@@ -148,6 +148,7 @@
                     return;
                 }
 
+                const TRANSFER_PENALTY = 2; // Add 2 minutes penalty for each transfer (adjust this value)
                 const distances = new Map();
                 const previous = new Map();
                 const unvisited = new Set(stations);
@@ -171,10 +172,15 @@
                     unvisited.delete(current);
 
                     const neighbors = graph.get(current) || [];
+                    const currentRoute = previous.get(current)?.route;
+                    
                     for (const neighbor of neighbors) {
                         if (!unvisited.has(neighbor.to)) continue;
                         
-                        const newDist = distances.get(current) + neighbor.time;
+                        // Add transfer penalty if switching routes
+                        const transferPenalty = (currentRoute && currentRoute !== neighbor.route) ? TRANSFER_PENALTY : 0;
+                        const newDist = distances.get(current) + neighbor.time + transferPenalty;
+                        
                         if (newDist < distances.get(neighbor.to)) {
                             distances.set(neighbor.to, newDist);
                             previous.set(neighbor.to, {
@@ -228,7 +234,8 @@
 
                 setRoute({
                     segments,
-                    totalTime: distances.get(toStation)
+                    totalTime: distances.get(toStation),
+                    actualTime: path.reduce((sum, step) => sum + step.time, 0) // Real travel time without penalties
                 });
             };
 
