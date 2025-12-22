@@ -13,7 +13,7 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useMemo } = React;
+        const { useState, useMemo, useEffect } = React;
 
         // Lucide icons as inline SVG components
         const Train = () => (
@@ -50,15 +50,38 @@
         );
 
         const SCRRouteFinder = () => {
-            // Your route data - add more routes here in the same format
-            const routeData = "CN/R001/SCN,0;SCE,2;SHB,4;AGP,6;BOD,7;COX,9;BEN,11;BNB,13;SAP,14;SAC,17//MT/R002/SCN,0;FWY,1;SCE,3;SHS,4;SHB,6;AGP,8;BOD,9;COX,11;BEN,13;PBN,16//";
-            
+            const [routeData, setRouteData] = useState('');
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
             const [fromStation, setFromStation] = useState('');
             const [toStation, setToStation] = useState('');
             const [route, setRoute] = useState(null);
 
+            // Load route data from route.txt
+            useEffect(() => {
+                fetch('route.txt')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Could not load route.txt');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        setRouteData(data);
+                        setLoading(false);
+                    })
+                    .catch(err => {
+                        setError(err.message);
+                        setLoading(false);
+                    });
+            }, []);
+
             // Parse route data
             const { routes, stations, graph } = useMemo(() => {
+                if (!routeData) {
+                    return { routes: [], stations: [], graph: new Map() };
+                }
+
                 const routes = [];
                 const stationsSet = new Set();
                 const graph = new Map();
@@ -67,6 +90,8 @@
                 
                 routeStrings.forEach(routeStr => {
                     const [operator, code, stationsStr] = routeStr.split('/');
+                    if (!operator || !code || !stationsStr) return;
+
                     const stationList = stationsStr.split(';').map(s => {
                         const [name, time] = s.split(',');
                         return { name: name.trim(), time: parseInt(time) };
@@ -215,6 +240,29 @@
                 'EX': 'bg-green-500'
             };
 
+            if (loading) {
+                return (
+                    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+                        <div className="text-center">
+                            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mb-4"></div>
+                            <p className="text-gray-600">Loading route data...</p>
+                        </div>
+                    </div>
+                );
+            }
+
+            if (error) {
+                return (
+                    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+                        <div className="bg-white rounded-lg shadow-xl p-8 max-w-md">
+                            <h2 className="text-xl font-bold text-red-600 mb-4">Error Loading Data</h2>
+                            <p className="text-gray-600 mb-4">{error}</p>
+                            <p className="text-sm text-gray-500">Make sure <code className="bg-gray-100 px-2 py-1 rounded">route.txt</code> is in the same folder as this HTML file.</p>
+                        </div>
+                    </div>
+                );
+            }
+
             return (
                 <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
                     <div className="max-w-4xl mx-auto">
@@ -331,7 +379,7 @@
                         <div className="mt-6 bg-white rounded-lg shadow-xl p-6">
                             <h3 className="font-semibold text-gray-800 mb-2">How to add more routes:</h3>
                             <p className="text-sm text-gray-600">
-                                Find the <code className="bg-gray-100 px-2 py-1 rounded">routeData</code> variable in the code and add your routes following this format:<br/>
+                                Edit <code className="bg-gray-100 px-2 py-1 rounded">route.txt</code> and add your routes following this format:<br/>
                                 <code className="bg-gray-100 px-2 py-1 rounded text-xs">Operator/RouteCode/Station1,time;Station2,time;//</code>
                             </p>
                             <p className="text-sm text-gray-500 mt-2">Currently loaded: {routes.length} routes, {stations.length} stations</p>
