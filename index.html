@@ -265,6 +265,109 @@
                 };
             };
 
+			const findFewestTransfersPath = () => {
+    			const best = new Map(); // station → { transfers, time }
+   				const previous = new Map();
+			    const unvisited = new Set(stations);
+			
+			    stations.forEach(s => {
+			        best.set(s, { transfers: Infinity, time: Infinity });
+			    });
+			
+			    best.set(fromStation, { transfers: 0, time: 0 });
+			
+			    while (unvisited.size > 0) {
+			        let current = null;
+			
+			        for (const s of unvisited) {
+			            const a = best.get(s);
+			            const b = current ? best.get(current) : null;
+			
+			            if (
+			                !current ||
+			                a.transfers < b.transfers ||
+			                (a.transfers === b.transfers && a.time < b.time)
+			            ) {
+			                current = s;
+			            }
+			        }
+			
+			        if (!current || current === toStation) break;
+			        unvisited.delete(current);
+			
+			        const neighbors = graph.get(current) || [];
+			        const currentRoute = previous.get(current)?.route;
+			
+			        for (const neighbor of neighbors) {
+			            if (!unvisited.has(neighbor.to)) continue;
+			
+			            const isTransfer = currentRoute && currentRoute !== neighbor.route;
+			            const transfers = best.get(current).transfers + (isTransfer ? 1 : 0);
+			            const time = best.get(current).time + neighbor.time;
+			
+			            const bestTo = best.get(neighbor.to);
+			
+			            if (
+			                transfers < bestTo.transfers ||
+			                (transfers === bestTo.transfers && time < bestTo.time)
+			            ) {
+			                best.set(neighbor.to, { transfers, time });
+			                previous.set(neighbor.to, {
+			                    station: current,
+			                    route: neighbor.route,
+			                    operator: neighbor.operator,
+			                    time: neighbor.time
+			                });
+			            }
+			        }
+			    }
+
+    if (!previous.has(toStation)) return null;
+
+    // Rebuild path (same as your existing code)
+    const path = [];
+    let current = toStation;
+
+    while (previous.has(current)) {
+        const prev = previous.get(current);
+        path.unshift({
+            from: prev.station,
+            to: current,
+            route: prev.route,
+            operator: prev.operator,
+            time: prev.time
+        });
+        current = prev.station;
+    }
+
+    const segments = [];
+    let currentSegment = null;
+
+    path.forEach(step => {
+        if (!currentSegment || currentSegment.route !== step.route) {
+            if (currentSegment) segments.push(currentSegment);
+            currentSegment = {
+                route: step.route,
+                operator: step.operator,
+                stations: [step.from, step.to],
+                time: step.time
+            };
+        } else {
+            currentSegment.stations.push(step.to);
+            currentSegment.time += step.time;
+        }
+    });
+
+    if (currentSegment) segments.push(currentSegment);
+
+    return {
+        segments,
+        actualTime: path.reduce((s, p) => s + p.time, 0),
+        transfers: segments.length - 1
+    };
+};
+
+
             const findAllRoutes = () => {
                 if (!fromStation || !toStation || fromStation === toStation) {
                     setRoutes(null);
@@ -274,7 +377,7 @@
                 // Find three different route options
                 const bestRoute = findPath(2, false); // Balanced (2 min penalty per transfer)
                 const fastestRoute = findPath(0, false); // Pure shortest time (no transfer penalty)
-                const shortestRoute = findPath(1000, true); // Very heavy penalty = absolute preference for fewest transfers
+                const shortestRoute = findFewestTransfersPath();
 
                 if (!bestRoute && !fastestRoute && !shortestRoute) {
                     setRoutes({ error: 'No route found' });
