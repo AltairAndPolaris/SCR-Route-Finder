@@ -194,8 +194,11 @@
                         // Count transfers: if we have a current route and neighbor is different route, that's a transfer
                         const isTransfer = currentRoute && currentRoute !== neighbor.route;
                         const newTransfers = currentTransfers + (isTransfer ? 1 : 0);
-                        const penalty = newTransfers * transferPenalty;
-                        const newDist = neighbor.time + penalty;
+						const newDist =
+							distances.get(current)
+							+ neighbor.time
+							+ (isTransfer ? transferPenalty : 0);
+
                         
                         // For cumulative distance tracking
                         const cumulativeDist = distances.get(current) + neighbor.time + (isTransfer ? transferPenalty : 0);
@@ -204,15 +207,17 @@
                             console.log(`  → ${neighbor.to} via ${neighbor.route}: ${neighbor.time} min, transfers: ${newTransfers}, penalty: ${penalty}, total: ${neighbor.time + penalty}`);
                         }
                         
-                        if (cumulativeDist < distances.get(neighbor.to)) {
-                            distances.set(neighbor.to, cumulativeDist);
-                            transferCount.set(neighbor.to, newTransfers);
-                            previous.set(neighbor.to, {
-                                station: current,
-                                route: neighbor.route,
-                                operator: neighbor.operator,
-                                time: neighbor.time
-                            });
+                        if (newDist < distances.get(neighbor.to)) {
+							distances.set(neighbor.to, newDist);
+							transferCount.set(neighbor.to, newTransfers);
+							previous.set(neighbor.to, {
+								station: current,
+								route: neighbor.route,
+								operator: neighbor.operator,
+								time: neighbor.time
+							});
+						}
+
                         }
                     }
                 }
