@@ -252,10 +252,10 @@
 
                 // Find three different route options
                 const bestRoute = findPath(2); // Balanced (2 min penalty per transfer)
-                const shortestRoute = findPath(0); // Pure shortest time
-                const mostDirectRoute = findPath(100); // Heavy penalty favors fewer transfers
+                const fastestRoute = findPath(0); // Pure shortest time (no transfer penalty)
+                const shortestRoute = findPath(1000); // Very heavy penalty = absolute preference for fewest transfers
 
-                if (!bestRoute && !shortestRoute && !mostDirectRoute) {
+                if (!bestRoute && !fastestRoute && !shortestRoute) {
                     setRoutes({ error: 'No route found' });
                     return;
                 }
@@ -263,23 +263,11 @@
                 // Remove duplicates (if routes are identical)
                 const allRoutes = [
                     { type: 'best', label: 'Best Route', description: 'Balanced time and transfers', route: bestRoute },
-                    { type: 'fastest', label: 'Fastest Route', description: 'Shortest travel time', route: shortestRoute },
-                    { type: 'direct', label: 'Most Direct', description: 'Fewest transfers', route: mostDirectRoute }
+                    { type: 'fastest', label: 'Fastest Route', description: 'Least time', route: fastestRoute },
+                    { type: 'shortest', label: 'Shortest Route', description: 'Fewest transfers', route: shortestRoute }
                 ].filter(r => r.route);
 
-                // Remove duplicates based on actual route taken
-                const uniqueRoutes = [];
-                const seen = new Set();
-                
-                allRoutes.forEach(item => {
-                    const signature = item.route.segments.map(s => s.route).join('-');
-                    if (!seen.has(signature)) {
-                        seen.add(signature);
-                        uniqueRoutes.push(item);
-                    }
-                });
-
-                setRoutes(uniqueRoutes);
+                setRoutes(allRoutes);
             };
 
             const operatorColors = {
@@ -294,7 +282,7 @@
                 const badgeColors = {
                     'best': 'bg-gradient-to-r from-indigo-500 to-purple-500',
                     'fastest': 'bg-gradient-to-r from-green-500 to-emerald-500',
-                    'direct': 'bg-gradient-to-r from-blue-500 to-cyan-500'
+                    'shortest': 'bg-gradient-to-r from-blue-500 to-cyan-500'
                 };
 
                 return (
