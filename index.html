@@ -1,593 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCR Route Finder</title>
-    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<title>Transit Route Planner</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    padding: 20px;
+}
+h1 {
+    margin-bottom: 10px;
+}
+input, select, button {
+    padding: 6px;
+    margin: 4px;
+}
+.section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+.route {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #4a6cf7;
+}
+.transfer {
+    color: #c0392b;
+    font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <div id="root"></div>
 
-    <script type="text/babel">
-        const { useState, useMemo, useEffect } = React;
+<h1>Transit Route Planner</h1>
 
-        // Lucide icons as inline SVG components
-        const Train = () => (
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="4" y="6" width="16" height="14" rx="2"/>
-                <path d="M4 11h16"/>
-                <path d="M12 6v5"/>
-                <circle cx="9" cy="17" r="1"/>
-                <circle cx="15" cy="17" r="1"/>
-            </svg>
-        );
+<div class="section">
+    <input type="file" id="fileInput">
+</div>
 
-        const ArrowRight = () => (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-            </svg>
-        );
+<div class="section">
+    From: <select id="from"></select>
+    To: <select id="to"></select>
+</div>
 
-        const Clock = () => (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-            </svg>
-        );
+<div class="section">
+    <h3>Operator pricing (per station)</h3>
+    <div id="pricing"></div>
+</div>
 
-        const Users = () => (
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-        );
+<button onclick="compute()">Compute routes</button>
 
-        const Transfer = () => (
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="17 1 21 5 17 9"/>
-                <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
-                <polyline points="7 23 3 19 7 15"/>
-                <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
-            </svg>
-        );
+<div class="section">
+    <h2>Results</h2>
+    <div id="output"></div>
+</div>
 
-        const SCRRouteFinder = () => {
-            const [routeData, setRouteData] = useState('');
-            const [loading, setLoading] = useState(true);
-            const [error, setError] = useState(null);
-            const [fromStation, setFromStation] = useState('');
-            const [toStation, setToStation] = useState('');
-            const [routes, setRoutes] = useState(null);
+<script>
+/* =======================
+   GRAPH PARSING
+======================= */
 
-            // Load route data from route.txt
-            useEffect(() => {
-                fetch('route.txt')
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('Could not load route.txt');
-                        }
-                        return response.text();
-                    })
-                    .then(data => {
-                        setRouteData(data);
-                        setLoading(false);
-                    })
-                    .catch(err => {
-                        setError(err.message);
-                        setLoading(false);
-                    });
-            }, []);
+function parseRouteFile(text) {
+    const graph = new Map();
+    const stations = new Set();
+    const operators = new Set();
 
-            // Parse route data
-            const { routesList, stations, graph } = useMemo(() => {
-                if (!routeData) {
-                    return { routesList: [], stations: [], graph: new Map() };
-                }
-
-                const routesList = [];
-                const stationsSet = new Set();
-                const graph = new Map();
-
-                const routeStrings = routeData.split('//').filter(r => r.trim());
-                
-                routeStrings.forEach(routeStr => {
-                    const [operator, code, stationsStr] = routeStr.split('/');
-                    if (!operator || !code || !stationsStr) return;
-
-                    const stationList = stationsStr.split(';').map(s => {
-                        const [name, time] = s.split(',');
-                        return { name: name.trim(), time: parseInt(time) };
-                    });
-
-                    routesList.push({
-                        operator,
-                        code,
-                        stations: stationList
-                    });
-
-                    stationList.forEach(s => stationsSet.add(s.name));
-
-                    for (let i = 0; i < stationList.length; i++) {
-                        const station = stationList[i].name;
-                        if (!graph.has(station)) {
-                            graph.set(station, []);
-                        }
-
-                        if (i < stationList.length - 1) {
-                            const nextStation = stationList[i + 1].name;
-                            const timeDiff = stationList[i + 1].time - stationList[i].time;
-                            graph.get(station).push({
-                                to: nextStation,
-                                time: timeDiff,
-                                route: code,
-                                operator
-                            });
-                        }
-
-                        if (i > 0) {
-                            const prevStation = stationList[i - 1].name;
-                            const timeDiff = stationList[i].time - stationList[i - 1].time;
-                            graph.get(station).push({
-                                to: prevStation,
-                                time: timeDiff,
-                                route: code,
-                                operator
-                            });
-                        }
-                    }
-                });
-
-                return {
-                    routesList,
-                    stations: Array.from(stationsSet).sort(),
-                    graph
-                };
-            }, [routeData]);
-
-            // Generic pathfinding with configurable transfer penalty
-            const findPath = (transferPenalty, debug = false) => {
-                const distances = new Map();
-                const previous = new Map();
-                const transferCount = new Map(); // Track number of transfers to each station
-                const unvisited = new Set(stations);
-
-                stations.forEach(s => {
-                    distances.set(s, Infinity);
-                    transferCount.set(s, Infinity);
-                });
-                distances.set(fromStation, 0);
-                transferCount.set(fromStation, 0);
-
-                while (unvisited.size > 0) {
-                    let current = null;
-                    let minDist = Infinity;
-                    
-                    for (const station of unvisited) {
-                        if (distances.get(station) < minDist) {
-                            minDist = distances.get(station);
-                            current = station;
-                        }
-                    }
-
-                    if (current === null || current === toStation) break;
-                    
-                    unvisited.delete(current);
-
-                    const neighbors = graph.get(current) || [];
-                    const currentRoute = previous.get(current)?.route;
-                    const currentTransfers = transferCount.get(current);
-                    
-                    if (debug && current === fromStation) {
-                        console.log(`From ${fromStation}, neighbors:`, neighbors);
-                    }
-                    
-                    for (const neighbor of neighbors) {
-                        if (!unvisited.has(neighbor.to)) continue;
-                        
-                        // Count transfers: if we have a current route and neighbor is different route, that's a transfer
-                        const isTransfer = currentRoute && currentRoute !== neighbor.route;
-                        const newTransfers = currentTransfers + (isTransfer ? 1 : 0);
-						const newDist =
-							distances.get(current)
-							+ neighbor.time
-							+ (isTransfer ? transferPenalty : 0);
-
-                        
-                        // For cumulative distance tracking
-                        const cumulativeDist = distances.get(current) + neighbor.time + (isTransfer ? transferPenalty : 0);
-                        
-                        if (newDist < distances.get(neighbor.to)) {
-							distances.set(neighbor.to, newDist);
-							transferCount.set(neighbor.to, newTransfers);
-							previous.set(neighbor.to, {
-								station: current,
-								route: neighbor.route,
-								operator: neighbor.operator,
-								time: neighbor.time
-							});
-						}
-
-                    }
-                }
-
-                if (!previous.has(toStation)) {
-                    return null;
-                }
-
-                const path = [];
-                let current = toStation;
-                
-                while (previous.has(current)) {
-                    const prev = previous.get(current);
-                    path.unshift({
-                        from: prev.station,
-                        to: current,
-                        route: prev.route,
-                        operator: prev.operator,
-                        time: prev.time
-                    });
-                    current = prev.station;
-                }
-
-                const segments = [];
-                let currentSegment = null;
-
-                path.forEach(step => {
-                    if (!currentSegment || currentSegment.route !== step.route) {
-                        if (currentSegment) segments.push(currentSegment);
-                        currentSegment = {
-                            route: step.route,
-                            operator: step.operator,
-                            stations: [step.from, step.to],
-                            time: step.time
-                        };
-                    } else {
-                        currentSegment.stations.push(step.to);
-                        currentSegment.time += step.time;
-                    }
-                });
-                if (currentSegment) segments.push(currentSegment);
-
-                const actualTime = path.reduce((sum, step) => sum + step.time, 0);
-                const transfers = segments.length - 1;
-
-                return {
-                    segments,
-                    actualTime,
-                    transfers
-                };
-            };
-
-			const findFewestTransfersPath = () => {
-    			const best = new Map(); // station → { transfers, time }
-   				const previous = new Map();
-			    const unvisited = new Set(stations);
-			
-			    stations.forEach(s => {
-			        best.set(s, { transfers: Infinity, time: Infinity });
-			    });
-			
-			    best.set(fromStation, { transfers: 0, time: 0 });
-			
-			    while (unvisited.size > 0) {
-			        let current = null;
-			
-			        for (const s of unvisited) {
-			            const a = best.get(s);
-			            const b = current ? best.get(current) : null;
-			
-			            if (
-			                !current ||
-			                a.transfers < b.transfers ||
-			                (a.transfers === b.transfers && a.time < b.time)
-			            ) {
-			                current = s;
-			            }
-			        }
-			
-			        if (!current || current === toStation) break;
-			        unvisited.delete(current);
-			
-			        const neighbors = graph.get(current) || [];
-			        const currentRoute = previous.get(current)?.route;
-			
-			        for (const neighbor of neighbors) {
-			            if (!unvisited.has(neighbor.to)) continue;
-			
-			            const isTransfer = currentRoute && currentRoute !== neighbor.route;
-			            const transfers = best.get(current).transfers + (isTransfer ? 1 : 0);
-			            const time = best.get(current).time + neighbor.time;
-			
-			            const bestTo = best.get(neighbor.to);
-			
-			            if (
-			                transfers < bestTo.transfers ||
-			                (transfers === bestTo.transfers && time < bestTo.time)
-			            ) {
-			                best.set(neighbor.to, { transfers, time });
-			                previous.set(neighbor.to, {
-			                    station: current,
-			                    route: neighbor.route,
-			                    operator: neighbor.operator,
-			                    time: neighbor.time
-			                });
-			            }
-			        }
-			    }
-
-    if (!previous.has(toStation)) return null;
-
-    // Rebuild path (same as your existing code)
-    const path = [];
-    let current = toStation;
-
-    while (previous.has(current)) {
-        const prev = previous.get(current);
-        path.unshift({
-            from: prev.station,
-            to: current,
-            route: prev.route,
-            operator: prev.operator,
-            time: prev.time
-        });
-        current = prev.station;
+    function addEdge(from, to, route, operator, time) {
+        if (!graph.has(from)) graph.set(from, []);
+        graph.get(from).push({ to, route, operator, time });
     }
 
-    const segments = [];
-    let currentSegment = null;
+    const routes = text.split("//").filter(r => r.trim());
 
-    path.forEach(step => {
-        if (!currentSegment || currentSegment.route !== step.route) {
-            if (currentSegment) segments.push(currentSegment);
-            currentSegment = {
-                route: step.route,
-                operator: step.operator,
-                stations: [step.from, step.to],
-                time: step.time
-            };
-        } else {
-            currentSegment.stations.push(step.to);
-            currentSegment.time += step.time;
+    for (const r of routes) {
+        const [operator, routeId, stationPart] = r.split("/");
+        operators.add(operator);
+
+        const stationsList = stationPart.split(";")
+            .map(s => {
+                const [name, t] = s.split(",");
+                return { name, time: Number(t) };
+            });
+
+        for (let i = 0; i < stationsList.length - 1; i++) {
+            const a = stationsList[i];
+            const b = stationsList[i + 1];
+            const dt = b.time - a.time;
+
+            addEdge(a.name, b.name, routeId, operator, dt);
+            addEdge(b.name, a.name, routeId, operator, dt);
+
+            stations.add(a.name);
+            stations.add(b.name);
         }
+    }
+
+    return { graph, stations: [...stations], operators: [...operators] };
+}
+
+/* =======================
+   PRIORITY QUEUE
+======================= */
+
+class PriorityQueue {
+    constructor(compare) {
+        this.data = [];
+        this.compare = compare;
+    }
+    push(x) {
+        this.data.push(x);
+        this.data.sort(this.compare);
+    }
+    pop() {
+        return this.data.shift();
+    }
+    get size() {
+        return this.data.length;
+    }
+}
+
+/* =======================
+   PATHFINDER
+======================= */
+
+function findPath(graph, from, to, mode, pricing) {
+    const TRANSFER_PENALTY = 5;
+
+    const pq = new PriorityQueue((a, b) => {
+        if (mode === "direct") {
+            if (a.transfers !== b.transfers)
+                return a.transfers - b.transfers;
+            return a.time - b.time;
+        }
+        if (mode === "cheap") {
+            return a.cost - b.cost;
+        }
+        return (a.time + a.transfers * TRANSFER_PENALTY) -
+               (b.time + b.transfers * TRANSFER_PENALTY);
     });
 
-    if (currentSegment) segments.push(currentSegment);
+    const best = new Map();
 
-    return {
-        segments,
-        actualTime: path.reduce((s, p) => s + p.time, 0),
-        transfers: segments.length - 1
-    };
-};
-
-
-            const findAllRoutes = () => {
-                if (!fromStation || !toStation || fromStation === toStation) {
-                    setRoutes(null);
-                    return;
-                }
-
-                // Find three different route options
-                const bestRoute = findPath(2, false); // Balanced (2 min penalty per transfer)
-                const fastestRoute = findPath(0, false); // Pure shortest time (no transfer penalty)
-                const shortestRoute = findFewestTransfersPath();
-
-                if (!bestRoute && !fastestRoute && !shortestRoute) {
-                    setRoutes({ error: 'No route found' });
-                    return;
-                }
-
-                // Remove duplicates (if routes are identical)
-                const allRoutes = [
-                    { type: 'best', label: 'Best Route', description: 'Balanced time and transfers', route: bestRoute },
-                    { type: 'fastest', label: 'Fastest Route', description: 'Least time', route: fastestRoute },
-                    { type: 'shortest', label: 'Shortest Route', description: 'Fewest transfers', route: shortestRoute }
-                ].filter(r => r.route);
-
-                setRoutes(allRoutes);
-            };
-
-            const operatorColors = {
-                'CN': 'bg-blue-500',
-                'MT': 'bg-red-500',
-                'WL': 'bg-cyan-500',
-                'AL': 'bg-purple-500',
-                'EX': 'bg-green-500'
-            };
-
-            const RouteDisplay = ({ type, label, description, route }) => {
-                const badgeColors = {
-                    'best': 'bg-gradient-to-r from-indigo-500 to-purple-500',
-                    'fastest': 'bg-gradient-to-r from-green-500 to-emerald-500',
-                    'shortest': 'bg-gradient-to-r from-blue-500 to-cyan-500'
-                };
-
-                return (
-                    <div className="bg-white rounded-lg shadow-xl p-6 mb-4">
-                        <div className="flex items-center justify-between mb-4 pb-4 border-b">
-                            <div>
-                                <div className={`inline-block ${badgeColors[type]} text-white px-4 py-2 rounded-full text-sm font-bold mb-2`}>
-                                    {label}
-                                </div>
-                                <p className="text-gray-600 text-sm">{description}</p>
-                            </div>
-                            <div className="text-right">
-                                <div className="flex items-center gap-2 text-gray-800">
-                                    <Clock />
-                                    <span className="text-2xl font-bold">{route.actualTime} min</span>
-                                </div>
-                                <div className="flex items-center gap-2 text-gray-600 mt-1">
-                                    <Transfer />
-                                    <span className="text-sm">{route.transfers} transfer{route.transfers !== 1 ? 's' : ''}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="space-y-6">
-                            {route.segments.map((segment, idx) => (
-                                <div key={idx}>
-                                    <div className="flex items-center gap-3 mb-3">
-                                        <div className={`${operatorColors[segment.operator] || 'bg-gray-500'} text-white px-3 py-1 rounded-full text-sm font-semibold`}>
-                                            {segment.route}
-                                        </div>
-                                        <div className="flex items-center gap-2 text-gray-600">
-                                            <Users />
-                                            <span className="text-sm">{segment.operator}</span>
-                                        </div>
-                                        <div className="flex items-center gap-2 text-gray-600">
-                                            <Clock />
-                                            <span className="text-sm">{segment.time} min</span>
-                                        </div>
-                                    </div>
-
-                                    <div className="ml-4 pl-4 border-l-4 border-gray-300">
-                                        {segment.stations.map((station, sIdx) => (
-                                            <div key={sIdx} className="flex items-center gap-3 py-2">
-                                                <div className={`w-3 h-3 rounded-full ${operatorColors[segment.operator] || 'bg-gray-500'}`}></div>
-                                                <span className="font-medium text-gray-800">{station}</span>
-                                                {sIdx === 0 && segment.stations.length > 2 && (
-                                                    <span className="text-sm text-gray-500">(Board here)</span>
-                                                )}
-                                                {sIdx === segment.stations.length - 1 && idx < route.segments.length - 1 && (
-                                                    <span className="text-sm text-indigo-600 font-semibold">(Transfer)</span>
-                                                )}
-                                                {sIdx === segment.stations.length - 1 && idx === route.segments.length - 1 && (
-                                                    <span className="text-sm text-green-600 font-semibold">(Arrive)</span>
-                                                )}
-                                            </div>
-                                        ))}
-                                    </div>
-
-                                    {idx < route.segments.length - 1 && (
-                                        <div className="flex items-center gap-2 my-4 text-indigo-600">
-                                            <ArrowRight />
-                                            <span className="font-semibold">Change to {route.segments[idx + 1].route}</span>
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                );
-            };
-
-            if (loading) {
-                return (
-                    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-                        <div className="text-center">
-                            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mb-4"></div>
-                            <p className="text-gray-600">Loading route data...</p>
-                        </div>
-                    </div>
-                );
-            }
-
-            if (error) {
-                return (
-                    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-                        <div className="bg-white rounded-lg shadow-xl p-8 max-w-md">
-                            <h2 className="text-xl font-bold text-red-600 mb-4">Error Loading Data</h2>
-                            <p className="text-gray-600 mb-4">{error}</p>
-                            <p className="text-sm text-gray-500">Make sure <code className="bg-gray-100 px-2 py-1 rounded">route.txt</code> is in the same folder as this HTML file.</p>
-                        </div>
-                    </div>
-                );
-            }
-
-            return (
-                <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
-                    <div className="max-w-4xl mx-auto">
-                        <div className="bg-white rounded-lg shadow-xl p-8 mb-6">
-                            <div className="flex items-center gap-3 mb-6">
-                                <Train />
-                                <h1 className="text-3xl font-bold text-gray-800">SCR Route Finder</h1>
-                            </div>
-                            
-                            <p className="text-gray-600 mb-6">Stepford County Railway - Find the best route between stations</p>
-
-                            <div className="grid md:grid-cols-2 gap-4 mb-6">
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-2">From Station</label>
-                                    <select 
-                                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                                        value={fromStation}
-                                        onChange={(e) => setFromStation(e.target.value)}
-                                    >
-                                        <option value="">Select station...</option>
-                                        {stations.map(s => (
-                                            <option key={s} value={s}>{s}</option>
-                                        ))}
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-2">To Station</label>
-                                    <select 
-                                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                                        value={toStation}
-                                        onChange={(e) => setToStation(e.target.value)}
-                                    >
-                                        <option value="">Select station...</option>
-                                        {stations.map(s => (
-                                            <option key={s} value={s}>{s}</option>
-                                        ))}
-                                    </select>
-                                </div>
-                            </div>
-
-                            <button
-                                onClick={findAllRoutes}
-                                disabled={!fromStation || !toStation}
-                                className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
-                            >
-                                Find Routes
-                            </button>
-                        </div>
-
-                        {routes && (
-                            <>
-                                {routes.error ? (
-                                    <div className="bg-white rounded-lg shadow-xl p-8">
-                                        <p className="text-red-600 text-center">{routes.error}</p>
-                                    </div>
-                                ) : (
-                                    <>
-                                        <h2 className="text-2xl font-bold text-gray-800 mb-4">Route Options</h2>
-                                        {routes.map((item, idx) => (
-                                            <RouteDisplay 
-                                                key={idx}
-                                                type={item.type}
-                                                label={item.label}
-                                                description={item.description}
-                                                route={item.route}
-                                            />
-                                        ))}
-                                    </>
-                                )}
-                            </>
-                        )}
-
-                        <div className="mt-6 bg-white rounded-lg shadow-xl p-6">
-                            <h3 className="font-semibold text-gray-800 mb-2">How to add more routes:</h3>
-                            <p className="text-sm text-gray-600">
-                                Edit <code className="bg-gray-100 px-2 py-1 rounded">route.txt</code> and add your routes following this format:<br/>
-                                <code className="bg-gray-100 px-2 py-1 rounded text-xs">Operator/RouteCode/Station1,time;Station2,time;//</code>
-                            </p>
-                            <p className="text-sm text-gray-500 mt-2">Currently loaded: {routesList.length} routes, {stations.length} stations</p>
-                        </div>
-                    </div>
-                </div>
-            );
+    for (const e of graph.get(from) || []) {
+        const s = {
+            station: from,
+            route: e.route,
+            operator: e.operator,
+            time: 0,
+            transfers: 0,
+            cost: 0,
+            path: []
         };
+        best.set(from + "|" + e.route, s);
+        pq.push(s);
+    }
 
-        ReactDOM.render(<SCRRouteFinder />, document.getElementById('root'));
-    </script>
+    while (pq.size) {
+        const cur = pq.pop();
+        if (cur.station === to) return cur;
+
+        for (const e of graph.get(cur.station) || []) {
+            const transfer = e.route !== cur.route;
+            const next = {
+                station: e.to,
+                route: e.route,
+                operator: e.operator,
+                time: cur.time + e.time,
+                transfers: cur.transfers + (transfer ? 1 : 0),
+                cost: cur.cost + (pricing[e.operator] || 0),
+                path: cur.path.concat({
+                    from: cur.station,
+                    to: e.to,
+                    route: e.route,
+                    operator: e.operator,
+                    time: e.time,
+                    transfer
+                })
+            };
+
+            const key = e.to + "|" + e.route;
+            const prev = best.get(key);
+
+            let better = false;
+            if (!prev) better = true;
+            else if (mode === "direct")
+                better = next.transfers < prev.transfers ||
+                        (next.transfers === prev.transfers && next.time < prev.time);
+            else if (mode === "cheap")
+                better = next.cost < prev.cost;
+            else
+                better = next.time + next.transfers * 5 <
+                         prev.time + prev.transfers * 5;
+
+            if (better) {
+                best.set(key, next);
+                pq.push(next);
+            }
+        }
+    }
+    return null;
+}
+
+/* =======================
+   UI
+======================= */
+
+let GRAPH, OPERATORS;
+
+document.getElementById("fileInput").addEventListener("change", e => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.onload = () => {
+        const { graph, stations, operators } = parseRouteFile(reader.result);
+        GRAPH = graph;
+        OPERATORS = operators;
+
+        const from = document.getElementById("from");
+        const to = document.getElementById("to");
+        from.innerHTML = to.innerHTML = "";
+
+        stations.forEach(s => {
+            from.add(new Option(s, s));
+            to.add(new Option(s, s));
+        });
+
+        const pricingDiv = document.getElementById("pricing");
+        pricingDiv.innerHTML = "";
+        operators.forEach(op => {
+            pricingDiv.innerHTML +=
+                `${op}: <input type="number" id="price_${op}" value="10"><br>`;
+        });
+    };
+    reader.readAsText(file);
+});
+
+function compute() {
+    const from = document.getElementById("from").value;
+    const to = document.getElementById("to").value;
+
+    const pricing = {};
+    OPERATORS.forEach(op => {
+        pricing[op] = Number(document.getElementById("price_" + op).value);
+    });
+
+    const balanced = findPath(GRAPH, from, to, "balanced", pricing);
+    const direct = findPath(GRAPH, from, to, "direct", pricing);
+    const cheap = findPath(GRAPH, from, to, "cheap", pricing);
+
+    const out = document.getElementById("output");
+    out.innerHTML = "";
+
+    renderRoute(out, "Balanced route", balanced);
+    renderRoute(out, "Most direct route", direct);
+    renderRoute(out, "Cheapest route", cheap);
+}
+
+function renderRoute(container, title, r) {
+    if (!r) {
+        container.innerHTML += `<h3>${title}</h3><p>No route found</p>`;
+        return;
+    }
+
+    let html = `<h3>${title}</h3>`;
+    html += `<p>Time: ${r.time} min | Transfers: ${r.transfers} | Cost: ${r.cost}</p>`;
+    html += `<div class="route">`;
+
+    r.path.forEach(p => {
+        if (p.transfer) {
+            html += `<div class="transfer">Change to ${p.route}</div>`;
+        }
+        html += `${p.from} → ${p.to} (${p.route}, ${p.time} min)<br>`;
+    });
+
+    html += `</div>`;
+    container.innerHTML += html;
+}
+</script>
+
 </body>
 </html>
