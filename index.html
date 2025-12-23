@@ -203,10 +203,6 @@
                         // For cumulative distance tracking
                         const cumulativeDist = distances.get(current) + neighbor.time + (isTransfer ? transferPenalty : 0);
                         
-                        if (debug && current === fromStation) {
-                            console.log(`  → ${neighbor.to} via ${neighbor.route}: ${neighbor.time} min, transfers: ${newTransfers}, penalty: ${penalty}, total: ${neighbor.time + penalty}`);
-                        }
-                        
                         if (newDist < distances.get(neighbor.to)) {
 							distances.set(neighbor.to, newDist);
 							transferCount.set(neighbor.to, newTransfers);
