@@ -9,13 +9,6 @@ body {
     background: #f4f6fa;
     padding: 20px;
 }
-h1 {
-    margin-bottom: 10px;
-}
-input, select, button {
-    padding: 6px;
-    margin: 4px;
-}
 .section {
     background: white;
     padding: 15px;
@@ -38,10 +31,6 @@ input, select, button {
 <h1>Transit Route Planner</h1>
 
 <div class="section">
-    <input type="file" id="fileInput">
-</div>
-
-<div class="section">
     From: <select id="from"></select>
     To: <select id="to"></select>
 </div>
@@ -60,7 +49,7 @@ input, select, button {
 
 <script>
 /* =======================
-   GRAPH PARSING
+   PARSE route.txt
 ======================= */
 
 function parseRouteFile(text) {
@@ -79,15 +68,14 @@ function parseRouteFile(text) {
         const [operator, routeId, stationPart] = r.split("/");
         operators.add(operator);
 
-        const stationsList = stationPart.split(";")
-            .map(s => {
-                const [name, t] = s.split(",");
-                return { name, time: Number(t) };
-            });
+        const list = stationPart.split(";").map(s => {
+            const [name, t] = s.split(",");
+            return { name, time: Number(t) };
+        });
 
-        for (let i = 0; i < stationsList.length - 1; i++) {
-            const a = stationsList[i];
-            const b = stationsList[i + 1];
+        for (let i = 0; i < list.length - 1; i++) {
+            const a = list[i];
+            const b = list[i + 1];
             const dt = b.time - a.time;
 
             addEdge(a.name, b.name, routeId, operator, dt);
@@ -123,7 +111,7 @@ class PriorityQueue {
 }
 
 /* =======================
-   PATHFINDER
+   PATHFINDING
 ======================= */
 
 function findPath(graph, from, to, mode, pricing) {
@@ -135,9 +123,7 @@ function findPath(graph, from, to, mode, pricing) {
                 return a.transfers - b.transfers;
             return a.time - b.time;
         }
-        if (mode === "cheap") {
-            return a.cost - b.cost;
-        }
+        if (mode === "cheap") return a.cost - b.cost;
         return (a.time + a.transfers * TRANSFER_PENALTY) -
                (b.time + b.transfers * TRANSFER_PENALTY);
     });
@@ -188,7 +174,7 @@ function findPath(graph, from, to, mode, pricing) {
             if (!prev) better = true;
             else if (mode === "direct")
                 better = next.transfers < prev.transfers ||
-                        (next.transfers === prev.transfers && next.time < prev.time);
+                         (next.transfers === prev.transfers && next.time < prev.time);
             else if (mode === "cheap")
                 better = next.cost < prev.cost;
             else
@@ -210,17 +196,15 @@ function findPath(graph, from, to, mode, pricing) {
 
 let GRAPH, OPERATORS;
 
-document.getElementById("fileInput").addEventListener("change", e => {
-    const file = e.target.files[0];
-    const reader = new FileReader();
-    reader.onload = () => {
-        const { graph, stations, operators } = parseRouteFile(reader.result);
+fetch("route.txt")
+    .then(r => r.text())
+    .then(text => {
+        const { graph, stations, operators } = parseRouteFile(text);
         GRAPH = graph;
         OPERATORS = operators;
 
         const from = document.getElementById("from");
         const to = document.getElementById("to");
-        from.innerHTML = to.innerHTML = "";
 
         stations.forEach(s => {
             from.add(new Option(s, s));
@@ -228,14 +212,16 @@ document.getElementById("fileInput").addEventListener("change", e => {
         });
 
         const pricingDiv = document.getElementById("pricing");
-        pricingDiv.innerHTML = "";
         operators.forEach(op => {
             pricingDiv.innerHTML +=
                 `${op}: <input type="number" id="price_${op}" value="10"><br>`;
         });
-    };
-    reader.readAsText(file);
-});
+    })
+    .catch(err => {
+        document.body.innerHTML =
+            "<h2>Failed to load route.txt</h2><p>Make sure the file is in the same directory.</p>";
+        console.error(err);
+    });
 
 function compute() {
     const from = document.getElementById("from").value;
@@ -246,21 +232,18 @@ function compute() {
         pricing[op] = Number(document.getElementById("price_" + op).value);
     });
 
-    const balanced = findPath(GRAPH, from, to, "balanced", pricing);
-    const direct = findPath(GRAPH, from, to, "direct", pricing);
-    const cheap = findPath(GRAPH, from, to, "cheap", pricing);
-
     const out = document.getElementById("output");
     out.innerHTML = "";
 
-    renderRoute(out, "Balanced route", balanced);
-    renderRoute(out, "Most direct route", direct);
-    renderRoute(out, "Cheapest route", cheap);
+    render("Balanced route", findPath(GRAPH, from, to, "balanced", pricing));
+    render("Most direct route", findPath(GRAPH, from, to, "direct", pricing));
+    render("Cheapest route", findPath(GRAPH, from, to, "cheap", pricing));
 }
 
-function renderRoute(container, title, r) {
+function render(title, r) {
+    const out = document.getElementById("output");
     if (!r) {
-        container.innerHTML += `<h3>${title}</h3><p>No route found</p>`;
+        out.innerHTML += `<h3>${title}</h3><p>No route found</p>`;
         return;
     }
 
@@ -269,14 +252,13 @@ function renderRoute(container, title, r) {
     html += `<div class="route">`;
 
     r.path.forEach(p => {
-        if (p.transfer) {
+        if (p.transfer)
             html += `<div class="transfer">Change to ${p.route}</div>`;
-        }
         html += `${p.from} → ${p.to} (${p.route}, ${p.time} min)<br>`;
     });
 
-    html += `</div>`;
-    container.innerHTML += html;
+    html += "</div>";
+    out.innerHTML += html;
 }
 </script>
 
