@@ -152,7 +152,7 @@
             }, [routeData]);
 
             // Generic pathfinding with configurable transfer penalty
-            const findPath = (transferPenalty) => {
+            const findPath = (transferPenalty, debug = false) => {
                 const distances = new Map();
                 const previous = new Map();
                 const unvisited = new Set(stations);
@@ -178,11 +178,19 @@
                     const neighbors = graph.get(current) || [];
                     const currentRoute = previous.get(current)?.route;
                     
+                    if (debug && current === fromStation) {
+                        console.log(`From ${fromStation}, neighbors:`, neighbors);
+                    }
+                    
                     for (const neighbor of neighbors) {
                         if (!unvisited.has(neighbor.to)) continue;
                         
                         const penalty = (currentRoute && currentRoute !== neighbor.route) ? transferPenalty : 0;
                         const newDist = distances.get(current) + neighbor.time + penalty;
+                        
+                        if (debug && current === fromStation) {
+                            console.log(`  → ${neighbor.to} via ${neighbor.route}: ${neighbor.time} min + ${penalty} penalty = ${newDist} total`);
+                        }
                         
                         if (newDist < distances.get(neighbor.to)) {
                             distances.set(neighbor.to, newDist);
@@ -251,9 +259,9 @@
                 }
 
                 // Find three different route options
-                const bestRoute = findPath(2); // Balanced (2 min penalty per transfer)
-                const fastestRoute = findPath(0); // Pure shortest time (no transfer penalty)
-                const shortestRoute = findPath(1000); // Very heavy penalty = absolute preference for fewest transfers
+                const bestRoute = findPath(2, false); // Balanced (2 min penalty per transfer)
+                const fastestRoute = findPath(0, false); // Pure shortest time (no transfer penalty)
+                const shortestRoute = findPath(1000, true); // Very heavy penalty = absolute preference for fewest transfers
 
                 if (!bestRoute && !fastestRoute && !shortestRoute) {
                     setRoutes({ error: 'No route found' });
