@@ -155,10 +155,15 @@
             const findPath = (transferPenalty, debug = false) => {
                 const distances = new Map();
                 const previous = new Map();
+                const transferCount = new Map(); // Track number of transfers to each station
                 const unvisited = new Set(stations);
 
-                stations.forEach(s => distances.set(s, Infinity));
+                stations.forEach(s => {
+                    distances.set(s, Infinity);
+                    transferCount.set(s, Infinity);
+                });
                 distances.set(fromStation, 0);
+                transferCount.set(fromStation, 0);
 
                 while (unvisited.size > 0) {
                     let current = null;
@@ -177,6 +182,7 @@
 
                     const neighbors = graph.get(current) || [];
                     const currentRoute = previous.get(current)?.route;
+                    const currentTransfers = transferCount.get(current);
                     
                     if (debug && current === fromStation) {
                         console.log(`From ${fromStation}, neighbors:`, neighbors);
@@ -185,15 +191,22 @@
                     for (const neighbor of neighbors) {
                         if (!unvisited.has(neighbor.to)) continue;
                         
-                        const penalty = (currentRoute && currentRoute !== neighbor.route) ? transferPenalty : 0;
-                        const newDist = distances.get(current) + neighbor.time + penalty;
+                        // Count transfers: if we have a current route and neighbor is different route, that's a transfer
+                        const isTransfer = currentRoute && currentRoute !== neighbor.route;
+                        const newTransfers = currentTransfers + (isTransfer ? 1 : 0);
+                        const penalty = newTransfers * transferPenalty;
+                        const newDist = neighbor.time + penalty;
+                        
+                        // For cumulative distance tracking
+                        const cumulativeDist = distances.get(current) + neighbor.time + (isTransfer ? transferPenalty : 0);
                         
                         if (debug && current === fromStation) {
-                            console.log(`  → ${neighbor.to} via ${neighbor.route}: ${neighbor.time} min + ${penalty} penalty = ${newDist} total`);
+                            console.log(`  → ${neighbor.to} via ${neighbor.route}: ${neighbor.time} min, transfers: ${newTransfers}, penalty: ${penalty}, total: ${neighbor.time + penalty}`);
                         }
                         
-                        if (newDist < distances.get(neighbor.to)) {
-                            distances.set(neighbor.to, newDist);
+                        if (cumulativeDist < distances.get(neighbor.to)) {
+                            distances.set(neighbor.to, cumulativeDist);
+                            transferCount.set(neighbor.to, newTransfers);
                             previous.set(neighbor.to, {
                                 station: current,
                                 route: neighbor.route,
