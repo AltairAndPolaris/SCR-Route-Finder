@@ -114,7 +114,7 @@ body {
     font-size: 0.95rem;
     transition: all 0.3s;
     min-width: 60px;
-    max-width: 80px;
+    max-width: 150px;
     text-align: right;
 }
 
