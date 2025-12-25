@@ -114,9 +114,8 @@ body {
     border-radius: 6px;
     font-size: 0.95rem;
     transition: all 0.3s;
-    width: 70px;
-    min-width: 60px;
-    max-width: 80px;
+    min-width: 20px;
+    max-width: 40px;
     text-align: right;
 }
 
