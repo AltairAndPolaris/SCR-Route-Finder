@@ -671,11 +671,15 @@ function extractSegments(path) {
                 operator: step.operator,
                 from: step.from,
                 to: step.to,
-                stations: [step.from, step.to]
+                stations: [step.from, step.to],
+                steps: [step],   // store actual steps for timing
+                time: step.time  // initialize time
             };
         } else {
             current.to = step.to;
             current.stations.push(step.to);
+            current.steps.push(step);
+            current.time += step.time;  // accumulate time
         }
     }
 
@@ -731,7 +735,7 @@ function render(title, r, color) {
                     <span class="operator-badge operator-${seg.operator}">
                         ${seg.route}
                     </span>
-                    <span class="step-time">${seg.stations.reduce((a,b,i,arr)=>i>0?a+"+"+(arr[i]!==arr[i-1]?b:"") : b,"")} min</span>
+                    <span class="step-time">${seg.time} min</span>
                     <div class="segment-toggle" 
                          onclick="document.getElementById('${stopId}').classList.toggle('hidden')">
                          ▼ Show all stops (${seg.stations.length})
