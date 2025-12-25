@@ -740,12 +740,10 @@ function render(title, r, color) {
                     <span class="step-stations">
                         ${getDisplayName(seg.from)} → ${getDisplayName(seg.to)}
                     </span>
-                    <span class="operator-badge operator-${seg.operator}">
-                        ${seg.route}
-                        ${equivalents.map(id =>
-                            `<span class="operator-badge operator-${seg.operator}">${id}</span>`
-                        ).join("")}
-                    </span>
+                    <span class="operator-badge operator-${seg.operator}">${seg.route}</span>
+                    ${equivalents.map(id =>
+                        `<span class="operator-badge operator-${seg.operator}">${id}</span>`
+                    ).join("")}
                     <span class="step-time">${seg.time || ""} min</span>
                 </div>
     
@@ -759,9 +757,6 @@ function render(title, r, color) {
             </div>
         `;
     });
-
-
-
     html += `</div>`; // closes route-path
     out.innerHTML += html;
 }
