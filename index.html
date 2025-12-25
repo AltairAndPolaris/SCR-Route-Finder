@@ -505,44 +505,7 @@ function findPath(graph, from, to, mode, pricing) {
     }
     return null;
 }
-let currentRoute = null;
 
-r.path.forEach((p, idx) => {
-
-    if (p.transfer && currentRoute) {
-        html += `<div class="transfer-badge">🔄 Transfer to ${p.route}</div>`;
-    }
-
-    html += `
-        <div class="route-step">
-            <div class="step-icon"></div>
-            <div class="step-details">
-                <span class="step-stations">${getDisplayName(p.from)} → ${getDisplayName(p.to)}</span>
-                <span class="operator-badge operator-${p.operator}">${p.route}</span>
-                <span class="step-time">${p.time} min</span>
-            </div>
-        </div>
-    `;
-
-    /* === SHOW IDENTICAL SERVICES (SAME OPERATOR + SAME STOPS) === */
-    if (!p.transfer) {
-        const equivalents = findEquivalentRoutes(p.from, p.to, p.route)
-            .filter(rid => rid !== p.route);
-
-        if (equivalents.length) {
-            html += `
-                <div style="margin: 6px 0 12px 22px; font-size: 0.85rem; color: #666;">
-                    Same stopping pattern:
-                    ${equivalents.map(rid =>
-                        `<span class="operator-badge operator-${p.operator}">${rid}</span>`
-                    ).join(" ")}
-                </div>
-            `;
-        }
-    }
-
-    currentRoute = p.route;
-});
 
 function findEquivalentRoutesForSegment(segment) {
     const refStops = segment.stations.join(">");
@@ -653,65 +616,103 @@ function compute() {
     render("🚀 Most Direct Route", findPath(GRAPH, from, to, "direct", pricing), "#2ecc71");
     render("💰 Cheapest Route", findPath(GRAPH, from, to, "cheap", pricing), "#f39c12");
 }
+function extractSegments(path) {
+    const segments = [];
+    let current = null;
+
+    for (const step of path) {
+        if (!current || step.transfer) {
+            if (current) segments.push(current);
+            current = {
+                route: step.route,
+                operator: step.operator,
+                from: step.from,
+                to: step.to,
+                stations: [step.from, step.to]
+            };
+        } else {
+            current.to = step.to;
+            current.stations.push(step.to);
+        }
+    }
+
+    if (current) segments.push(current);
+    return segments;
+}
 
 function render(title, r, color) {
+    function render(title, r, color) {
     const out = document.getElementById("output");
-    
+
     if (!r) {
         out.innerHTML += `
             <div class="route-card" style="border-left-color: ${color}">
                 <h3>${title}</h3>
                 <div class="no-route">No route found</div>
-            </div>
-        `;
+            </div>`;
         return;
     }
 
-    // Helper function to get display name
-    const getDisplayName = (code) => {
-        return STATION_NAMES[code] ? `${code} - ${STATION_NAMES[code]}` : code;
-    };
+    const getDisplayName = c =>
+        STATION_NAMES[c] ? `${c} - ${STATION_NAMES[c]}` : c;
 
     let html = `
         <div class="route-card" style="border-left-color: ${color}">
-            <h3>${title}</h3>
-            <div class="route-stats">
-                <div class="stat">
-                    <span class="stat-label">⏱️ Time:</span>
-                    <span class="stat-value">${r.time} min</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-label">🔄 Transfers:</span>
-                    <span class="stat-value">${r.transfers}</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-label">💵 Cost:</span>
-                    <span class="stat-value">${r.cost}</span>
-                </div>
-            </div>
-            <div class="route-path">
-    `;
+        <h3>${title}</h3>
+        <div class="route-stats">
+            <div class="stat"><span class="stat-label">⏱️</span>${r.time} min</div>
+            <div class="stat"><span class="stat-label">🔄</span>${r.transfers}</div>
+            <div class="stat"><span class="stat-label">💵</span>${r.cost}</div>
+        </div>
+        <div class="route-path">`;
 
-    let currentRoute = null;
+    let lastRoute = null;
 
-r.path.forEach((p, idx) => {
+    r.path.forEach(p => {
+        if (p.transfer) {
+            html += `<div class="transfer-badge">🔄 Transfer</div>`;
+        }
 
+        html += `
+            <div class="route-step">
+                <div class="step-icon"></div>
+                <div class="step-details">
+                    <span class="step-stations">
+                        ${getDisplayName(p.from)} → ${getDisplayName(p.to)}
+                    </span>
+                    <span class="operator-badge operator-${p.operator}">
+                        ${p.route}
+                    </span>
+                    <span class="step-time">${p.time} min</span>
+                </div>
+            </div>`;
+        lastRoute = p.route;
+    });
+
+    html += `</div>`;
+
+    /* === SEGMENT-LEVEL EQUIVALENCE (CORRECT PLACE) === */
     const segments = extractSegments(r.path);
 
-segments.forEach(seg => {
-    const eq = findEquivalentRoutesForSegment(seg)
-        .filter(id => id !== seg.route);
+    segments.forEach(seg => {
+        const eq = findEquivalentRoutesForSegment(seg)
+            .filter(id => id !== seg.route);
 
-    if (eq.length) {
-        output.innerHTML += `
-            <div class="same-routes" style="margin: 6px 0 12px 20px">
-                Same service (${seg.from} → ${seg.to}):
-                ${eq.map(id =>
-                    `<span class="operator-badge operator-${seg.operator}">${id}</span>`
-                ).join(" ")}
-            </div>
-        `;
-    }
+        if (eq.length) {
+            html += `
+                <div style="margin:10px 0 0 20px;font-size:0.85rem;color:#666">
+                    Same service (${seg.from} → ${seg.to}):
+                    ${eq.map(id =>
+                        `<span class="operator-badge operator-${seg.operator}">${id}</span>`
+                    ).join(" ")}
+                </div>`;
+        }
+    });
+
+    html += `</div>`;
+    out.innerHTML += html;
+}
+
 });
 
 });
