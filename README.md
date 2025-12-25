@@ -1,5 +1,6 @@
 # SCR-Route-Finder
 This is a website built for the game Stepford County Railway on Roblox.
+Contains all stations and 
 
 It has been created for drivers and passengers to find the routes leading to different stations.
 The current features are :
@@ -10,5 +11,7 @@ The current features are :
 Planned features :
 - A random station generator for Tag games
 - A connection with the game for time and current available routes (not sure i can do that)
+- EXP and Point rate per routes
 
 Have fun with my little website. I may take a bit long to respond to bug reports or requests, but i'm always trying to work on it.
+Made with ChatGPT and Claude (i don't know JS, don't blame me)
