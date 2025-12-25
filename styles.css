@@ -113,7 +113,7 @@ body {
     border-radius: 6px;
     font-size: 0.95rem;
     transition: all 0.3s;
-    min-width: 60px;
+    min-width: 140px;
     max-width: 150px;
     text-align: right;
 }
