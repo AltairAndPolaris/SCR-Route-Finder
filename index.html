@@ -412,7 +412,10 @@ function findPath(graph, from, to, mode, pricing) {
                 return a.transfers - b.transfers;
             return a.time - b.time;
         }
-        if (mode === "cheap") return a.cost - b.cost;
+        if (mode === "cheap") {
+            if (a.cost !== b.cost) return a.cost - b.cost;
+            return a.time - b.time;  // tie-breaker: prefer faster
+        }
         return (a.time + a.transfers * TRANSFER_PENALTY) -
                (b.time + b.transfers * TRANSFER_PENALTY);
     });
@@ -460,15 +463,21 @@ function findPath(graph, from, to, mode, pricing) {
             const prev = best.get(key);
 
             let better = false;
-            if (!prev) better = true;
-            else if (mode === "direct")
+            if (!prev) {
+                better = true;
+            } else if (mode === "direct") {
+                // For direct mode: fewer transfers wins, then faster time
                 better = next.transfers < prev.transfers ||
                          (next.transfers === prev.transfers && next.time < prev.time);
-            else if (mode === "cheap")
-                better = next.cost < prev.cost;
-            else
-                better = next.time + next.transfers * 5 <
-                         prev.time + prev.transfers * 5;
+            } else if (mode === "cheap") {
+                // For cheap mode: lower cost wins, then faster time
+                better = next.cost < prev.cost ||
+                         (next.cost === prev.cost && next.time < prev.time);
+            } else {
+                // For balanced mode: use combined score
+                better = (next.time + next.transfers * TRANSFER_PENALTY) <
+                         (prev.time + prev.transfers * TRANSFER_PENALTY);
+            }
 
             if (better) {
                 best.set(key, next);
