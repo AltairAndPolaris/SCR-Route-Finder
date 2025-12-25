@@ -483,9 +483,24 @@ function findPath(graph, from, to, mode, pricing) {
    UI
 ======================= */
 
-let GRAPH, OPERATORS;
+let GRAPH, OPERATORS, STATION_NAMES;
 
-fetch("route.txt")
+// Load station names first
+fetch("station.txt")
+    .then(r => r.text())
+    .then(text => {
+        STATION_NAMES = {};
+        const entries = text.split("/").filter(e => e.trim());
+        entries.forEach(entry => {
+            const [code, name] = entry.split(";");
+            if (code && name) {
+                STATION_NAMES[code.trim()] = name.trim();
+            }
+        });
+        
+        // Then load routes
+        return fetch("route.txt");
+    })
     .then(r => r.text())
     .then(text => {
         const { graph, stations, operators } = parseRouteFile(text);
@@ -496,8 +511,9 @@ fetch("route.txt")
         const to = document.getElementById("to");
 
         stations.forEach(s => {
-            from.add(new Option(s, s));
-            to.add(new Option(s, s));
+            const displayName = STATION_NAMES[s] ? `${s} - ${STATION_NAMES[s]}` : s;
+            from.add(new Option(displayName, s));
+            to.add(new Option(displayName, s));
         });
 
         const pricingDiv = document.getElementById("pricing");
@@ -514,8 +530,9 @@ fetch("route.txt")
         document.body.innerHTML = `
             <div class="container">
                 <div class="card">
-                    <h2 style="color: #e74c3c;">❌ Failed to load route.txt</h2>
-                    <p>Make sure the file is in the same directory.</p>
+                    <h2 style="color: #e74c3c;">❌ Failed to load data files</h2>
+                    <p>Make sure route.txt and station.txt are in the same directory.</p>
+                    <p style="color: #999; font-size: 0.9rem;">${err.message}</p>
                 </div>
             </div>
         `;
@@ -557,6 +574,11 @@ function render(title, r, color) {
         return;
     }
 
+    // Helper function to get display name
+    const getDisplayName = (code) => {
+        return STATION_NAMES[code] ? `${code} - ${STATION_NAMES[code]}` : code;
+    };
+
     let html = `
         <div class="route-card" style="border-left-color: ${color}">
             <h3>${title}</h3>
@@ -571,7 +593,7 @@ function render(title, r, color) {
                 </div>
                 <div class="stat">
                     <span class="stat-label">💵 Cost:</span>
-                    <span class="stat-value">$${r.cost}</span>
+                    <span class="stat-value">${r.cost}</span>
                 </div>
             </div>
             <div class="route-path">
@@ -587,7 +609,7 @@ function render(title, r, color) {
             <div class="route-step">
                 <div class="step-icon"></div>
                 <div class="step-details">
-                    <span class="step-stations">${p.from} → ${p.to}</span>
+                    <span class="step-stations">${getDisplayName(p.from)} → ${getDisplayName(p.to)}</span>
                     <span class="operator-badge operator-${p.operator}">${p.route}</span>
                     <span class="step-time">${p.time} min</span>
                 </div>
