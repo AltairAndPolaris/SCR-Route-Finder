@@ -505,37 +505,65 @@ function findPath(graph, from, to, mode, pricing) {
     }
     return null;
 }
+let currentRoute = null;
 
-function findEquivalentRoutes(from, to, referenceRouteId) {
-    const ref = ROUTE_INDEX.get(referenceRouteId);
-    if (!ref) return [];
-    
-    const iFrom = ref.stations.indexOf(from);
-    const iTo = ref.stations.indexOf(to);
-    if (iFrom === -1 || iTo === -1 || iFrom >= iTo) return [];
-    
-    const refSegment = ref.stations.slice(iFrom, iTo + 1);
-    const refKey = ref.operator + "|" + refSegment.join(">");
-    
-    const matches = [];
-    
-    for (const [routeId, info] of ROUTE_INDEX.entries()) {
-        if (info.operator !== ref.operator) continue;
-    
-        const jFrom = info.stations.indexOf(from);
-        const jTo = info.stations.indexOf(to);
-        if (jFrom === -1 || jTo === -1 || jFrom >= jTo) continue;
-    
-        const segment = info.stations.slice(jFrom, jTo + 1);
-        const key = info.operator + "|" + segment.join(">");
-    
-        if (key === refKey) {
-            matches.push(routeId);
+r.path.forEach((p, idx) => {
+
+    if (p.transfer && currentRoute) {
+        html += `<div class="transfer-badge">🔄 Transfer to ${p.route}</div>`;
+    }
+
+    html += `
+        <div class="route-step">
+            <div class="step-icon"></div>
+            <div class="step-details">
+                <span class="step-stations">${getDisplayName(p.from)} → ${getDisplayName(p.to)}</span>
+                <span class="operator-badge operator-${p.operator}">${p.route}</span>
+                <span class="step-time">${p.time} min</span>
+            </div>
+        </div>
+    `;
+
+    /* === SHOW IDENTICAL SERVICES (SAME OPERATOR + SAME STOPS) === */
+    if (!p.transfer) {
+        const equivalents = findEquivalentRoutes(p.from, p.to, p.route)
+            .filter(rid => rid !== p.route);
+
+        if (equivalents.length) {
+            html += `
+                <div style="margin: 6px 0 12px 22px; font-size: 0.85rem; color: #666;">
+                    Same stopping pattern:
+                    ${equivalents.map(rid =>
+                        `<span class="operator-badge operator-${p.operator}">${rid}</span>`
+                    ).join(" ")}
+                </div>
+            `;
         }
     }
-    
-    return matches;
+
+    currentRoute = p.route;
+});
+
+function findEquivalentRoutesForSegment(segment) {
+    const refStops = segment.stations.join(">");
+    const result = [];
+
+    for (const [routeId, info] of ROUTE_INDEX.entries()) {
+        if (info.operator !== segment.operator) continue;
+
+        const i = info.stations.indexOf(segment.from);
+        const j = info.stations.indexOf(segment.to);
+        if (i < 0 || j <= i) continue;
+
+        const slice = info.stations.slice(i, j + 1).join(">");
+        if (slice === refStops) {
+            result.push(routeId);
+        }
+    }
+
+    return result;
 }
+
 /* =======================
    UI
 ======================= */
@@ -668,39 +696,24 @@ function render(title, r, color) {
 
 r.path.forEach((p, idx) => {
 
-    if (p.transfer && currentRoute) {
-        html += `<div class="transfer-badge">🔄 Transfer to ${p.route}</div>`;
-    }
+    const segments = extractSegments(r.path);
 
-    html += `
-        <div class="route-step">
-            <div class="step-icon"></div>
-            <div class="step-details">
-                <span class="step-stations">${getDisplayName(p.from)} → ${getDisplayName(p.to)}</span>
-                <span class="operator-badge operator-${p.operator}">${p.route}</span>
-                <span class="step-time">${p.time} min</span>
+segments.forEach(seg => {
+    const eq = findEquivalentRoutesForSegment(seg)
+        .filter(id => id !== seg.route);
+
+    if (eq.length) {
+        output.innerHTML += `
+            <div class="same-routes" style="margin: 6px 0 12px 20px">
+                Same service (${seg.from} → ${seg.to}):
+                ${eq.map(id =>
+                    `<span class="operator-badge operator-${seg.operator}">${id}</span>`
+                ).join(" ")}
             </div>
-        </div>
-    `;
-
-    /* === SHOW IDENTICAL SERVICES (SAME OPERATOR + SAME STOPS) === */
-    if (!p.transfer) {
-        const equivalents = findEquivalentRoutes(p.from, p.to, p.route)
-            .filter(rid => rid !== p.route);
-
-        if (equivalents.length) {
-            html += `
-                <div style="margin: 6px 0 12px 22px; font-size: 0.85rem; color: #666;">
-                    Same stopping pattern:
-                    ${equivalents.map(rid =>
-                        `<span class="operator-badge operator-${p.operator}">${rid}</span>`
-                    ).join(" ")}
-                </div>
-            `;
-        }
+        `;
     }
+});
 
-    currentRoute = p.route;
 });
 
 
