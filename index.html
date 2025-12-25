@@ -136,11 +136,11 @@ body {
     color: white;
 }
 
-.operator-CN { background: #3498db; }
-.operator-MT { background: #e74c3c; }
-.operator-WL { background: #1abc9c; }
-.operator-AL { background: #9b59b6; }
-.operator-EX { background: #2ecc71; }
+.operator-CN { background: #0096EE; }
+.operator-MT { background: #EE4044; }
+.operator-WL { background: #002D5F; }
+.operator-AL { background: #EC7D33; }
+.operator-EX { background: #FF0080; }
 
 .btn-compute {
     width: 100%;
@@ -336,12 +336,28 @@ body {
     <div class="results-container" id="output"></div>
 </div>
 
+
+    
 <script>
 /* =======================
    PARSE route.txt
 ======================= */
+const DEFAULT_OPERATOR_PRICES = {
+    CN: 5,
+    MT: 3,
+    WL: 7,
+    AL: 10,
+    EX: 15
+};
 
 function parseRouteFile(text) {
+    CN: 5,
+    MT: 3,
+    WL: 7,
+    AL: 10,
+    EX: 15
+    };
+    
     const graph = new Map();
     const stations = new Set();
     const operators = new Set();
@@ -527,13 +543,21 @@ fetch("station.txt")
 
         const pricingDiv = document.getElementById("pricing");
         operators.forEach(op => {
+            const defaultPrice = DEFAULT_OPERATOR_PRICES[op] ?? 10;
+        
             pricingDiv.innerHTML += `
                 <div class="pricing-item">
                     <label class="operator-badge operator-${op}">${op}</label>
-                    <input type="number" id="price_${op}" value="10" min="0">
+                    <input
+                        type="number"
+                        id="price_${op}"
+                        value="${defaultPrice}"
+                        min="0"
+                    >
                 </div>
             `;
         });
+
     })
     .catch(err => {
         document.body.innerHTML = `
