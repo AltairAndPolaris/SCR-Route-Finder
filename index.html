@@ -320,6 +320,11 @@ body {
     font-size: 0.8rem;
     user-select: none;
 }
+.segment-stops div {
+    margin-left: 15px;
+    padding: 2px 0;
+}
+
 
 .segment-toggle:hover {
     text-decoration: underline;
@@ -741,7 +746,7 @@ function render(title, r, color) {
                          ▼ Show all stops (${seg.stations.length})
                     </div>
                     <div id="${stopId}" class="segment-stops hidden">
-                        ${seg.stations.map(s => getDisplayName(s)).join(" → ")}
+                        ${seg.stations.map(s => `<div>${getDisplayName(s)}</div>`).join("")}
                     </div>
         `;
 
