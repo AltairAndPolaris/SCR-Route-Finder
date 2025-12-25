@@ -641,7 +641,6 @@ function extractSegments(path) {
 }
 
 function render(title, r, color) {
-    function render(title, r, color) {
     const out = document.getElementById("output");
 
     if (!r) {
@@ -658,15 +657,16 @@ function render(title, r, color) {
 
     let html = `
         <div class="route-card" style="border-left-color: ${color}">
-        <h3>${title}</h3>
-        <div class="route-stats">
-            <div class="stat"><span class="stat-label">⏱️</span>${r.time} min</div>
-            <div class="stat"><span class="stat-label">🔄</span>${r.transfers}</div>
-            <div class="stat"><span class="stat-label">💵</span>${r.cost}</div>
-        </div>
-        <div class="route-path">`;
+            <h3>${title}</h3>
 
-    let lastRoute = null;
+            <div class="route-stats">
+                <div class="stat"><span class="stat-label">⏱️</span>${r.time} min</div>
+                <div class="stat"><span class="stat-label">🔄</span>${r.transfers}</div>
+                <div class="stat"><span class="stat-label">💵</span>${r.cost}</div>
+            </div>
+
+            <div class="route-path">
+    `;
 
     r.path.forEach(p => {
         if (p.transfer) {
@@ -685,43 +685,35 @@ function render(title, r, color) {
                     </span>
                     <span class="step-time">${p.time} min</span>
                 </div>
-            </div>`;
-        lastRoute = p.route;
+            </div>
+        `;
     });
 
     html += `</div>`;
 
-    /* === SEGMENT-LEVEL EQUIVALENCE (CORRECT PLACE) === */
+    /* === SEGMENT-LEVEL EQUIVALENCE (TRANSFER-BASED) === */
     const segments = extractSegments(r.path);
 
     segments.forEach(seg => {
-        const eq = findEquivalentRoutesForSegment(seg)
+        const equivalents = findEquivalentRoutesForSegment(seg)
             .filter(id => id !== seg.route);
 
-        if (eq.length) {
+        if (equivalents.length) {
             html += `
                 <div style="margin:10px 0 0 20px;font-size:0.85rem;color:#666">
                     Same service (${seg.from} → ${seg.to}):
-                    ${eq.map(id =>
+                    ${equivalents.map(id =>
                         `<span class="operator-badge operator-${seg.operator}">${id}</span>`
                     ).join(" ")}
-                </div>`;
+                </div>
+            `;
         }
     });
 
     html += `</div>`;
     out.innerHTML += html;
 }
-});
 
-
-    html += `
-            </div>
-        </div>
-    `;
-    
-    out.innerHTML += html;
-}
 </script>
 
 </body>
