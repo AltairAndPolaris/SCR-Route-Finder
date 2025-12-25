@@ -91,13 +91,14 @@ body {
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 50px;
+    gap: 15px;
 }
 
 .pricing-item {
     display: flex;
     align-items: center;
     gap: 10px;
+    white-space: nowrap;
 }
 
 .pricing-item label {
@@ -113,6 +114,10 @@ body {
     border-radius: 6px;
     font-size: 0.95rem;
     transition: all 0.3s;
+    width: 70px;
+    min-width: 60px;
+    max-width: 80px;
+    text-align: right;
 }
 
 .pricing-item input:focus {
