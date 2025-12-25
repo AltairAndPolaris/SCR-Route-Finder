@@ -713,92 +713,52 @@ function render(title, r, color) {
 
     const segments = extractSegments(r.path);
 
-        segments.forEach((seg, idx) => {
-            // Add a transfer badge at the start if needed
-            if (idx > 0) {
-                html += `<div class="transfer-badge">🔄 Transfer</div>`;
-            }
-        
-            const stopId = `stops_${title}_${idx}`.replace(/\s+/g, "_");
-        
-            html += `
-                <div class="route-step">
-                    <div class="step-icon"></div>
-                    <div class="step-details">
-                        <span class="step-stations">
-                            ${getDisplayName(seg.from)} → ${getDisplayName(seg.to)}
-                        </span>
-                        <span class="operator-badge operator-${seg.operator}">
-                            ${seg.route}
-                        </span>
-                        <span class="step-time">${seg.stations.reduce((a,b,i,arr)=>i>0?a+"+"+(arr[i]!==arr[i-1]?b:"") : b,"")} min</span>
-                        <div class="segment-toggle" 
-                             onclick="document.getElementById('${stopId}').classList.toggle('hidden')">
-                             ▼ Show all stops (${seg.stations.length})
-                        </div>
-                        <div id="${stopId}" class="segment-stops hidden">
-                            ${seg.stations.map(s => getDisplayName(s)).join(" → ")}
-                        </div>
-            `;
-        
-            // Show equivalent routes inline
-            const equivalents = findEquivalentRoutesForSegment(seg)
-                .filter(id => id !== seg.route);
-        
-            if (equivalents.length) {
-                html += `
-                    <div style="margin-top:4px">
-                        Same service: 
-                        ${equivalents.map(id =>
-                            `<span class="operator-badge operator-${seg.operator}">${id}</span>`
-                        ).join(" ")}
-                    </div>
-                `;
-            }
-        
-            html += `</div></div>`; // closes step-details and route-step
-    });
+    segments.forEach((seg, idx) => {
+        // Add a transfer badge at the start if needed
+        if (idx > 0) {
+            html += `<div class="transfer-badge">🔄 Transfer</div>`;
+        }
 
+        const stopId = `stops_${title}_${idx}`.replace(/\s+/g, "_");
 
-    html += `</div>`;
-
-    /* === SEGMENT-LEVEL EQUIVALENCE (TRANSFER-BASED) === */
-    const segments = extractSegments(r.path);
-
-        segments.forEach((seg, idx) => {
-            const equivalents = findEquivalentRoutesForSegment(seg)
-                .filter(id => id !== seg.route);
-        
-            const stopId = `stops_${title}_${idx}`.replace(/\s+/g, "_");
-        
-            html += `
-                <div style="margin-top:6px">
-                    <div class="segment-toggle"
+        html += `
+            <div class="route-step">
+                <div class="step-icon"></div>
+                <div class="step-details">
+                    <span class="step-stations">
+                        ${getDisplayName(seg.from)} → ${getDisplayName(seg.to)}
+                    </span>
+                    <span class="operator-badge operator-${seg.operator}">
+                        ${seg.route}
+                    </span>
+                    <span class="step-time">${seg.stations.reduce((a,b,i,arr)=>i>0?a+"+"+(arr[i]!==arr[i-1]?b:"") : b,"")} min</span>
+                    <div class="segment-toggle" 
                          onclick="document.getElementById('${stopId}').classList.toggle('hidden')">
-                        ▼ Show all stops (${seg.stations.length})
+                         ▼ Show all stops (${seg.stations.length})
                     </div>
                     <div id="${stopId}" class="segment-stops hidden">
                         ${seg.stations.map(s => getDisplayName(s)).join(" → ")}
                     </div>
+        `;
+
+        const equivalents = findEquivalentRoutesForSegment(seg)
+            .filter(id => id !== seg.route);
+
+        if (equivalents.length) {
+            html += `
+                <div style="margin-top:4px">
+                    Same service: 
+                    ${equivalents.map(id =>
+                        `<span class="operator-badge operator-${seg.operator}">${id}</span>`
+                    ).join(" ")}
+                </div>
             `;
-        
-            if (equivalents.length) {
-                html += `
-                    <div style="margin-top:4px">
-                        Same service: 
-                        ${equivalents.map(id =>
-                            `<span class="operator-badge operator-${seg.operator}">${id}</span>`
-                        ).join(" ")}
-                    </div>
-                `;
-            }
-        
-        html += `</div>`; // closes this segment block
+        }
+
+        html += `</div></div>`; // closes step-details and route-step
     });
 
-
-
-    html += `</div>`;
+    html += `</div>`; // closes route-path
     out.innerHTML += html;
 }
 
