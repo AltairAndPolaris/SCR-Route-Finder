@@ -232,6 +232,55 @@ function findEquivalentRoutesForSegment(segment) {
     return result;
 }
 
+// =======================
+// PARSE trains.txt (single-line, multiple trains separated by semicolons)
+// =======================
+let TRAINS = [];
+
+fetch("trains.txt")
+  .then(r => r.text())
+  .then(text => {
+    text = text.trim().replace(/;$/, "");
+
+    // Split by semicolon to get each train
+    const entries = text.split(";").filter(e => e.trim());
+
+    TRAINS = entries.map(entry => {
+      const [trainClass, operator, type, formation] = entry.split(",");
+      return { class: trainClass, operator, type, formation };
+    });
+
+    console.log("Parsed trains:", TRAINS);
+  })
+  .catch(err => {
+    console.error("Failed to load trains.txt", err);
+  });
+
+
+function calculateTrainLength(formation) {
+    const parts = formation.split("+").map(Number);
+
+    // HST: power cars at both ends
+    if (
+        parts.length === 3 &&
+        parts[0] === 1 &&
+        parts[2] === 1
+    ) {
+        return parts.reduce((a, b) => a + b, 0);
+    }
+
+    // FLIRT / middle power unit
+    if (
+        parts.length === 3 &&
+        parts[1] === 1
+    ) {
+        return parts[0] + parts[2];
+    }
+
+    // Default
+    return parts.reduce((a, b) => a + b, 0);
+}
+
 /* =======================
    UI
 ======================= */
