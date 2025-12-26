@@ -164,7 +164,7 @@ function findPath(graph, from, to, mode, pricing) {
         if (cur.station === to) return cur;
 
         for (const e of graph.get(cur.station) || []) {
-            const transfer = e.route !== cur.route;
+            const transfer = cur.route && e.route !== cur.route;
             const next = {
                 station: e.to,
                 route: e.route,
