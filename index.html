@@ -470,13 +470,17 @@ function render(title, r, color) {
     });
     html += `</div>`; // closes route-path
     out.innerHTML += html;
-}
-document.querySelectorAll(".operator-badge").forEach(bubble => {
-    bubble.addEventListener("click", () => {
-        const routeId = bubble.textContent.trim();
-        showServiceMap(routeId);
-    });
+    // Attach click listeners to all route bubbles in this card
+    const card = out.querySelector(`.route-card:last-child`);
+    card.querySelectorAll(".operator-badge").forEach(bubble => {
+        bubble.addEventListener("click", e => {
+            const routeId = bubble.textContent.trim();
+            showServiceMap(routeId);
+            e.stopPropagation(); // prevent the global click listener from immediately closing the popup
+        });
 });
+
+}
 
 document.addEventListener("click", e => {
     const popup = document.getElementById("service-map-popup");
