@@ -470,6 +470,7 @@ function render(title, r, color) {
     });
     html += `</div>`; // closes route-path
     out.innerHTML += html;
+
     // Attach click listeners to all route bubbles in this card
     const card = out.querySelector(`.route-card:last-child`);
     card.querySelectorAll(".operator-badge").forEach(bubble => {
@@ -482,13 +483,14 @@ function render(title, r, color) {
 
 }
 
-document.addEventListener("click", e => {
-    const popup = document.getElementById("service-map-popup");
-    if (!popup) return;
-    if (!popup.contains(e.target) && !e.target.classList.contains("operator-badge")) {
-        popup.remove();
+document.getElementById("output").addEventListener("click", e => {
+    if (e.target.classList.contains("operator-badge")) {
+        const routeId = e.target.textContent.trim();
+        showServiceMap(routeId);
+        e.stopPropagation();
     }
 });
+
 
 function showServiceMap(routeId) {
     const route = ROUTE_INDEX.get(routeId);
