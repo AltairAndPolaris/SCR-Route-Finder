@@ -361,3 +361,30 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.service-map-popup {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    background: #fff;
+    border: 2px solid #333;
+    padding: 10px;
+    z-index: 999;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.service-map-popup .station {
+    padding: 4px 8px;
+    margin: 2px 0;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+.service-map-popup .station.branch {
+    margin-left: 30px;
+    border-left: 2px dashed #888;
+    padding-left: 8px;
+}

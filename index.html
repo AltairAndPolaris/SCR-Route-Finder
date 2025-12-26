@@ -471,6 +471,43 @@ function render(title, r, color) {
     html += `</div>`; // closes route-path
     out.innerHTML += html;
 }
+document.querySelectorAll(".operator-badge").forEach(bubble => {
+    bubble.addEventListener("click", () => {
+        const routeId = bubble.textContent.trim();
+        showServiceMap(routeId);
+    });
+});
+
+document.addEventListener("click", e => {
+    const popup = document.getElementById("service-map-popup");
+    if (!popup) return;
+    if (!popup.contains(e.target) && !e.target.classList.contains("operator-badge")) {
+        popup.remove();
+    }
+});
+
+function showServiceMap(routeId) {
+    const route = ROUTE_INDEX.get(routeId);
+    if (!route) return alert("Route not found");
+
+    const container = document.createElement("div");
+    container.className = "service-map-popup";
+
+    // Iterate through stations
+    route.stations.forEach((station, idx) => {
+        const isBranch = station.endsWith(">") || station.endsWith("<");
+        const stationDiv = document.createElement("div");
+        stationDiv.className = "station" + (isBranch ? " branch" : "");
+        stationDiv.textContent = station;
+        container.appendChild(stationDiv);
+    });
+
+    // Insert or replace popup in DOM
+    let existing = document.getElementById("service-map-popup");
+    if (existing) existing.remove();
+    container.id = "service-map-popup";
+    document.body.appendChild(container);
+}
 
 </script>
 
