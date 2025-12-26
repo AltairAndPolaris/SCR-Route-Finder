@@ -515,7 +515,7 @@ function showServiceMap(routeId) {
         dotWrapper.className = "station-wrapper";
 
         const dot = document.createElement("div");
-        dot.className = "station-dot" + (isBranch ? " branch" : ""));
+        dot.className = "station-dot" + (isBranch ? " branch" : "");
         dotWrapper.appendChild(dot);
 
         const label = document.createElement("div");
@@ -531,7 +531,7 @@ function showServiceMap(routeId) {
             line.className = "station-line";
             lineContainer.appendChild(line);
         }
-    });
+    })
 
     container.appendChild(lineContainer);
     document.body.appendChild(container);
