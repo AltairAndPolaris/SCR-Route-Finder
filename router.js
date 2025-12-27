@@ -477,14 +477,27 @@ function showServiceMap(routeId) {
     container.id = "service-map-popup";
     container.className = "service-map-popup";
 
-    // Create close button
+    // Add click handler directly to container to close when clicking the background
+    container.addEventListener("click", function(e) {
+        if (e.target === container) {
+            console.log("Clicked background");
+            container.remove();
+        }
+    });
+
+    // Create close button FIRST
     const closeBtn = document.createElement("button");
-    closeBtn.textContent = "✕ Close";
-    closeBtn.style.cssText = "position: absolute; top: 10px; right: 10px; padding: 10px; cursor: pointer; z-index: 10000;";
-    closeBtn.onclick = function() {
-        console.log("Close button clicked!"); // Debug log
+    closeBtn.innerHTML = "✕";
+    closeBtn.className = "popup-close-btn";
+    closeBtn.style.cssText = "position: absolute; top: 1rem; right: 1rem; z-index: 10001; background: #f7fafc; border: 2px solid #e2e8f0; border-radius: 50%; width: 2.5rem; height: 2.5rem; cursor: pointer; font-size: 1.5rem;";
+    
+    // Use addEventListener instead of onclick
+    closeBtn.addEventListener("click", function(e) {
+        console.log("Close button clicked!");
+        e.stopPropagation(); // Prevent other handlers
         container.remove();
-    };
+    });
+
     container.appendChild(closeBtn);
 
     // Create line container
