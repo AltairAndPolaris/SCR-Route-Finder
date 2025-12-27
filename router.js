@@ -426,7 +426,7 @@ function render(title, r, color) {
     out.innerHTML += html;
 }
 
-// Single event listener for operator badges
+
 document.getElementById("output").addEventListener("click", e => {
     if (e.target.classList.contains("operator-badge")) {
         const routeId = e.target.textContent.trim();
@@ -436,14 +436,6 @@ document.getElementById("output").addEventListener("click", e => {
         if (fromStation && toStation) {
             showServiceMap(routeId, fromStation, toStation);
         }
-        e.stopPropagation();
-    }
-});
-
-document.getElementById("output").addEventListener("click", e => {
-    if (e.target.classList.contains("operator-badge")) {
-        const routeId = e.target.textContent.trim();
-        showServiceMap(routeId);
         e.stopPropagation();
     }
 });
