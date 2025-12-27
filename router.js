@@ -477,11 +477,14 @@ function showServiceMap(routeId) {
     container.id = "service-map-popup";
     container.className = "service-map-popup";
 
-    // Create close button (actual element, not just CSS)
+    // Create close button
     const closeBtn = document.createElement("button");
-    closeBtn.className = "popup-close-btn";
-    closeBtn.innerHTML = "✕";
-    closeBtn.onclick = () => container.remove();
+    closeBtn.textContent = "✕ Close";
+    closeBtn.style.cssText = "position: absolute; top: 10px; right: 10px; padding: 10px; cursor: pointer; z-index: 10000;";
+    closeBtn.onclick = function() {
+        console.log("Close button clicked!"); // Debug log
+        container.remove();
+    };
     container.appendChild(closeBtn);
 
     // Create line container
@@ -491,7 +494,6 @@ function showServiceMap(routeId) {
     route.stations.forEach((station, idx) => {
         const isBranch = station.endsWith(">") || station.endsWith("<");
 
-        // Dot container
         const dotWrapper = document.createElement("div");
         dotWrapper.className = "station-wrapper";
 
@@ -506,13 +508,12 @@ function showServiceMap(routeId) {
 
         lineContainer.appendChild(dotWrapper);
 
-        // Add connecting line between dots (except last)
         if (idx < route.stations.length - 1) {
             const line = document.createElement("div");
             line.className = "station-line";
             lineContainer.appendChild(line);
         }
-    })
+    });
 
     container.appendChild(lineContainer);
     document.body.appendChild(container);
