@@ -402,8 +402,8 @@ function render(title, r, color) {
                         <span class="step-stations">
                             ${getDisplayName(seg.from)} → ${getDisplayName(seg.to)}
                         </span>
-                        <span class="operator-badge operator-${seg.operator}">${seg.route}</span>
-                        ${equivalents.map(id => `<span class="operator-badge operator-${seg.operator}">${id}</span>`).join("")}
+                        <span class="operator-badge operator-${seg.operator}" data-from="${seg.from}" data-to="${seg.to}">${seg.route}</span>
+                        ${equivalents.map(id => `<span class="operator-badge operator-${seg.operator}" data-from="${seg.from}" data-to="${seg.to}">${id}</span>`).join("")}
                         <span class="step-time">${seg.time || ""} min</span>
                     </div>
             
@@ -422,36 +422,25 @@ function render(title, r, color) {
 
         `;
     });
-    html += `</div>`; // closes route-path
+    html += `</div></div>`; // closes route-path and route-card
     out.innerHTML += html;
-
-    // Attach click listeners to all route bubbles in this card
-    const card = out.querySelector(`.route-card:last-child`);
-    card.querySelectorAll(".operator-badge").forEach(bubble => {
-        // Find the parent route-step to get segment info
-        const routeStep = bubble.closest('.route-step');
-        const stationText = routeStep.querySelector('.step-stations').textContent;
-        
-        // Extract from and to stations from the text (format: "CODE - Name → CODE - Name")
-        const match = stationText.match(/^([A-Z]+)\s*-?\s*[^→]*→\s*([A-Z]+)/);
-        
-        bubble.addEventListener("click", e => {
-            const routeId = bubble.textContent.trim();
-            
-            if (match && match[1] && match[2]) {
-                const fromStation = match[1];
-                const toStation = match[2];
-                showServiceMap(routeId, fromStation, toStation);
-            } else {
-                showServiceMap(routeId);
-            }
-            
-            e.stopPropagation();
-        });
-    });
-});
-
 }
+
+// Single event listener for operator badges
+document.getElementById("output").addEventListener("click", e => {
+    if (e.target.classList.contains("operator-badge")) {
+        const routeId = e.target.textContent.trim();
+        const fromStation = e.target.getAttribute("data-from");
+        const toStation = e.target.getAttribute("data-to");
+        
+        if (fromStation && toStation) {
+            showServiceMap(routeId, fromStation, toStation);
+        } else {
+            showServiceMap(routeId);
+        }
+        e.stopPropagation();
+    }
+});
 
 document.getElementById("output").addEventListener("click", e => {
     if (e.target.classList.contains("operator-badge")) {
@@ -589,10 +578,6 @@ function showServiceMap(routeId, fromStation, toStation) {
             lineContainer.appendChild(line);
         }
     });
-
-    container.appendChild(lineContainer);
-    document.body.appendChild(container);
-}
 
     container.appendChild(lineContainer);
     document.body.appendChild(container);
