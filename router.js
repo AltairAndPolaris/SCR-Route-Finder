@@ -428,22 +428,30 @@ function render(title, r, color) {
     // Attach click listeners to all route bubbles in this card
     const card = out.querySelector(`.route-card:last-child`);
     card.querySelectorAll(".operator-badge").forEach(bubble => {
+        // Find the parent route-step to get segment info
+        const routeStep = bubble.closest('.route-step');
+        const stationText = routeStep.querySelector('.step-stations').textContent;
+        
+        // Extract from and to stations from the text (format: "CODE - Name → CODE - Name")
+        const match = stationText.match(/^([A-Z]+)\s*-?\s*[^→]*→\s*([A-Z]+)/);
+        
         bubble.addEventListener("click", e => {
             const routeId = bubble.textContent.trim();
-            showServiceMap(routeId);
-            e.stopPropagation(); // prevent the global click listener from immediately closing the popup
+            
+            if (match && match[1] && match[2]) {
+                const fromStation = match[1];
+                const toStation = match[2];
+                showServiceMap(routeId, fromStation, toStation);
+            } else {
+                showServiceMap(routeId);
+            }
+            
+            e.stopPropagation();
         });
+    });
 });
 
 }
-
-document.getElementById("output").addEventListener("click", e => {
-    if (e.target.classList.contains("operator-badge")) {
-        const routeId = e.target.textContent.trim();
-        showServiceMap(routeId);
-        e.stopPropagation();
-    }
-});
 
 document.getElementById("output").addEventListener("click", e => {
     if (e.target.classList.contains("operator-badge")) {
@@ -464,7 +472,7 @@ document.addEventListener("click", e => {
     }
 });
 
-function showServiceMap(routeId) {
+function showServiceMap(routeId, fromStation, toStation) {
     const route = ROUTE_INDEX.get(routeId);
     if (!route) return alert("Route not found");
 
@@ -477,6 +485,14 @@ function showServiceMap(routeId) {
         EX: '#FF0080'
     };
     const operatorColor = operatorColors[route.operator] || '#667eea';
+
+    // Find the indices of from and to stations
+    const fromIdx = route.stations.indexOf(fromStation);
+    const toIdx = route.stations.indexOf(toStation);
+    
+    // Determine the range (handle both directions)
+    const startIdx = Math.min(fromIdx, toIdx);
+    const endIdx = Math.max(fromIdx, toIdx);
 
     // Remove existing popup
     let existing = document.getElementById("service-map-popup");
@@ -519,23 +535,64 @@ function showServiceMap(routeId) {
 
         const dot = document.createElement("div");
         dot.className = "station-dot" + (isBranch ? " branch" : "");
-        dot.style.background = operatorColor; // Apply operator color
+        
+        // Determine color based on position in journey
+        let dotColor = operatorColor;
+        if (fromIdx >= 0 && toIdx >= 0) {
+            if (idx === fromIdx) {
+                dotColor = '#2ecc71'; // Green for boarding
+                dot.style.boxShadow = '0 0 0 4px rgba(46, 204, 113, 0.3)';
+            } else if (idx === toIdx) {
+                dotColor = '#e74c3c'; // Red for alighting
+                dot.style.boxShadow = '0 0 0 4px rgba(231, 76, 60, 0.3)';
+            } else if (idx > startIdx && idx < endIdx) {
+                dotColor = '#f39c12'; // Orange for intermediate
+            }
+        }
+        
+        dot.style.background = dotColor;
         dotWrapper.appendChild(dot);
 
         const label = document.createElement("div");
         label.className = "station-label";
         label.textContent = station;
+        
+        // Style label based on position
+        if (fromIdx >= 0 && toIdx >= 0) {
+            if (idx === fromIdx) {
+                label.style.color = '#2ecc71';
+                label.style.fontWeight = '700';
+            } else if (idx === toIdx) {
+                label.style.color = '#e74c3c';
+                label.style.fontWeight = '700';
+            } else if (idx > startIdx && idx < endIdx) {
+                label.style.color = '#f39c12';
+                label.style.fontWeight = '600';
+            }
+        }
+        
         dotWrapper.appendChild(label);
-
         lineContainer.appendChild(dotWrapper);
 
         if (idx < route.stations.length - 1) {
             const line = document.createElement("div");
             line.className = "station-line";
-            line.style.background = operatorColor; // Apply operator color
+            
+            // Highlight line if it's part of the journey
+            if (fromIdx >= 0 && toIdx >= 0 && idx >= startIdx && idx < endIdx) {
+                line.style.background = '#f39c12'; // Orange for active journey
+                line.style.height = '4px'; // Make it thicker
+            } else {
+                line.style.background = operatorColor;
+            }
+            
             lineContainer.appendChild(line);
         }
     });
+
+    container.appendChild(lineContainer);
+    document.body.appendChild(container);
+}
 
     container.appendChild(lineContainer);
     document.body.appendChild(container);
