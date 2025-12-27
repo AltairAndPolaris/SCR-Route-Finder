@@ -435,8 +435,6 @@ document.getElementById("output").addEventListener("click", e => {
         
         if (fromStation && toStation) {
             showServiceMap(routeId, fromStation, toStation);
-        } else {
-            showServiceMap(routeId);
         }
         e.stopPropagation();
     }
