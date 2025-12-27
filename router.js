@@ -320,9 +320,9 @@ function compute() {
     const out = document.getElementById("output");
     out.innerHTML = "";
 
-    render("⚖️ Balanced Route", findPath(GRAPH, from, to, "balanced", pricing), "#667eea");
-    render("🚀 Most Direct Route", findPath(GRAPH, from, to, "direct", pricing), "#2ecc71");
-    render("💰 Cheapest Route", findPath(GRAPH, from, to, "cheap", pricing), "#f39c12");
+    render("Balanced Route", findPath(GRAPH, from, to, "balanced", pricing), "#667eea");
+    render("Most Direct Route", findPath(GRAPH, from, to, "direct", pricing), "#2ecc71");
+    render("Cheapest Route", findPath(GRAPH, from, to, "cheap", pricing), "#f39c12");
 }
 function extractSegments(path) {
     const segments = [];
@@ -384,7 +384,7 @@ function render(title, r, color) {
 
     segments.forEach((seg, idx) => {
         if (idx > 0) {
-            html += `<div class="transfer-badge">🔄 Transfer</div>`;
+            html += `<div class="transfer-badge">Transfer</div>`;
         }
     
         const stopId = `stops_${title}_${idx}`.replace(/\s+/g, "_");
@@ -527,18 +527,27 @@ function showServiceMap(routeId, fromStation, toStation) {
         
         // Determine color based on position in journey
         let dotColor = operatorColor;
+        
+        console.log(`Station ${station} (idx ${idx}): fromIdx=${fromIdx}, toIdx=${toIdx}, startIdx=${startIdx}, endIdx=${endIdx}`);
+        
         if (fromIdx >= 0 && toIdx >= 0) {
             if (idx === fromIdx) {
                 dotColor = '#2ecc71'; // Green for boarding
                 dot.style.boxShadow = '0 0 0 4px rgba(46, 204, 113, 0.3)';
+                console.log(`  -> Setting GREEN (boarding)`);
             } else if (idx === toIdx) {
                 dotColor = '#e74c3c'; // Red for alighting
                 dot.style.boxShadow = '0 0 0 4px rgba(231, 76, 60, 0.3)';
+                console.log(`  -> Setting RED (alighting)`);
             } else if (idx > startIdx && idx < endIdx) {
                 dotColor = '#f39c12'; // Orange for intermediate
+                console.log(`  -> Setting ORANGE (intermediate)`);
             }
+        } else {
+            console.log(`  -> No highlighting (fromIdx or toIdx is -1)`);
         }
         
+        console.log(`  -> Final color: ${dotColor}`);
         dot.style.background = dotColor;
         dotWrapper.appendChild(dot);
 
