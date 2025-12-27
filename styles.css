@@ -547,7 +547,6 @@ body {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #667eea;
     border: 3px solid white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     z-index: 2;
@@ -580,7 +579,6 @@ body {
 .station-line {
     width: 50px;
     height: 3px;
-    background: #667eea;
     margin: 0;
     align-self: flex-start;
     margin-top: 6px;
