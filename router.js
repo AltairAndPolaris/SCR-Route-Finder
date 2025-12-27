@@ -445,6 +445,24 @@ document.getElementById("output").addEventListener("click", e => {
     }
 });
 
+document.getElementById("output").addEventListener("click", e => {
+    if (e.target.classList.contains("operator-badge")) {
+        const routeId = e.target.textContent.trim();
+        showServiceMap(routeId);
+        e.stopPropagation();
+    }
+});
+
+// Add global click listener to close popup when clicking outside or on close button
+document.addEventListener("click", e => {
+    const popup = document.getElementById("service-map-popup");
+    if (!popup) return;
+    
+    // Close if clicking outside the popup or on the popup itself (for the X button)
+    if (!e.target.closest(".service-line") || e.target.classList.contains("service-map-popup")) {
+        popup.remove();
+    }
+});
 
 function showServiceMap(routeId) {
     const route = ROUTE_INDEX.get(routeId);
@@ -458,6 +476,13 @@ function showServiceMap(routeId) {
     const container = document.createElement("div");
     container.id = "service-map-popup";
     container.className = "service-map-popup";
+
+    // Create close button (actual element, not just CSS)
+    const closeBtn = document.createElement("button");
+    closeBtn.className = "popup-close-btn";
+    closeBtn.innerHTML = "✕";
+    closeBtn.onclick = () => container.remove();
+    container.appendChild(closeBtn);
 
     // Create line container
     const lineContainer = document.createElement("div");
