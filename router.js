@@ -462,10 +462,11 @@ document.addEventListener("click", e => {
 });
 
 function showServiceMap(routeId, fromStation, toStation) {
+    console.log(`showServiceMap called with: routeId="${routeId}", from="${fromStation}", to="${toStation}"`);
+    
     const route = ROUTE_INDEX.get(routeId);
     if (!route) return alert("Route not found");
 
-    // Get operator color
     const operatorColors = {
         CN: '#0096EE',
         MT: '#EE4044',
