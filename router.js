@@ -468,6 +468,16 @@ function showServiceMap(routeId) {
     const route = ROUTE_INDEX.get(routeId);
     if (!route) return alert("Route not found");
 
+    // Get operator color
+    const operatorColors = {
+        CN: '#0096EE',
+        MT: '#EE4044',
+        WL: '#002D5F',
+        AL: '#EC7D33',
+        EX: '#FF0080'
+    };
+    const operatorColor = operatorColors[route.operator] || '#667eea';
+
     // Remove existing popup
     let existing = document.getElementById("service-map-popup");
     if (existing) existing.remove();
@@ -477,24 +487,21 @@ function showServiceMap(routeId) {
     container.id = "service-map-popup";
     container.className = "service-map-popup";
 
-    // Add click handler directly to container to close when clicking the background
+    // Add click handler to close
     container.addEventListener("click", function(e) {
         if (e.target === container) {
-            console.log("Clicked background");
             container.remove();
         }
     });
 
-    // Create close button FIRST
+    // Create close button
     const closeBtn = document.createElement("button");
     closeBtn.innerHTML = "✕";
     closeBtn.className = "popup-close-btn";
     closeBtn.style.cssText = "position: absolute; top: 1rem; right: 1rem; z-index: 10001; background: #f7fafc; border: 2px solid #e2e8f0; border-radius: 50%; width: 2.5rem; height: 2.5rem; cursor: pointer; font-size: 1.5rem;";
     
-    // Use addEventListener instead of onclick
     closeBtn.addEventListener("click", function(e) {
-        console.log("Close button clicked!");
-        e.stopPropagation(); // Prevent other handlers
+        e.stopPropagation();
         container.remove();
     });
 
@@ -512,6 +519,7 @@ function showServiceMap(routeId) {
 
         const dot = document.createElement("div");
         dot.className = "station-dot" + (isBranch ? " branch" : "");
+        dot.style.background = operatorColor; // Apply operator color
         dotWrapper.appendChild(dot);
 
         const label = document.createElement("div");
@@ -524,6 +532,7 @@ function showServiceMap(routeId) {
         if (idx < route.stations.length - 1) {
             const line = document.createElement("div");
             line.className = "station-line";
+            line.style.background = operatorColor; // Apply operator color
             lineContainer.appendChild(line);
         }
     });
