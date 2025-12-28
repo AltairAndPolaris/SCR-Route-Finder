@@ -503,6 +503,50 @@ function showServiceMap(routeId, fromStation, toStation) {
 
     container.appendChild(closeBtn);
 
+    const compatibleTrains = TRAINS.filter(train => train.operator === route.operator);
+
+    if (compatibleTrains.length > 0) {
+        const trainSection = document.createElement("div");
+        trainSection.style.cssText = "margin-bottom: 1.5rem; padding: 1rem; background: #f8fafc; border-radius: 12px; border-left: 4px solid " + operatorColor;
+        
+        const trainTitle = document.createElement("h4");
+        trainTitle.textContent = "Compatible Trains";
+        trainTitle.style.cssText = "margin: 0 0 0.75rem 0; font-size: 1rem; font-weight: 700; color: #2d3748;";
+        trainSection.appendChild(trainTitle);
+        
+        const trainList = document.createElement("div");
+        trainList.style.cssText = "display: flex; flex-wrap: wrap; gap: 0.5rem;";
+        
+        compatibleTrains.forEach(train => {
+            const trainBadge = document.createElement("div");
+            trainBadge.style.cssText = `
+                padding: 0.5rem 0.75rem;
+                background: white;
+                border: 2px solid ${operatorColor};
+                border-radius: 8px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: #2d3748;
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+            `;
+            
+            const trainLength = calculateTrainLength(train.formation);
+            
+            trainBadge.innerHTML = `
+                <div style="font-weight: 700; color: ${operatorColor};">${train.class}</div>
+                <div style="font-size: 0.75rem; color: #718096;">${train.type} • ${trainLength} cars</div>
+                <div style="font-size: 0.7rem; color: #a0aec0;">${train.formation}</div>
+            `;
+            
+            trainList.appendChild(trainBadge);
+        });
+        
+        trainSection.appendChild(trainList);
+        container.appendChild(trainSection);
+    }
+
     // Create line container
     const lineContainer = document.createElement("div");
     lineContainer.className = "service-line";
@@ -516,7 +560,6 @@ function showServiceMap(routeId, fromStation, toStation) {
         const dot = document.createElement("div");
         dot.className = "station-dot" + (isBranch ? " branch" : "");
         
-        // Determine color based on position in journey
         let dotColor = operatorColor;
         
         console.log(`Station ${station} (idx ${idx}): fromIdx=${fromIdx}, toIdx=${toIdx}, startIdx=${startIdx}, endIdx=${endIdx}`);
