@@ -2,11 +2,11 @@
    CONFIGURATION
 ======================= */
 const DEFAULT_OPERATOR_PRICES = {
-    "Stepford Connect": 5,
-    "Metro": 3,
-    "Waterline": 7,
-    "Airlink": 10,
-    "Stepford Express": 15
+    "CN": 5,
+    "MT": 3,
+    "WL": 7,
+    "AL": 10,
+    "EX": 15
 };
 
 /* =======================
