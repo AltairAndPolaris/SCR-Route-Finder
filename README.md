@@ -1,6 +1,6 @@
 # SCR-Route-Finder
 
-*WARNING - This website does not contain the informations for the newest version of SCR. Support for version 2.3 is planned for late January.*
+*WARNING - The information used by the website comes from the unofficial fandom wiki. Please check it before reporting wrong data.*
 
 This is a website built for the game Stepford County Railway on Roblox.
 Contains all stations and routes from SCR 2.2
