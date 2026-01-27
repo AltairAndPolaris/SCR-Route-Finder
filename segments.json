@@ -1,0 +1,7138 @@
+{
+  "segments": [
+    {
+      "from": "SCN",
+      "to": "SCE",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R007",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R020",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R022",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R055",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SCE",
+      "to": "SHB",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R007",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "AGP",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R134",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "AGP",
+      "to": "BOD",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R002",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R134",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "BOD",
+      "to": "COX",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "COX",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "BBG",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BBG",
+      "to": "SAP",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SAP",
+      "to": "SAC",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R055",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R056",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R059",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R060",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R063",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SAC",
+      "to": "SAP",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R055",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R056",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R059",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R060",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R063",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SAP",
+      "to": "BBG",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "BBG",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "COX",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "COX",
+      "to": "BOD",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BOD",
+      "to": "AGP",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R002",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "AGP",
+      "to": "SHB",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "SCE",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R007",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SCE",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R001",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R007",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R020",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R022",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R055",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "FWY",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R021",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "FWY",
+      "to": "SCE",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R021",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SCE",
+      "to": "SHS",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R021",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "SHS",
+      "to": "SHB",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "PBE",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R013",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R015",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "PBE",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R013",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R015",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R047",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "SHS",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "SHS",
+      "to": "SCE",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R021",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SCE",
+      "to": "FWY",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R021",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "FWY",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R002",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R021",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BBG",
+      "to": "HHG",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "HHG",
+      "to": "USP",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "USP",
+      "to": "WTN",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WTN",
+      "to": "RCP",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "RCP",
+      "to": "LSR",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "LSR",
+      "to": "LTC",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R076",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R082",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R083",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R085",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R086",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "LTC",
+      "to": "LSR",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R076",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R082",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R083",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R085",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R086",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "LSR",
+      "to": "RCP",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "RCP",
+      "to": "WTN",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WTN",
+      "to": "USP",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "USP",
+      "to": "HHG",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "HHG",
+      "to": "BBG",
+      "routes": [
+        {
+          "route": "R003",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R004",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R039",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "BOD",
+      "routes": [
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "HHG",
+      "to": "WTN",
+      "routes": [
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "WTN",
+      "to": "LSR",
+      "routes": [
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R057",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "LTC",
+      "to": "EDG",
+      "routes": [
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R082",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R101",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "EDG",
+      "to": "LTC",
+      "routes": [
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R082",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R101",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "LSR",
+      "to": "WTN",
+      "routes": [
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R057",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "WTN",
+      "to": "HHG",
+      "routes": [
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BOD",
+      "to": "SHB",
+      "routes": [
+        {
+          "route": "R004",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R005",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R024",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SCV",
+      "to": "FNQ",
+      "routes": [
+        {
+          "route": "R005",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R028",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R029",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 3
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "FNQ",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "FNQ",
+      "routes": [
+        {
+          "route": "R005",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "FNQ",
+      "to": "SCV",
+      "routes": [
+        {
+          "route": "R005",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R006",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R028",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R029",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "FNQ",
+      "to": "CHP",
+      "routes": [
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "CHP",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "CHP",
+      "routes": [
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R046",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "CHP",
+      "to": "FNQ",
+      "routes": [
+        {
+          "route": "R006",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "ELJ",
+      "routes": [
+        {
+          "route": "R007",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R059",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "ELJ",
+      "to": "BRY",
+      "routes": [
+        {
+          "route": "R007",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "BRY",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "R007",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "HHG",
+      "routes": [
+        {
+          "route": "R007",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "HHG",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "R007",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "BRY",
+      "routes": [
+        {
+          "route": "R007",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BRY",
+      "to": "ELJ",
+      "routes": [
+        {
+          "route": "R007",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "ELJ",
+      "to": "SHB",
+      "routes": [
+        {
+          "route": "R007",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R059",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "NHW",
+      "routes": [
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "NHW",
+      "to": "EMP",
+      "routes": [
+        {
+          "route": "R008",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "EMP",
+      "to": "ELJ",
+      "routes": [
+        {
+          "route": "R008",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "ELJ",
+      "to": "EMP",
+      "routes": [
+        {
+          "route": "R008",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "EMP",
+      "to": "NHW",
+      "routes": [
+        {
+          "route": "R008",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "NHW",
+      "to": "SHB",
+      "routes": [
+        {
+          "route": "R008",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R027",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "SCV",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R009",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "SCV",
+      "routes": [
+        {
+          "route": "R009",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R045",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "NRY",
+      "to": "EDQ",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R011",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R086",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "EDQ",
+      "to": "FRD",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R011",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "FRD",
+      "to": "WBN",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R011",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "WBN",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R011",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "PBE",
+      "to": "MGD",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R015",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "MGD",
+      "to": "WNG",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "WNG",
+      "to": "GNS",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R013",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "GNS",
+      "to": "WNG",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R013",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "WNG",
+      "to": "MGD",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "MGD",
+      "to": "PBE",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R015",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "WBN",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R011",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WBN",
+      "to": "FRD",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R011",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "FRD",
+      "to": "EDQ",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R011",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "EDQ",
+      "to": "NRY",
+      "routes": [
+        {
+          "route": "R010",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R011",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R086",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "CSP",
+      "routes": [
+        {
+          "route": "R011",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R016",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R019",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "CSP",
+      "to": "APK",
+      "routes": [
+        {
+          "route": "R011",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R019",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "APK",
+      "to": "CON",
+      "routes": [
+        {
+          "route": "R011",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R019",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "CON",
+      "to": "APK",
+      "routes": [
+        {
+          "route": "R011",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R019",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "APK",
+      "to": "CSP",
+      "routes": [
+        {
+          "route": "R011",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R019",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "CSP",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R011",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R012",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R014",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R016",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R019",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "NRH",
+      "to": "NRY",
+      "routes": [
+        {
+          "route": "R012",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "NRY",
+      "to": "NRH",
+      "routes": [
+        {
+          "route": "R012",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "PBE",
+      "to": "WNG",
+      "routes": [
+        {
+          "route": "R013",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WNG",
+      "to": "PBE",
+      "routes": [
+        {
+          "route": "R013",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "CSP",
+      "to": "SAW",
+      "routes": [
+        {
+          "route": "R014",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R016",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "SAW",
+      "to": "FAR",
+      "routes": [
+        {
+          "route": "R014",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "FAR",
+      "to": "EFD",
+      "routes": [
+        {
+          "route": "R014",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "EFD",
+      "to": "FAR",
+      "routes": [
+        {
+          "route": "R014",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "FAR",
+      "to": "SAW",
+      "routes": [
+        {
+          "route": "R014",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SAW",
+      "to": "CSP",
+      "routes": [
+        {
+          "route": "R014",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R016",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R017",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "MGD",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "R015",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "MGD",
+      "routes": [
+        {
+          "route": "R015",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R120",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R137",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SAW",
+      "to": "JST",
+      "routes": [
+        {
+          "route": "R016",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "JST",
+      "to": "FAR",
+      "routes": [
+        {
+          "route": "R016",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "FAR",
+      "to": "RDV",
+      "routes": [
+        {
+          "route": "R016",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "RDV",
+      "to": "EFD",
+      "routes": [
+        {
+          "route": "R016",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "EFD",
+      "to": "RDV",
+      "routes": [
+        {
+          "route": "R016",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "RDV",
+      "to": "FAR",
+      "routes": [
+        {
+          "route": "R016",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "FAR",
+      "to": "JST",
+      "routes": [
+        {
+          "route": "R016",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "JST",
+      "to": "SAW",
+      "routes": [
+        {
+          "route": "R016",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R018",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SAW",
+      "to": "SAX",
+      "routes": [
+        {
+          "route": "R017",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "SAX",
+      "to": "SAW",
+      "routes": [
+        {
+          "route": "R017",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SCE",
+      "to": "UFC",
+      "routes": [
+        {
+          "route": "R020",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R022",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "UFC",
+      "to": "WHL",
+      "routes": [
+        {
+          "route": "R020",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R022",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "WHL",
+      "to": "HTR",
+      "routes": [
+        {
+          "route": "R020",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "HTR",
+      "to": "WHF",
+      "routes": [
+        {
+          "route": "R020",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WHF",
+      "to": "HTR",
+      "routes": [
+        {
+          "route": "R020",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "HTR",
+      "to": "WHL",
+      "routes": [
+        {
+          "route": "R020",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "WHL",
+      "to": "UFC",
+      "routes": [
+        {
+          "route": "R020",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R022",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "UFC",
+      "to": "SCE",
+      "routes": [
+        {
+          "route": "R020",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R022",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SHS",
+      "to": "WFL",
+      "routes": [
+        {
+          "route": "R021",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "WFL",
+      "to": "UFC",
+      "routes": [
+        {
+          "route": "R021",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "UFC",
+      "to": "WFL",
+      "routes": [
+        {
+          "route": "R021",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WFL",
+      "to": "SHS",
+      "routes": [
+        {
+          "route": "R021",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R023",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "BCY",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R022",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "WHL",
+      "to": "WHF",
+      "routes": [
+        {
+          "route": "R022",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WHF",
+      "to": "WHL",
+      "routes": [
+        {
+          "route": "R022",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "BCY",
+      "routes": [
+        {
+          "route": "R022",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R032",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R033",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "EDG",
+      "to": "FAY",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "FAY",
+      "to": "WCT",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WCT",
+      "to": "MLC",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "MLC",
+      "to": "WYV",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "WYV",
+      "to": "STL",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "STL",
+      "to": "NSE",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "NSE",
+      "to": "LYN",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R083",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R085",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R087",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "LYN",
+      "to": "NSE",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R083",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R085",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R087",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "NSE",
+      "to": "STL",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "STL",
+      "to": "WYV",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WYV",
+      "to": "MLC",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "MLC",
+      "to": "WCT",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WCT",
+      "to": "FAY",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "FAY",
+      "to": "EDG",
+      "routes": [
+        {
+          "route": "R024",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WCT",
+      "to": "MRC",
+      "routes": [
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "MRC",
+      "to": "MLC",
+      "routes": [
+        {
+          "route": "R025",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "MLC",
+      "to": "MRC",
+      "routes": [
+        {
+          "route": "R025",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "MRC",
+      "to": "WCT",
+      "routes": [
+        {
+          "route": "R025",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R038",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R040",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "HHG",
+      "routes": [
+        {
+          "route": "R026",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R083",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "EDG",
+      "to": "WCT",
+      "routes": [
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "WYV",
+      "to": "NSE",
+      "routes": [
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R087",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "NSE",
+      "to": "WYV",
+      "routes": [
+        {
+          "route": "R026",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R037",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R087",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "WCT",
+      "to": "EDG",
+      "routes": [
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "HHG",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R026",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R083",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "FNQ",
+      "to": "BCY",
+      "routes": [
+        {
+          "route": "R028",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R029",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BCY",
+      "to": "HPK",
+      "routes": [
+        {
+          "route": "R028",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "HPK",
+      "to": "WFD",
+      "routes": [
+        {
+          "route": "R028",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WFD",
+      "to": "HPK",
+      "routes": [
+        {
+          "route": "R028",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "HPK",
+      "to": "BCY",
+      "routes": [
+        {
+          "route": "R028",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BCY",
+      "to": "FNQ",
+      "routes": [
+        {
+          "route": "R028",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R029",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BCY",
+      "to": "CHP",
+      "routes": [
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R139",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BOD",
+      "to": "CXN",
+      "routes": [
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R132",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R134",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "CXN",
+      "to": "BAR",
+      "routes": [
+        {
+          "route": "R030",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 15
+        },
+        {
+          "route": "R136",
+          "duration_minutes": 17
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BAR",
+      "to": "BRY",
+      "routes": [
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BRY",
+      "to": "BAR",
+      "routes": [
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BAR",
+      "to": "CXN",
+      "routes": [
+        {
+          "route": "R030",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "CXN",
+      "to": "BOD",
+      "routes": [
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "CHP",
+      "to": "BCY",
+      "routes": [
+        {
+          "route": "R030",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R031",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R034",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R135",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "WFD",
+      "to": "BCY",
+      "routes": [
+        {
+          "route": "R032",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BCY",
+      "to": "WFD",
+      "routes": [
+        {
+          "route": "R032",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R035",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R036",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R103",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BRY",
+      "to": "EBR",
+      "routes": [
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "EBR",
+      "to": "BPK",
+      "routes": [
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "BPK",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "R034",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "BPK",
+      "routes": [
+        {
+          "route": "R034",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "BPK",
+      "to": "EBR",
+      "routes": [
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "EBR",
+      "to": "BRY",
+      "routes": [
+        {
+          "route": "R034",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R130",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R131",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "LTW",
+      "to": "EDG",
+      "routes": [
+        {
+          "route": "R041",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R100",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "EDG",
+      "to": "LTW",
+      "routes": [
+        {
+          "route": "R041",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R042",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R100",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "LTW",
+      "to": "LTC",
+      "routes": [
+        {
+          "route": "R043",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "LTC",
+      "to": "LTW",
+      "routes": [
+        {
+          "route": "R043",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R044",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SCV",
+      "to": "CHP",
+      "routes": [
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SAC",
+      "to": "SAX",
+      "routes": [
+        {
+          "route": "R046",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R055",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R057",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R059",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "SAX",
+      "to": "SAC",
+      "routes": [
+        {
+          "route": "R046",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R048",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R055",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R057",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R059",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "CHP",
+      "to": "SCV",
+      "routes": [
+        {
+          "route": "R046",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "RLB",
+      "to": "CLB",
+      "routes": [
+        {
+          "route": "R049",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R100",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R101",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "CLB",
+      "to": "ALB",
+      "routes": [
+        {
+          "route": "R049",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R100",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R101",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "ALB",
+      "to": "EDG",
+      "routes": [
+        {
+          "route": "R049",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R100",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R101",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "EDG",
+      "to": "ALB",
+      "routes": [
+        {
+          "route": "R049",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R100",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R101",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R106",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "ALB",
+      "to": "CLB",
+      "routes": [
+        {
+          "route": "R049",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R100",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R101",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "CLB",
+      "to": "RLB",
+      "routes": [
+        {
+          "route": "R049",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R050",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R100",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R101",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R102",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "SAC",
+      "routes": [
+        {
+          "route": "R051",
+          "duration_minutes": 7
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 7
+        }
+      ]
+    },
+    {
+      "from": "SAC",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R051",
+          "duration_minutes": 8
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 8
+        }
+      ]
+    },
+    {
+      "from": "SAC",
+      "to": "SAO",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R060",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R063",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "SAO",
+      "to": "SAX",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 4
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "SCE",
+      "to": "ELJ",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "ELJ",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "SAC",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SAC",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "ELJ",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "ELJ",
+      "to": "SCE",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "SHB",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R059",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R076",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R079",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "BRY",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BRY",
+      "to": "SAP",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 4
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R059",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R076",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R079",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SCE",
+      "to": "SAP",
+      "routes": [
+        {
+          "route": "R055",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "SAX",
+      "to": "SAZ",
+      "routes": [
+        {
+          "route": "R055",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R057",
+          "duration_minutes": 3
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 9
+        }
+      ]
+    },
+    {
+      "from": "SAZ",
+      "to": "SAX",
+      "routes": [
+        {
+          "route": "R055",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R057",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R060",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R063",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SAP",
+      "to": "SCE",
+      "routes": [
+        {
+          "route": "R055",
+          "duration_minutes": 6
+        }
+      ]
+    },
+    {
+      "from": "SAP",
+      "to": "LSR",
+      "routes": [
+        {
+          "route": "R056",
+          "duration_minutes": 6
+        }
+      ]
+    },
+    {
+      "from": "LSR",
+      "to": "SAP",
+      "routes": [
+        {
+          "route": "R056",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "SAC",
+      "to": "WTN",
+      "routes": [
+        {
+          "route": "R057",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "WTN",
+      "to": "SAC",
+      "routes": [
+        {
+          "route": "R057",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "SHB",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "ELJ",
+      "to": "SAP",
+      "routes": [
+        {
+          "route": "R059",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "SAP",
+      "to": "ELJ",
+      "routes": [
+        {
+          "route": "R059",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "SAP",
+      "routes": [
+        {
+          "route": "R060",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SAO",
+      "to": "SAZ",
+      "routes": [
+        {
+          "route": "R060",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R063",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SAP",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "R060",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "HHG",
+      "to": "SAP",
+      "routes": [
+        {
+          "route": "R063",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SAP",
+      "to": "HHG",
+      "routes": [
+        {
+          "route": "R063",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R108",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R109",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R075",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R075",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "SHB",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R076",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R079",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "LSR",
+      "routes": [
+        {
+          "route": "R076",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 7
+        },
+        {
+          "route": "R086",
+          "duration_minutes": 6
+        }
+      ]
+    },
+    {
+      "from": "LSR",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R076",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 8
+        },
+        {
+          "route": "R086",
+          "duration_minutes": 6
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "SHB",
+      "routes": [
+        {
+          "route": "R076",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R079",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "EDG",
+      "to": "WYV",
+      "routes": [
+        {
+          "route": "R077",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R082",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R087",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "WYV",
+      "to": "EDG",
+      "routes": [
+        {
+          "route": "R077",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R082",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R087",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "LTC",
+      "to": "WYV",
+      "routes": [
+        {
+          "route": "R078",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "WYV",
+      "to": "LYN",
+      "routes": [
+        {
+          "route": "R078",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "LYN",
+      "to": "WYV",
+      "routes": [
+        {
+          "route": "R078",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "WYV",
+      "to": "LTC",
+      "routes": [
+        {
+          "route": "R078",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "LSR",
+      "routes": [
+        {
+          "route": "R080",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R085",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "LSR",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "R080",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R085",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "LTC",
+      "routes": [
+        {
+          "route": "R081",
+          "duration_minutes": 9
+        }
+      ]
+    },
+    {
+      "from": "LTC",
+      "to": "LYN",
+      "routes": [
+        {
+          "route": "R081",
+          "duration_minutes": 8
+        }
+      ]
+    },
+    {
+      "from": "LYN",
+      "to": "LTC",
+      "routes": [
+        {
+          "route": "R081",
+          "duration_minutes": 9
+        }
+      ]
+    },
+    {
+      "from": "LTC",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R081",
+          "duration_minutes": 8
+        }
+      ]
+    },
+    {
+      "from": "SCN",
+      "to": "ELJ",
+      "routes": [
+        {
+          "route": "R082",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "ELJ",
+      "to": "HHG",
+      "routes": [
+        {
+          "route": "R082",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "HHG",
+      "to": "LSR",
+      "routes": [
+        {
+          "route": "R082",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R083",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "LSR",
+      "to": "HHG",
+      "routes": [
+        {
+          "route": "R082",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R083",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R088",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "HHG",
+      "to": "ELJ",
+      "routes": [
+        {
+          "route": "R082",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "ELJ",
+      "to": "SCN",
+      "routes": [
+        {
+          "route": "R082",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "NRY",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R083",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "LTC",
+      "to": "WCT",
+      "routes": [
+        {
+          "route": "R083",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "WCT",
+      "to": "NSE",
+      "routes": [
+        {
+          "route": "R083",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "NSE",
+      "to": "WCT",
+      "routes": [
+        {
+          "route": "R083",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "WCT",
+      "to": "LTC",
+      "routes": [
+        {
+          "route": "R083",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "NRY",
+      "routes": [
+        {
+          "route": "R083",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "MGT",
+      "routes": [
+        {
+          "route": "R085",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "LTC",
+      "to": "NSE",
+      "routes": [
+        {
+          "route": "R085",
+          "duration_minutes": 7
+        }
+      ]
+    },
+    {
+      "from": "NSE",
+      "to": "LTC",
+      "routes": [
+        {
+          "route": "R085",
+          "duration_minutes": 7
+        }
+      ]
+    },
+    {
+      "from": "MGT",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R085",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "EDQ",
+      "to": "BEN",
+      "routes": [
+        {
+          "route": "R086",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BEN",
+      "to": "EDQ",
+      "routes": [
+        {
+          "route": "R086",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "RLB",
+      "to": "EDG",
+      "routes": [
+        {
+          "route": "R087",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "EDG",
+      "to": "RLB",
+      "routes": [
+        {
+          "route": "R087",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "WCT",
+      "to": "LYN",
+      "routes": [
+        {
+          "route": "R088",
+          "duration_minutes": 6
+        }
+      ]
+    },
+    {
+      "from": "LYN",
+      "to": "WCT",
+      "routes": [
+        {
+          "route": "R088",
+          "duration_minutes": 6
+        }
+      ]
+    },
+    {
+      "from": "ALB",
+      "to": "RLB",
+      "routes": [
+        {
+          "route": "R106",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "RLB",
+      "to": "ALB",
+      "routes": [
+        {
+          "route": "R106",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "EDG",
+      "to": "MLC",
+      "routes": [
+        {
+          "route": "R108",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "MLC",
+      "to": "EDG",
+      "routes": [
+        {
+          "route": "R108",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "ELJ",
+      "to": "BAR",
+      "routes": [
+        {
+          "route": "R132",
+          "duration_minutes": 10
+        },
+        {
+          "route": "R133",
+          "duration_minutes": 19
+        },
+        {
+          "route": "R134",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "DTR",
+      "to": "GNS",
+      "routes": [
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "BRY",
+      "to": "DTR",
+      "routes": [
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "CXN",
+      "to": "BCY",
+      "routes": [
+        {
+          "route": "R139",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R140",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 3
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "STB",
+      "to": "CXN",
+      "routes": [
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R140",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 1
+        },
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "BCY",
+      "to": "CXN",
+      "routes": [
+        {
+          "route": "R140",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "CXN",
+      "to": "STB",
+      "routes": [
+        {
+          "route": "R140",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "RNW",
+      "to": "WNG",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "GNS",
+      "to": "RNW",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "FWY",
+      "to": "SHS",
+      "routes": [
+        {
+          "route": "WHL",
+          "duration_minutes": 3
+        }
+      ]
+    }
+  ]
+}

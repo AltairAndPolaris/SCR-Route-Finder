@@ -1,0 +1,300 @@
+{
+  "stations": [
+    {
+      "code": "SAO",
+      "name": "Airport Terminal 1"
+    },
+    {
+      "code": "SAX",
+      "name": "Airport Terminal 2"
+    },
+    {
+      "code": "SAZ",
+      "name": "Airport Terminal 3"
+    },
+    {
+      "code": "SAW",
+      "name": "Airport West"
+    },
+    {
+      "code": "AGP",
+      "name": "Angel Pass"
+    },
+    {
+      "code": "APK",
+      "name": "Ashlan Park"
+    },
+    {
+      "code": "ALB",
+      "name": "Aslockby"
+    },
+    {
+      "code": "BAR",
+      "name": "Barton"
+    },
+    {
+      "code": "BPK",
+      "name": "Beaulieu Park"
+    },
+    {
+      "code": "BCY",
+      "name": "Beechley"
+    },
+    {
+      "code": "BEN",
+      "name": "Benton"
+    },
+    {
+      "code": "BBG",
+      "name": "Benton Bridge"
+    },
+    {
+      "code": "BRY",
+      "name": "Berrily"
+    },
+    {
+      "code": "BOD",
+      "name": "Bodin"
+    },
+    {
+      "code": "CXN",
+      "name": "Coxly Newtown"
+    },
+    {
+      "code": "CSP",
+      "name": "Cambridge Street Parkway"
+    },
+    {
+      "code": "CLB",
+      "name": "Carnalea Bridge"
+    },
+    {
+      "code": "CHP",
+      "name": "City Hospital"
+    },
+    {
+      "code": "CON",
+      "name": "Connolly"
+    },
+    {
+      "code": "COX",
+      "name": "Coxly"
+    },
+    {
+      "code": "DTR",
+      "name": "Denton Road"
+    },
+    {
+      "code": "EBR",
+      "name": "East Berrily"
+    },
+    {
+      "code": "EDQ",
+      "name": "Eden Quay"
+    },
+    {
+      "code": "EDG",
+      "name": "Edgemead"
+    },
+    {
+      "code": "ELJ",
+      "name": "Elsemere Junction"
+    },
+    {
+      "code": "EMP",
+      "name": "Elsemere Pond"
+    },
+    {
+      "code": "EFD",
+      "name": "Esterfield"
+    },
+    {
+      "code": "FRD",
+      "name": "Faraday Road"
+    },
+    {
+      "code": "FAR",
+      "name": "Farleigh"
+    },
+    {
+      "code": "FAY",
+      "name": "Faymere"
+    },
+    {
+      "code": "FNQ",
+      "name": "Financial Quarter"
+    },
+    {
+      "code": "FWY",
+      "name": "Four Ways"
+    },
+    {
+      "code": "GNS",
+      "name": "Greenslade"
+    },
+    {
+      "code": "HHG",
+      "name": "Hampton Hargate"
+    },
+    {
+      "code": "HPK",
+      "name": "Hemdon Park"
+    },
+    {
+      "code": "HTR",
+      "name": "Houghton Rake"
+    },
+    {
+      "code": "JST",
+      "name": "James Street"
+    },
+    {
+      "code": "LTC",
+      "name": "Leighton City"
+    },
+    {
+      "code": "LSR",
+      "name": "Leighton Stepford Road"
+    },
+    {
+      "code": "LTW",
+      "name": "Leighton West"
+    },
+    {
+      "code": "LYN",
+      "name": "Llyn-by-the-Sea"
+    },
+    {
+      "code": "MLC",
+      "name": "Millcastle"
+    },
+    {
+      "code": "MRC",
+      "name": "Millcastle Racecourse"
+    },
+    {
+      "code": "MGT",
+      "name": "Morganstown"
+    },
+    {
+      "code": "MGD",
+      "name": "Morganstown Docks"
+    },
+    {
+      "code": "NHW",
+      "name": "New Harrow"
+    },
+    {
+      "code": "NRY",
+      "name": "Newry"
+    },
+    {
+      "code": "NRH",
+      "name": "Newry Harbour"
+    },
+    {
+      "code": "NSE",
+      "name": "Northshore"
+    },
+    {
+      "code": "PBE",
+      "name": "Port Benton"
+    },
+    {
+      "code": "RLB",
+      "name": "Rayleigh Bay"
+    },
+    {
+      "code": "RNW",
+      "name": "Robinson Way"
+    },
+    {
+      "code": "RCP",
+      "name": "Rocket Parade"
+    },
+    {
+      "code": "RDV",
+      "name": "Rosedale Village"
+    },
+    {
+      "code": "SHB",
+      "name": "St Helens Bridge"
+    },
+    {
+      "code": "STL",
+      "name": "Starryloch"
+    },
+    {
+      "code": "SAC",
+      "name": "Stepford Airport Central"
+    },
+    {
+      "code": "SAP",
+      "name": "Stepford Airport Parkway"
+    },
+    {
+      "code": "STB",
+      "name": "Stepford Bay"
+    },
+    {
+      "code": "SCN",
+      "name": "Stepford Central"
+    },
+    {
+      "code": "SCE",
+      "name": "Stepford East"
+    },
+    {
+      "code": "SHS",
+      "name": "Stepford High Street"
+    },
+    {
+      "code": "UFC",
+      "name": "Stepford United Football Club"
+    },
+    {
+      "code": "SCV",
+      "name": "Stepford Victoria"
+    },
+    {
+      "code": "USP",
+      "name": "Upper Staploe"
+    },
+    {
+      "code": "WTN",
+      "name": "Water Newton"
+    },
+    {
+      "code": "WBN",
+      "name": "West Benton"
+    },
+    {
+      "code": "WCT",
+      "name": "Westercoast"
+    },
+    {
+      "code": "WYV",
+      "name": "Westwyvern"
+    },
+    {
+      "code": "WHF",
+      "name": "Whitefield"
+    },
+    {
+      "code": "WFL",
+      "name": "Whitefield Lido"
+    },
+    {
+      "code": "WNG",
+      "name": "Whitney Green"
+    },
+    {
+      "code": "WFD",
+      "name": "Willowfield"
+    },
+    {
+      "code": "WHL",
+      "name": "Woodhead Lane"
+    }
+  ]
+}

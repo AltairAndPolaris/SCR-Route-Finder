@@ -1,0 +1,592 @@
+{
+  "trains": [
+    {
+      "name": "Class 43 (HST) Standard",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 6
+    },
+    {
+      "name": "Class 43 (HST) Buffer",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 6
+    },
+    {
+      "name": "Class 43 (HST) 5-car",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 7
+    },
+    {
+      "name": "Class 43 (HST) 7-car",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 9
+    },
+    {
+      "name": "Class 43 (HST) 8-car (buffer)",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 10
+    },
+    {
+      "name": "Class 43 (HST) 9-car",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 11
+    },
+    {
+      "name": "Class 68 1+3+1",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 11
+    },
+    {
+      "name": "Class 91 7-car",
+      "operator": "Stepford Express",
+      "propulsion": "E",
+      "size": 9
+    },
+    {
+      "name": "Class 91 9-car",
+      "operator": "Stepford Express",
+      "propulsion": "E",
+      "size": 11
+    },
+    {
+      "name": "Class 143 Standard",
+      "operator": "Waterline",
+      "propulsion": "D",
+      "size": 2
+    },
+    {
+      "name": "Class 143 Double",
+      "operator": "Waterline",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 156 Standard",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 2
+    },
+    {
+      "name": "Class 156 Double",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 158 /0",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 3
+    },
+    {
+      "name": "Class 158 /9",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 2
+    },
+    {
+      "name": "Class 158 /9 (Double)",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 165 Standard",
+      "operator": "Waterline",
+      "propulsion": "D",
+      "size": 2
+    },
+    {
+      "name": "Class 165 Double",
+      "operator": "Waterline",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 166",
+      "operator": "Waterline",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 168",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 170 /2",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 2
+    },
+    {
+      "name": "Class 170 /2 (Double)",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 170 /4",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 3
+    },
+    {
+      "name": "Class 171",
+      "operator": "Waterline",
+      "propulsion": "D",
+      "size": 3
+    },
+    {
+      "name": "Class 180 Standard",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 5
+    },
+    {
+      "name": "Class 180 Double",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 10
+    },
+    {
+      "name": "Class 180 100M",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 5
+    },
+    {
+      "name": "Class 180 Double (100M)",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 10
+    },
+    {
+      "name": "Class 180 Standard + 100M (Double)",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 10
+    },
+    {
+      "name": "Class 185 Standard",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 3
+    },
+    {
+      "name": "Class 185 Double",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 6
+    },
+    {
+      "name": "Class 185 Standard",
+      "operator": "AirLink",
+      "propulsion": "D",
+      "size": 3
+    },
+    {
+      "name": "Class 185 Double",
+      "operator": "AirLink",
+      "propulsion": "D",
+      "size": 6
+    },
+    {
+      "name": "Class 195 /0",
+      "operator": "Waterline",
+      "propulsion": "D",
+      "size": 2
+    },
+    {
+      "name": "Class 195 /1",
+      "operator": "Waterline",
+      "propulsion": "D",
+      "size": 3
+    },
+    {
+      "name": "Class 195 /2",
+      "operator": "Stepford Connect",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 220 Standard",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 220 Double",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 8
+    },
+    {
+      "name": "Class 221 Standard",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 5
+    },
+    {
+      "name": "Class 221 Double",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 10
+    },
+    {
+      "name": "Class 313",
+      "operator": "Waterline",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 319",
+      "operator": "Waterline",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 321",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 331 /0",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 3
+    },
+    {
+      "name": "Class 331 /1",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 332 4-car",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 332 5-car",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 333",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 345",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 350 /1",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 350 /1 (Double)",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 8
+    },
+    {
+      "name": "Class 350 /2",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 357",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 360 Standard",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 360 /1",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 360 /2",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 365",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 377",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 379",
+      "operator": "Waterline",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 380 /0",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 3
+    },
+    {
+      "name": "Class 380 /1",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 385 /0",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 3
+    },
+    {
+      "name": "Class 385 /0 (Double)",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 6
+    },
+    {
+      "name": "Class 385 /1",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 385 /1 (Double)",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 8
+    },
+    {
+      "name": "Class 387 Standard",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 387 Double",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 8
+    },
+    {
+      "name": "Class 390 /0",
+      "operator": "Stepford Express",
+      "propulsion": "E",
+      "size": 9
+    },
+    {
+      "name": "Class 390 /1",
+      "operator": "Stepford Express",
+      "propulsion": "E",
+      "size": 11
+    },
+    {
+      "name": "Class 397 /0",
+      "operator": "Stepford Express",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 397 /0 (Double)",
+      "operator": "Stepford Express",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 397 /1",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 397 /1 (Double)",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 398 Standard",
+      "operator": "Metro",
+      "propulsion": "E",
+      "size": 3
+    },
+    {
+      "name": "Class 398 Double",
+      "operator": "Metro",
+      "propulsion": "E",
+      "size": 6
+    },
+    {
+      "name": "Class 555 Standard",
+      "operator": "Metro",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 555 Double",
+      "operator": "Metro",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 700",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 707",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 717",
+      "operator": "Metro",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 720",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 730 /0",
+      "operator": "Waterline",
+      "propulsion": "E",
+      "size": 3
+    },
+    {
+      "name": "Class 730 /1",
+      "operator": "Stepford Connect",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 745",
+      "operator": "AirLink",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 755 /3",
+      "operator": "AirLink",
+      "propulsion": "D",
+      "size": 3
+    },
+    {
+      "name": "Class 755 /4",
+      "operator": "AirLink",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 756 /0",
+      "operator": "Metro",
+      "propulsion": "D",
+      "size": 3
+    },
+    {
+      "name": "Class 756 /1",
+      "operator": "Metro",
+      "propulsion": "D",
+      "size": 4
+    },
+    {
+      "name": "Class 777 Standard",
+      "operator": "Metro",
+      "propulsion": "E",
+      "size": 4
+    },
+    {
+      "name": "Class 777 Double",
+      "operator": "Metro",
+      "propulsion": "E",
+      "size": 8
+    },
+    {
+      "name": "Class 800 /1",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 9
+    },
+    {
+      "name": "Class 800 /2",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 5
+    },
+    {
+      "name": "Class 800 /2 (Double)",
+      "operator": "Stepford Express",
+      "propulsion": "D",
+      "size": 10
+    },
+    {
+      "name": "Class 801 /1",
+      "operator": "Stepford Express",
+      "propulsion": "E",
+      "size": 5
+    },
+    {
+      "name": "Class 801 /1 (Double)",
+      "operator": "Stepford Express",
+      "propulsion": "E",
+      "size": 10
+    },
+    {
+      "name": "Class 801 /2",
+      "operator": "Stepford Express",
+      "propulsion": "E",
+      "size": 9
+    },
+    {
+      "name": "Class 802 Standard",
+      "operator": "AirLink",
+      "propulsion": "D",
+      "size": 5
+    },
+    {
+      "name": "Class 802 Double",
+      "operator": "AirLink",
+      "propulsion": "D",
+      "size": 10
+    }
+  ]
+}
