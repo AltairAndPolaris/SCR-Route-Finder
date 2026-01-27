@@ -137,8 +137,10 @@ function findPath(graph, from, to, mode, pricing) {
             if (a.cost !== b.cost) return a.cost - b.cost;
             return a.time - b.time;
         }
-        return (a.time + a.transfers * TRANSFER_PENALTY) -
-               (b.time + b.transfers * TRANSFER_PENALTY);
+        // Balanced mode: compare combined score
+        const scoreA = a.time + (a.transfers * TRANSFER_PENALTY);
+        const scoreB = b.time + (b.transfers * TRANSFER_PENALTY);
+        return scoreA - scoreB;
     });
 
     const best = new Map();
@@ -193,8 +195,10 @@ function findPath(graph, from, to, mode, pricing) {
                 better = next.cost < prev.cost ||
                          (next.cost === prev.cost && next.time < prev.time);
             } else {
-                better = (next.time + next.transfers * TRANSFER_PENALTY) 
-                         (prev.time + prev.transfers * TRANSFER_PENALTY);
+                // Balanced mode
+                const nextScore = next.time + (next.transfers * TRANSFER_PENALTY);
+                const prevScore = prev.time + (prev.transfers * TRANSFER_PENALTY);
+                better = nextScore < prevScore;
             }
 
             if (better) {
