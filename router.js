@@ -1,6 +1,14 @@
 /* =======================
    CONFIGURATION
 ======================= */
+const OPERATOR_CODES = {
+    "Stepford Connect": "CN",
+    "Metro": "MT",
+    "Waterline": "WL",
+    "Airlink": "AL",
+    "Stepford Express": "EX"
+};
+
 const DEFAULT_OPERATOR_PRICES = {
     "CN": 5,
     "MT": 3,
@@ -9,11 +17,19 @@ const DEFAULT_OPERATOR_PRICES = {
     "EX": 15
 };
 
+const OPERATOR_COLORS = {
+    "CN": '#0096EE',
+    "MT": '#EE4044',
+    "WL": '#002D5F',
+    "AL": '#EC7D33',
+    "EX": '#FF0080'
+};
+
 /* =======================
    DATA STRUCTURES
 ======================= */
 let GRAPH = new Map();
-let ROUTE_DATA = new Map(); // Full route info including compatible trains
+let ROUTE_DATA = new Map();
 let STATION_DATA = new Map();
 let TRAIN_DATA = [];
 let OPERATORS = new Set();
@@ -23,7 +39,6 @@ let OPERATORS = new Set();
 ======================= */
 async function loadAllData() {
     try {
-        // Load all JSON files in parallel
         const [segmentsRes, routesRes, stationsRes, trainsRes] = await Promise.all([
             fetch("segments.json"),
             fetch("routes.json"),
@@ -53,11 +68,13 @@ function processData({ segmentsData, routesData, stationsData, trainsData }) {
 
     // Process routes
     routesData.routes.forEach(route => {
+        const operatorCode = OPERATOR_CODES[route.operator] || route.operator;
         ROUTE_DATA.set(route.name, {
             operator: route.operator,
+            operatorCode: operatorCode,
             compatibleTrains: route.compatible_trains
         });
-        OPERATORS.add(route.operator);
+        OPERATORS.add(operatorCode);
     });
 
     // Process trains
@@ -78,7 +95,7 @@ function processData({ segmentsData, routesData, stationsData, trainsData }) {
             
             // Get operator from route data
             const routeDetails = ROUTE_DATA.get(routeId);
-            const operator = routeDetails ? routeDetails.operator : "Unknown";
+            const operatorCode = routeDetails ? routeDetails.operatorCode : "Unknown";
 
             // Add edge to graph
             if (!graph.has(from)) {
@@ -87,7 +104,7 @@ function processData({ segmentsData, routesData, stationsData, trainsData }) {
             graph.get(from).push({
                 to,
                 route: routeId,
-                operator,
+                operator: operatorCode,
                 time
             });
         });
@@ -291,16 +308,14 @@ async function initialize() {
         const pricingDiv = document.getElementById("pricing");
         operators.forEach(op => {
             const defaultPrice = DEFAULT_OPERATOR_PRICES[op] ?? 10;
-            
-            // Create a CSS-friendly class name
-            const cssClass = op.toLowerCase().replace(/\s+/g, '-');
+            const color = OPERATOR_COLORS[op] || '#667eea';
             
             pricingDiv.innerHTML += `
                 <div class="pricing-item">
-                    <label class="operator-badge operator-${cssClass}">${op}</label>
+                    <label class="operator-badge operator-${op}" style="background: ${color}; color: white;">${op}</label>
                     <input
                         type="number"
-                        id="price_${cssClass}"
+                        id="price_${op}"
                         data-operator="${op}"
                         value="${defaultPrice}"
                         min="0"
@@ -310,6 +325,25 @@ async function initialize() {
         });
 
         console.log(`Loaded ${stations.length} stations, ${operators.length} operators, ${ROUTE_DATA.size} routes, ${TRAIN_DATA.length} trains`);
+
+        // Add version indicator
+        const versionDiv = document.createElement('div');
+        versionDiv.style.cssText = `
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-size: 0.85rem;
+            color: #718096;
+            font-weight: 600;
+            z-index: 9999;
+            border: 1px solid #e2e8f0;
+        `;
+        versionDiv.textContent = 'Version 2.3.1, bugfix 2';
+        document.body.appendChild(versionDiv);
 
     } catch (err) {
         document.body.innerHTML = `
@@ -397,8 +431,7 @@ function render(title, r, color) {
         const equivalents = findEquivalentRoutesForSegment(seg)
             .filter(id => id !== seg.route);
         
-        // Create CSS-friendly class name
-        const cssClass = seg.operator.toLowerCase().replace(/\s+/g, '-');
+        const operatorColor = OPERATOR_COLORS[seg.operator] || '#667eea';
     
         html += `
             <div class="route-step">
@@ -408,8 +441,8 @@ function render(title, r, color) {
                         <span class="step-stations">
                             ${getDisplayName(seg.from)} → ${getDisplayName(seg.to)}
                         </span>
-                        <span class="operator-badge operator-${cssClass}" data-route="${seg.route}">${seg.route}</span>
-                        ${equivalents.map(id => `<span class="operator-badge operator-${cssClass}" data-route="${id}">${id}</span>`).join("")}
+                        <span class="operator-badge operator-${seg.operator}" style="background: ${operatorColor}; color: white;" data-route="${seg.route}">${seg.route}</span>
+                        ${equivalents.map(id => `<span class="operator-badge operator-${seg.operator}" style="background: ${operatorColor}; color: white;" data-route="${id}">${id}</span>`).join("")}
                         <span class="step-time">${seg.time || ""} min</span>
                     </div>
             
@@ -463,14 +496,7 @@ function showRouteDetails(routeId) {
         return;
     }
 
-    const operatorColors = {
-        "CN": '#0096EE',
-        "MT": '#EE4044',
-        "WL": '#002D5F',
-        "AL": '#EC7D33',
-        "EX": '#FF0080'
-    };
-    const operatorColor = operatorColors[routeInfo.operator] || '#667eea';
+    const operatorColor = OPERATOR_COLORS[routeInfo.operatorCode] || '#667eea';
 
     // Remove existing popup
     let existing = document.getElementById("route-details-popup");
@@ -555,7 +581,7 @@ function showRouteDetails(routeId) {
     `;
     header.innerHTML = `
         <h2 style="margin: 0 0 0.5rem 0; font-size: 1.75rem; color: #2d3748;">${routeId}</h2>
-        <div style="font-size: 1rem; color: ${operatorColor}; font-weight: 600;">${routeInfo.operator}</div>
+        <div style="font-size: 1rem; color: ${operatorColor}; font-weight: 600;">${routeInfo.operator} (${routeInfo.operatorCode})</div>
     `;
     content.appendChild(header);
 
