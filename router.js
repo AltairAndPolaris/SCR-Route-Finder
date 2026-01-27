@@ -464,11 +464,11 @@ function showRouteDetails(routeId) {
     }
 
     const operatorColors = {
-        "Stepford Connect": '#0096EE',
-        "Metro": '#EE4044',
-        "Waterline": '#002D5F',
-        "Airlink": '#EC7D33',
-        "Stepford Express": '#FF0080'
+        "CN": '#0096EE',
+        "MT": '#EE4044',
+        "WL": '#002D5F',
+        "AL": '#EC7D33',
+        "EX": '#FF0080'
     };
     const operatorColor = operatorColors[routeInfo.operator] || '#667eea';
 
