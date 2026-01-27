@@ -2,7 +2,7 @@
   "routes": [
     {
       "name": "R001",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 158 /0",
         "Class 158 /9",
@@ -38,7 +38,7 @@
     },
     {
       "name": "R002",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -53,7 +53,7 @@
     },
     {
       "name": "R003",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -90,7 +90,7 @@
     },
     {
       "name": "R004",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -127,7 +127,7 @@
     },
     {
       "name": "R005",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 158 /0",
         "Class 158 /9",
@@ -163,7 +163,7 @@
     },
     {
       "name": "R006",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -178,7 +178,7 @@
     },
     {
       "name": "R007",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -216,7 +216,7 @@
     },
     {
       "name": "R008",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -231,7 +231,7 @@
     },
     {
       "name": "R009",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -269,7 +269,7 @@
     },
     {
       "name": "R010",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -287,7 +287,7 @@
     },
     {
       "name": "R011",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -305,7 +305,7 @@
     },
     {
       "name": "R012",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -319,7 +319,7 @@
     },
     {
       "name": "R013",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -337,7 +337,7 @@
     },
     {
       "name": "R014",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -355,7 +355,7 @@
     },
     {
       "name": "R015",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -369,7 +369,7 @@
     },
     {
       "name": "R016",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -387,7 +387,7 @@
     },
     {
       "name": "R017",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -405,7 +405,7 @@
     },
     {
       "name": "R018",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -419,7 +419,7 @@
     },
     {
       "name": "R019",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -437,7 +437,7 @@
     },
     {
       "name": "R020",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -456,7 +456,7 @@
     },
     {
       "name": "R021",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -471,7 +471,7 @@
     },
     {
       "name": "R022",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -490,7 +490,7 @@
     },
     {
       "name": "R023",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -505,7 +505,7 @@
     },
     {
       "name": "R024",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -542,7 +542,7 @@
     },
     {
       "name": "R025",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -579,7 +579,7 @@
     },
     {
       "name": "R026",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -598,7 +598,7 @@
     },
     {
       "name": "R027",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -613,7 +613,7 @@
     },
     {
       "name": "R028",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -628,7 +628,7 @@
     },
     {
       "name": "R029",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -643,7 +643,7 @@
     },
     {
       "name": "R030",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -658,7 +658,7 @@
     },
     {
       "name": "R031",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -673,7 +673,7 @@
     },
     {
       "name": "R032",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -710,7 +710,7 @@
     },
     {
       "name": "R033",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -747,7 +747,7 @@
     },
     {
       "name": "R034",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -762,7 +762,7 @@
     },
     {
       "name": "R035",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -800,7 +800,7 @@
     },
     {
       "name": "R036",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -819,7 +819,7 @@
     },
     {
       "name": "R037",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -858,7 +858,7 @@
     },
     {
       "name": "R038",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -897,7 +897,7 @@
     },
     {
       "name": "R039",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -936,7 +936,7 @@
     },
     {
       "name": "R040",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -975,7 +975,7 @@
     },
     {
       "name": "R041",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1015,7 +1015,7 @@
     },
     {
       "name": "R042",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1054,7 +1054,7 @@
     },
     {
       "name": "R043",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1094,7 +1094,7 @@
     },
     {
       "name": "R044",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1133,7 +1133,7 @@
     },
     {
       "name": "R045",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -1171,7 +1171,7 @@
     },
     {
       "name": "R046",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 158 /0",
         "Class 158 /9",
@@ -1207,7 +1207,7 @@
     },
     {
       "name": "R047",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -1222,7 +1222,7 @@
     },
     {
       "name": "R048",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -1259,7 +1259,7 @@
     },
     {
       "name": "R049",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1278,7 +1278,7 @@
     },
     {
       "name": "R050",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1297,7 +1297,7 @@
     },
     {
       "name": "R051",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1318,7 +1318,7 @@
     },
     {
       "name": "WHL",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1339,7 +1339,7 @@
     },
     {
       "name": "WHL",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1360,7 +1360,7 @@
     },
     {
       "name": "WHL",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1381,7 +1381,7 @@
     },
     {
       "name": "R055",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1402,7 +1402,7 @@
     },
     {
       "name": "R056",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1423,7 +1423,7 @@
     },
     {
       "name": "R057",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1444,7 +1444,7 @@
     },
     {
       "name": "WHL",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1465,7 +1465,7 @@
     },
     {
       "name": "R059",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1486,21 +1486,21 @@
     },
     {
       "name": "R060",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 345"
       ]
     },
     {
       "name": "R063",
-      "operator": "AirLink",
+      "operator": "AL",
       "compatible_trains": [
         "Class 345"
       ]
     },
     {
       "name": "R075",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1533,7 +1533,7 @@
     },
     {
       "name": "R076",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1566,7 +1566,7 @@
     },
     {
       "name": "R077",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1599,7 +1599,7 @@
     },
     {
       "name": "R078",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1632,7 +1632,7 @@
     },
     {
       "name": "R079",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1665,7 +1665,7 @@
     },
     {
       "name": "R080",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1698,7 +1698,7 @@
     },
     {
       "name": "R081",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1731,7 +1731,7 @@
     },
     {
       "name": "R082",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1764,7 +1764,7 @@
     },
     {
       "name": "R083",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1788,7 +1788,7 @@
     },
     {
       "name": "R084",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1812,7 +1812,7 @@
     },
     {
       "name": "R085",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1836,7 +1836,7 @@
     },
     {
       "name": "R086",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 220 Standard",
         "Class 220 Double",
@@ -1849,7 +1849,7 @@
     },
     {
       "name": "R087",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1873,7 +1873,7 @@
     },
     {
       "name": "R088",
-      "operator": "Stepford Express",
+      "operator": "EX",
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1906,7 +1906,7 @@
     },
     {
       "name": "R100",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1925,7 +1925,7 @@
     },
     {
       "name": "R101",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1944,7 +1944,7 @@
     },
     {
       "name": "R102",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 156 Standard",
         "Class 156 Double"
@@ -1952,7 +1952,7 @@
     },
     {
       "name": "R103",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1971,7 +1971,7 @@
     },
     {
       "name": "R104",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -1991,7 +1991,7 @@
     },
     {
       "name": "R105",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -2011,7 +2011,7 @@
     },
     {
       "name": "R106",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -2022,7 +2022,7 @@
     },
     {
       "name": "R107",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -2042,7 +2042,7 @@
     },
     {
       "name": "R108",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -2062,7 +2062,7 @@
     },
     {
       "name": "R109",
-      "operator": "Stepford Connect",
+      "operator": "CN",
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -2082,7 +2082,7 @@
     },
     {
       "name": "R120",
-      "operator": "Waterline",
+      "operator": "WL",
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -2096,7 +2096,7 @@
     },
     {
       "name": "R130",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2111,7 +2111,7 @@
     },
     {
       "name": "R131",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2126,7 +2126,7 @@
     },
     {
       "name": "R132",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2141,7 +2141,7 @@
     },
     {
       "name": "R133",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2156,7 +2156,7 @@
     },
     {
       "name": "R134",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2171,7 +2171,7 @@
     },
     {
       "name": "R135",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2186,7 +2186,7 @@
     },
     {
       "name": "R136",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2201,7 +2201,7 @@
     },
     {
       "name": "R137",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 756 /0",
         "Class 756 /1"
@@ -2209,7 +2209,7 @@
     },
     {
       "name": "R139",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double"
@@ -2217,7 +2217,7 @@
     },
     {
       "name": "R140",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2227,7 +2227,7 @@
     },
     {
       "name": "R141",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2237,7 +2237,7 @@
     },
     {
       "name": "WHL",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double"
@@ -2245,7 +2245,7 @@
     },
     {
       "name": "WHL",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double"
@@ -2253,7 +2253,7 @@
     },
     {
       "name": "WHL",
-      "operator": "Metro",
+      "operator": "MT",
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double"
