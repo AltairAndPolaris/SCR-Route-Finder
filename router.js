@@ -33,6 +33,7 @@ let ROUTE_DATA = new Map();
 let STATION_DATA = new Map();
 let TRAIN_DATA = [];
 let OPERATORS = new Set();
+let INVALID_ROUTES = {};
 
 /* =======================
    LOAD ALL DATA
@@ -44,6 +45,7 @@ async function loadAllData() {
             fetch("routes.json"),
             fetch("stations.json"),
             fetch("trains.json")
+            fetch("invalid_routes.json")
         ]);
 
         const [segmentsData, routesData, stationsData, trainsData] = await Promise.all([
@@ -51,9 +53,10 @@ async function loadAllData() {
             routesRes.json(),
             stationsRes.json(),
             trainsRes.json()
+            invalidRoutesRes.json()
         ]);
 
-        return { segmentsData, routesData, stationsData, trainsData };
+        return { segmentsData, routesData, stationsData, trainsData, invalidRoutesData };
     } catch (error) {
         console.error("Error loading data files:", error);
         throw error;
@@ -76,6 +79,9 @@ function processData({ segmentsData, routesData, stationsData, trainsData }) {
         });
         OPERATORS.add(operatorCode);
     });
+
+    //Process invalid routes
+    INVALID_ROUTES = invalidRoutesData.invalid_routes || {};
 
     // Process trains
     TRAIN_DATA = trainsData.trains;
@@ -136,6 +142,86 @@ class PriorityQueue {
     get size() {
         return this.data.length;
     }
+}
+
+/* =======================
+   INVALID ROUTES
+======================= */
+function showInvalidRoutesWarning() {
+    let existing = document.getElementById("invalid-routes-popup");
+    if (existing) {
+        existing.remove();
+        return;
+    }
+
+    const container = document.createElement("div");
+    container.id = "invalid-routes-popup";
+    container.style.cssText = `
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.5); display: flex; align-items: center;
+        justify-content: center; z-index: 10000; padding: 2rem;
+        backdrop-filter: blur(4px);
+    `;
+
+    container.addEventListener("click", (e) => {
+        if (e.target === container) container.remove();
+    });
+
+    const content = document.createElement("div");
+    content.style.cssText = `
+        background: white; border-radius: 16px; padding: 2rem;
+        max-width: 700px; max-height: 80vh; overflow-y: auto;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); position: relative;
+    `;
+
+    const closeBtn = document.createElement("button");
+    closeBtn.innerHTML = "✕";
+    closeBtn.style.cssText = `
+        position: absolute; top: 1rem; right: 1rem; background: #f7fafc;
+        border: 2px solid #e2e8f0; border-radius: 50%; width: 2.5rem;
+        height: 2.5rem; cursor: pointer; font-size: 1.5rem;
+    `;
+    closeBtn.onclick = () => container.remove();
+    content.appendChild(closeBtn);
+
+    const header = document.createElement("div");
+    header.innerHTML = `
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <span style="font-size: 2rem;">⚠️</span>
+            <h2 style="margin: 0; font-size: 1.75rem;">Data Warning</h2>
+        </div>
+        <p style="margin: 0; color: #718096;">
+            These routes have been identified to have wrong data. This may be due to data being absent on the Fandom wiki.
+        </p>
+    `;
+    content.appendChild(header);
+
+    const count = Object.keys(INVALID_ROUTES).length;
+    const countBadge = document.createElement("div");
+    countBadge.style.cssText = `
+        background: #fef3c7; border: 2px solid #f59e0b; border-radius: 8px;
+        padding: 0.75rem; margin: 1rem 0; text-align: center;
+        font-weight: 600; color: #92400e;
+    `;
+    countBadge.textContent = `${count} route${count !== 1 ? 's' : ''} affected`;
+    content.appendChild(countBadge);
+
+    const routesList = document.createElement("div");
+    for (const [routeId, errors] of Object.entries(INVALID_ROUTES)) {
+        const card = document.createElement("div");
+        card.style.cssText = `
+            background: #fff7ed; border: 2px solid #fdba74; border-radius: 8px;
+            padding: 1rem; margin-bottom: 0.75rem;
+        `;
+        card.innerHTML = `
+            <div style="font-weight: 700; color: #92400e; margin-bottom: 0.5rem;">${routeId}</div>
+            ${errors.map(e => `<div style="font-size: 0.85rem; color: #78350f; padding-left: 1rem;">• ${e}</div>`).join('')}
+        `;
+        routesList.appendChild(card);
+    }
+    content.appendChild(routesList);
+    container.appendChild(content);
+    document.body.appendChild(container);
 }
 
 /* =======================
@@ -323,6 +409,23 @@ async function initialize() {
                 </div>
             `;
         });
+
+        // Add warning icon (top left)
+        const invalidRouteCount = Object.keys(INVALID_ROUTES).length;
+        if (invalidRouteCount > 0) {
+            const warningBtn = document.createElement('button');
+            warningBtn.style.cssText = "
+                position: fixed; top: 10px; left: 10px;
+                background: #fef3c7; border: 2px solid #f59e0b;
+                border-radius: 50%; width: 3rem; height: 3rem;
+                cursor: pointer; font-size: 1.5rem; z-index: 9999;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            ";
+            warningBtn.innerHTML = '⚠️';
+            warningBtn.title = `${invalidRouteCount} route${invalidRouteCount !== 1 ? 's' : ''} with data issues`;
+            warningBtn.onclick = showInvalidRoutesWarning;
+            document.body.appendChild(warningBtn);
+        }
 
         console.log(`Loaded ${stations.length} stations, ${operators.length} operators, ${ROUTE_DATA.size} routes, ${TRAIN_DATA.length} trains`);
 
