@@ -5,7 +5,7 @@ const OPERATOR_CODES = {
     "Stepford Connect": "CN",
     "Metro": "MT",
     "Waterline": "WL",
-    "Airlink": "AL",
+    "AirLink": "AL",
     "Stepford Express": "EX"
 };
 
@@ -326,25 +326,6 @@ async function initialize() {
 
         console.log(`Loaded ${stations.length} stations, ${operators.length} operators, ${ROUTE_DATA.size} routes, ${TRAIN_DATA.length} trains`);
 
-        // Add version indicator
-        const versionDiv = document.createElement('div');
-        versionDiv.style.cssText = `
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            font-size: 0.85rem;
-            color: #718096;
-            font-weight: 600;
-            z-index: 9999;
-            border: 1px solid #e2e8f0;
-        `;
-        versionDiv.textContent = 'Version 2.3.1, bugfix 2';
-        document.body.appendChild(versionDiv);
-
     } catch (err) {
         document.body.innerHTML = `
             <div class="container">
@@ -633,7 +614,7 @@ function showRouteDetails(routeId) {
             trainCard.innerHTML = `
                 <div style="font-weight: 700; color: ${operatorColor}; margin-bottom: 0.25rem;">${train.name}</div>
                 <div style="font-size: 0.75rem; color: #718096;">
-                    ${train.propulsion === 'D' ? '🚂 Diesel' : train.propulsion === 'E' ? '⚡ Electric' : '🔋 ' + train.propulsion} • ${train.size} cars
+                    ${train.propulsion === 'D' ? 'Diesel' : train.propulsion === 'E' ? 'Electric' : '🔋 ' + train.propulsion} • ${train.size} cars
                 </div>
             `;
             
@@ -656,7 +637,80 @@ function showRouteDetails(routeId) {
         noTrains.textContent = "No compatible trains found for this route";
         content.appendChild(noTrains);
     }
+    // Create line container
+    const lineContainer = document.createElement("div");
+    lineContainer.className = "service-line";
 
+    route.stations.forEach((station, idx) => {
+        const isBranch = station.endsWith(">") || station.endsWith("<");
+
+        const dotWrapper = document.createElement("div");
+        dotWrapper.className = "station-wrapper";
+
+        const dot = document.createElement("div");
+        dot.className = "station-dot" + (isBranch ? " branch" : "");
+        
+        let dotColor = operatorColor;
+        
+        console.log(`Station ${station} (idx ${idx}): fromIdx=${fromIdx}, toIdx=${toIdx}, startIdx=${startIdx}, endIdx=${endIdx}`);
+        
+        if (fromIdx >= 0 && toIdx >= 0) {
+            if (idx === fromIdx) {
+                dotColor = '#2ecc71'; // Green for boarding
+                dot.style.boxShadow = '0 0 0 4px rgba(46, 204, 113, 0.3)';
+                console.log(`  -> Setting GREEN (boarding)`);
+            } else if (idx === toIdx) {
+                dotColor = '#e74c3c'; // Red for alighting
+                dot.style.boxShadow = '0 0 0 4px rgba(231, 76, 60, 0.3)';
+                console.log(`  -> Setting RED (alighting)`);
+            } else if (idx > startIdx && idx < endIdx) {
+                dotColor = '#f39c12'; // Orange for intermediate
+                console.log(`  -> Setting ORANGE (intermediate)`);
+            }
+        } else {
+            console.log(`  -> No highlighting (fromIdx or toIdx is -1)`);
+        }
+        
+        console.log(`  -> Final color: ${dotColor}`);
+        dot.style.background = dotColor;
+        dotWrapper.appendChild(dot);
+
+        const label = document.createElement("div");
+        label.className = "station-label";
+        label.textContent = station;
+        
+        // Style label based on position
+        if (fromIdx >= 0 && toIdx >= 0) {
+            if (idx === fromIdx) {
+                label.style.color = '#2ecc71';
+                label.style.fontWeight = '700';
+            } else if (idx === toIdx) {
+                label.style.color = '#e74c3c';
+                label.style.fontWeight = '700';
+            } else if (idx > startIdx && idx < endIdx) {
+                label.style.color = '#f39c12';
+                label.style.fontWeight = '600';
+            }
+        }
+        
+        dotWrapper.appendChild(label);
+        lineContainer.appendChild(dotWrapper);
+
+        if (idx < route.stations.length - 1) {
+            const line = document.createElement("div");
+            line.className = "station-line";
+            
+            // Highlight line if it's part of the journey
+            if (fromIdx >= 0 && toIdx >= 0 && idx >= startIdx && idx < endIdx) {
+                line.style.background = '#f39c12'; // Orange for active journey
+                line.style.height = '4px'; // Make it thicker
+            } else {
+                line.style.background = operatorColor;
+            }
+            
+            lineContainer.appendChild(line);
+        }
+    })
     container.appendChild(content);
     document.body.appendChild(container);
 }
