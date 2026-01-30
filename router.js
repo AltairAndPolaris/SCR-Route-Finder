@@ -40,7 +40,7 @@ let INVALID_ROUTES = {};
 ======================= */
 async function loadAllData() {
     try {
-        const [segmentsRes, routesRes, stationsRes, trainsRes] = await Promise.all([
+        const [segmentsRes, routesRes, stationsRes, trainsRes, invalidRoutesRes] = await Promise.all([
             fetch("segments.json"),
             fetch("routes.json"),
             fetch("stations.json"),
@@ -63,7 +63,7 @@ async function loadAllData() {
     }
 }
 
-function processData({ segmentsData, routesData, stationsData, trainsData }) {
+function processData({ segmentsData, routesData, stationsData, trainsData, invalidRoutesData }) {
     // Process stations
     stationsData.stations.forEach(station => {
         STATION_DATA.set(station.code, station.name);
@@ -740,80 +740,6 @@ function showRouteDetails(routeId) {
         noTrains.textContent = "No compatible trains found for this route";
         content.appendChild(noTrains);
     }
-    // Create line container
-    const lineContainer = document.createElement("div");
-    lineContainer.className = "service-line";
-
-    route.stations.forEach((station, idx) => {
-        const isBranch = station.endsWith(">") || station.endsWith("<");
-
-        const dotWrapper = document.createElement("div");
-        dotWrapper.className = "station-wrapper";
-
-        const dot = document.createElement("div");
-        dot.className = "station-dot" + (isBranch ? " branch" : "");
-        
-        let dotColor = operatorColor;
-        
-        console.log(`Station ${station} (idx ${idx}): fromIdx=${fromIdx}, toIdx=${toIdx}, startIdx=${startIdx}, endIdx=${endIdx}`);
-        
-        if (fromIdx >= 0 && toIdx >= 0) {
-            if (idx === fromIdx) {
-                dotColor = '#2ecc71'; // Green for boarding
-                dot.style.boxShadow = '0 0 0 4px rgba(46, 204, 113, 0.3)';
-                console.log(`  -> Setting GREEN (boarding)`);
-            } else if (idx === toIdx) {
-                dotColor = '#e74c3c'; // Red for alighting
-                dot.style.boxShadow = '0 0 0 4px rgba(231, 76, 60, 0.3)';
-                console.log(`  -> Setting RED (alighting)`);
-            } else if (idx > startIdx && idx < endIdx) {
-                dotColor = '#f39c12'; // Orange for intermediate
-                console.log(`  -> Setting ORANGE (intermediate)`);
-            }
-        } else {
-            console.log(`  -> No highlighting (fromIdx or toIdx is -1)`);
-        }
-        
-        console.log(`  -> Final color: ${dotColor}`);
-        dot.style.background = dotColor;
-        dotWrapper.appendChild(dot);
-
-        const label = document.createElement("div");
-        label.className = "station-label";
-        label.textContent = station;
-        
-        // Style label based on position
-        if (fromIdx >= 0 && toIdx >= 0) {
-            if (idx === fromIdx) {
-                label.style.color = '#2ecc71';
-                label.style.fontWeight = '700';
-            } else if (idx === toIdx) {
-                label.style.color = '#e74c3c';
-                label.style.fontWeight = '700';
-            } else if (idx > startIdx && idx < endIdx) {
-                label.style.color = '#f39c12';
-                label.style.fontWeight = '600';
-            }
-        }
-        
-        dotWrapper.appendChild(label);
-        lineContainer.appendChild(dotWrapper);
-
-        if (idx < route.stations.length - 1) {
-            const line = document.createElement("div");
-            line.className = "station-line";
-            
-            // Highlight line if it's part of the journey
-            if (fromIdx >= 0 && toIdx >= 0 && idx >= startIdx && idx < endIdx) {
-                line.style.background = '#f39c12'; // Orange for active journey
-                line.style.height = '4px'; // Make it thicker
-            } else {
-                line.style.background = operatorColor;
-            }
-            
-            lineContainer.appendChild(line);
-        }
-    })
     container.appendChild(content);
     document.body.appendChild(container);
 
