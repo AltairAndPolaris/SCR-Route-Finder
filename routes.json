@@ -3,6 +3,30 @@
     {
       "name": "R001",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "SHB",
+        "AGP",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "SAP",
+        "SAC"
+      ],
+      "stations_reverse": [
+        "SAC",
+        "SAP",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 158 /0",
         "Class 158 /9",
@@ -39,6 +63,30 @@
     {
       "name": "R002",
       "operator": "Metro",
+      "stations_forward": [
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "AGP",
+        "BOD",
+        "COX",
+        "BEN",
+        "PBE"
+      ],
+      "stations_reverse": [
+        "PBE",
+        "BEN",
+        "COX",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -54,6 +102,38 @@
     {
       "name": "R003",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "SHB",
+        "AGP",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "HHG",
+        "USP",
+        "WTN",
+        "RCP",
+        "LSR",
+        "LTC"
+      ],
+      "stations_reverse": [
+        "LTC",
+        "LSR",
+        "RCP",
+        "WTN",
+        "USP",
+        "HHG",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -91,6 +171,30 @@
     {
       "name": "R004",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "EDG"
+      ],
+      "stations_reverse": [
+        "EDG",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -128,6 +232,32 @@
     {
       "name": "R005",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCV",
+        "FNQ",
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "SAP",
+        "SAC"
+      ],
+      "stations_reverse": [
+        "SAC",
+        "SAP",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN",
+        "FNQ",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 158 /0",
         "Class 158 /9",
@@ -164,6 +294,36 @@
     {
       "name": "R006",
       "operator": "Metro",
+      "stations_forward": [
+        "SCV",
+        "FNQ",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "AGP",
+        "BOD",
+        "COX",
+        "BEN",
+        "PBE"
+      ],
+      "stations_reverse": [
+        "PBE",
+        "BEN",
+        "COX",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "FNQ",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -179,6 +339,24 @@
     {
       "name": "R007",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "SHB",
+        "ELJ",
+        "BRY",
+        "MGT",
+        "HHG"
+      ],
+      "stations_reverse": [
+        "HHG",
+        "MGT",
+        "BRY",
+        "ELJ",
+        "SHB",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -217,6 +395,34 @@
     {
       "name": "R008",
       "operator": "Metro",
+      "stations_forward": [
+        "SCV",
+        "FNQ",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "BRY"
+      ],
+      "stations_reverse": [
+        "BRY",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "FNQ",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -232,6 +438,38 @@
     {
       "name": "R009",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCV",
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "HHG",
+        "WTN",
+        "RCP",
+        "LSR",
+        "LTC",
+        "EDG"
+      ],
+      "stations_reverse": [
+        "EDG",
+        "LTC",
+        "LSR",
+        "RCP",
+        "WTN",
+        "HHG",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -270,6 +508,28 @@
     {
       "name": "R010",
       "operator": "Waterline",
+      "stations_forward": [
+        "NRY",
+        "EDQ",
+        "FRD",
+        "WBN",
+        "BEN",
+        "PBE",
+        "MGD",
+        "WNG",
+        "GNS"
+      ],
+      "stations_reverse": [
+        "GNS",
+        "WNG",
+        "MGD",
+        "PBE",
+        "BEN",
+        "WBN",
+        "FRD",
+        "EDQ",
+        "NRY"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -288,6 +548,26 @@
     {
       "name": "R011",
       "operator": "Waterline",
+      "stations_forward": [
+        "NRY",
+        "EDQ",
+        "FRD",
+        "WBN",
+        "BEN",
+        "CSP",
+        "APK",
+        "CON"
+      ],
+      "stations_reverse": [
+        "CON",
+        "APK",
+        "CSP",
+        "BEN",
+        "WBN",
+        "FRD",
+        "EDQ",
+        "NRY"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -306,6 +586,28 @@
     {
       "name": "R012",
       "operator": "Waterline",
+      "stations_forward": [
+        "NRH",
+        "NRY",
+        "EDQ",
+        "FRD",
+        "WBN",
+        "BEN",
+        "CSP",
+        "APK",
+        "CON"
+      ],
+      "stations_reverse": [
+        "CON",
+        "APK",
+        "CSP",
+        "BEN",
+        "WBN",
+        "FRD",
+        "EDQ",
+        "NRY",
+        "NRH"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -320,6 +622,18 @@
     {
       "name": "R013",
       "operator": "Waterline",
+      "stations_forward": [
+        "BEN",
+        "PBE",
+        "WNG",
+        "GNS"
+      ],
+      "stations_reverse": [
+        "GNS",
+        "WNG",
+        "PBE",
+        "BEN"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -338,6 +652,28 @@
     {
       "name": "R014",
       "operator": "Waterline",
+      "stations_forward": [
+        "NRY",
+        "EDQ",
+        "FRD",
+        "WBN",
+        "BEN",
+        "CSP",
+        "SAW",
+        "FAR",
+        "EFD"
+      ],
+      "stations_reverse": [
+        "EFD",
+        "FAR",
+        "SAW",
+        "CSP",
+        "BEN",
+        "WBN",
+        "FRD",
+        "EDQ",
+        "NRY"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -356,6 +692,18 @@
     {
       "name": "R015",
       "operator": "Waterline",
+      "stations_forward": [
+        "BEN",
+        "PBE",
+        "MGD",
+        "MGT"
+      ],
+      "stations_reverse": [
+        "MGT",
+        "MGD",
+        "PBE",
+        "BEN"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -370,6 +718,24 @@
     {
       "name": "R016",
       "operator": "Waterline",
+      "stations_forward": [
+        "BEN",
+        "CSP",
+        "SAW",
+        "JST",
+        "FAR",
+        "RDV",
+        "EFD"
+      ],
+      "stations_reverse": [
+        "EFD",
+        "RDV",
+        "FAR",
+        "JST",
+        "SAW",
+        "CSP",
+        "BEN"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -388,6 +754,26 @@
     {
       "name": "R017",
       "operator": "Waterline",
+      "stations_forward": [
+        "NRY",
+        "EDQ",
+        "FRD",
+        "WBN",
+        "BEN",
+        "CSP",
+        "SAW",
+        "SAX"
+      ],
+      "stations_reverse": [
+        "SAX",
+        "SAW",
+        "CSP",
+        "BEN",
+        "WBN",
+        "FRD",
+        "EDQ",
+        "NRY"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -406,6 +792,30 @@
     {
       "name": "R018",
       "operator": "Waterline",
+      "stations_forward": [
+        "NRH",
+        "NRY",
+        "EDQ",
+        "FRD",
+        "WBN",
+        "BEN",
+        "CSP",
+        "SAW",
+        "JST",
+        "FAR"
+      ],
+      "stations_reverse": [
+        "FAR",
+        "JST",
+        "SAW",
+        "CSP",
+        "BEN",
+        "WBN",
+        "FRD",
+        "EDQ",
+        "NRY",
+        "NRH"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -420,6 +830,18 @@
     {
       "name": "R019",
       "operator": "Waterline",
+      "stations_forward": [
+        "BEN",
+        "CSP",
+        "APK",
+        "CON"
+      ],
+      "stations_reverse": [
+        "CON",
+        "APK",
+        "CSP",
+        "BEN"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -438,6 +860,22 @@
     {
       "name": "R020",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "UFC",
+        "WHL",
+        "HTR",
+        "WHF"
+      ],
+      "stations_reverse": [
+        "WHF",
+        "HTR",
+        "WHL",
+        "UFC",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -457,6 +895,22 @@
     {
       "name": "R021",
       "operator": "Metro",
+      "stations_forward": [
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "WFL",
+        "UFC"
+      ],
+      "stations_reverse": [
+        "UFC",
+        "WFL",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -472,6 +926,22 @@
     {
       "name": "R022",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "BCY",
+        "SCN",
+        "SCE",
+        "UFC",
+        "WHL",
+        "WHF"
+      ],
+      "stations_reverse": [
+        "WHF",
+        "WHL",
+        "UFC",
+        "SCE",
+        "SCN",
+        "BCY"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -491,6 +961,28 @@
     {
       "name": "R023",
       "operator": "Metro",
+      "stations_forward": [
+        "SCV",
+        "FNQ",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "WFL",
+        "UFC"
+      ],
+      "stations_reverse": [
+        "UFC",
+        "WFL",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "FNQ",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -506,6 +998,50 @@
     {
       "name": "R024",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "HHG",
+        "WTN",
+        "RCP",
+        "LSR",
+        "LTC",
+        "EDG",
+        "FAY",
+        "WCT",
+        "MLC",
+        "WYV",
+        "STL",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "STL",
+        "WYV",
+        "MLC",
+        "WCT",
+        "FAY",
+        "EDG",
+        "LTC",
+        "LSR",
+        "RCP",
+        "WTN",
+        "HHG",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -543,6 +1079,44 @@
     {
       "name": "R025",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "HHG",
+        "USP",
+        "WTN",
+        "RCP",
+        "LSR",
+        "LTC",
+        "EDG",
+        "FAY",
+        "WCT",
+        "MRC",
+        "MLC",
+        "WYV"
+      ],
+      "stations_reverse": [
+        "WYV",
+        "MLC",
+        "MRC",
+        "WCT",
+        "FAY",
+        "EDG",
+        "LTC",
+        "LSR",
+        "RCP",
+        "WTN",
+        "USP",
+        "HHG",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -580,6 +1154,44 @@
     {
       "name": "R026",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCV",
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "EDG",
+        "WCT",
+        "MLC",
+        "WYV",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "WYV",
+        "MLC",
+        "WCT",
+        "EDG",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -599,6 +1211,28 @@
     {
       "name": "R027",
       "operator": "Metro",
+      "stations_forward": [
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "BRY"
+      ],
+      "stations_reverse": [
+        "BRY",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -614,6 +1248,20 @@
     {
       "name": "R028",
       "operator": "Metro",
+      "stations_forward": [
+        "SCV",
+        "FNQ",
+        "BCY",
+        "HPK",
+        "WFD"
+      ],
+      "stations_reverse": [
+        "WFD",
+        "HPK",
+        "BCY",
+        "FNQ",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -629,6 +1277,16 @@
     {
       "name": "R029",
       "operator": "Metro",
+      "stations_forward": [
+        "SCV",
+        "FNQ",
+        "BCY"
+      ],
+      "stations_reverse": [
+        "BCY",
+        "FNQ",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -644,6 +1302,38 @@
     {
       "name": "R030",
       "operator": "Metro",
+      "stations_forward": [
+        "WFD",
+        "HPK",
+        "BCY",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "AGP",
+        "BOD",
+        "CXN",
+        "BAR",
+        "BRY"
+      ],
+      "stations_reverse": [
+        "BRY",
+        "BAR",
+        "CXN",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "BCY",
+        "HPK",
+        "WFD"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -659,6 +1349,30 @@
     {
       "name": "R031",
       "operator": "Metro",
+      "stations_forward": [
+        "WFD",
+        "HPK",
+        "BCY",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "WFL",
+        "UFC"
+      ],
+      "stations_reverse": [
+        "UFC",
+        "WFL",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "BCY",
+        "HPK",
+        "WFD"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -674,6 +1388,28 @@
     {
       "name": "R032",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "WFD",
+        "BCY",
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "PBE"
+      ],
+      "stations_reverse": [
+        "PBE",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN",
+        "BCY",
+        "WFD"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -711,6 +1447,30 @@
     {
       "name": "R033",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "BCY",
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "SAP",
+        "SAC"
+      ],
+      "stations_reverse": [
+        "SAC",
+        "SAP",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN",
+        "BCY"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -748,6 +1508,38 @@
     {
       "name": "R034",
       "operator": "Metro",
+      "stations_forward": [
+        "BCY",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "BRY",
+        "EBR",
+        "BPK",
+        "MGT"
+      ],
+      "stations_reverse": [
+        "MGT",
+        "BPK",
+        "EBR",
+        "BRY",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "BCY"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -763,6 +1555,46 @@
     {
       "name": "R035",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "WFD",
+        "BCY",
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "EDG",
+        "FAY",
+        "WCT",
+        "MLC",
+        "WYV"
+      ],
+      "stations_reverse": [
+        "WYV",
+        "MLC",
+        "WCT",
+        "FAY",
+        "EDG",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN",
+        "BCY",
+        "WFD"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -801,6 +1633,46 @@
     {
       "name": "R036",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "WFD",
+        "BCY",
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "EDG",
+        "WCT",
+        "MLC",
+        "WYV",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "WYV",
+        "MLC",
+        "WCT",
+        "EDG",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN",
+        "BCY",
+        "WFD"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -820,6 +1692,26 @@
     {
       "name": "R037",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "LTC",
+        "EDG",
+        "FAY",
+        "WCT",
+        "MLC",
+        "WYV",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "WYV",
+        "MLC",
+        "WCT",
+        "FAY",
+        "EDG",
+        "LTC"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -859,6 +1751,24 @@
     {
       "name": "R038",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "LTC",
+        "EDG",
+        "FAY",
+        "WCT",
+        "MRC",
+        "MLC",
+        "WYV"
+      ],
+      "stations_reverse": [
+        "WYV",
+        "MLC",
+        "MRC",
+        "WCT",
+        "FAY",
+        "EDG",
+        "LTC"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -898,6 +1808,26 @@
     {
       "name": "R039",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "BEN",
+        "BBG",
+        "HHG",
+        "USP",
+        "WTN",
+        "RCP",
+        "LSR",
+        "LTC"
+      ],
+      "stations_reverse": [
+        "LTC",
+        "LSR",
+        "RCP",
+        "WTN",
+        "USP",
+        "HHG",
+        "BBG",
+        "BEN"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -937,6 +1867,28 @@
     {
       "name": "R040",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "EDG",
+        "FAY",
+        "WCT",
+        "MRC",
+        "MLC",
+        "WYV",
+        "STL",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "STL",
+        "WYV",
+        "MLC",
+        "MRC",
+        "WCT",
+        "FAY",
+        "EDG"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -976,6 +1928,14 @@
     {
       "name": "R041",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "LTW",
+        "EDG"
+      ],
+      "stations_reverse": [
+        "EDG",
+        "LTW"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1016,6 +1976,28 @@
     {
       "name": "R042",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "LTW",
+        "EDG",
+        "FAY",
+        "WCT",
+        "MLC",
+        "WYV",
+        "STL",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "STL",
+        "WYV",
+        "MLC",
+        "WCT",
+        "FAY",
+        "EDG",
+        "LTW"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1055,6 +2037,14 @@
     {
       "name": "R043",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "LTW",
+        "LTC"
+      ],
+      "stations_reverse": [
+        "LTC",
+        "LTW"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1095,6 +2085,28 @@
     {
       "name": "R044",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "BEN",
+        "BBG",
+        "HHG",
+        "USP",
+        "WTN",
+        "RCP",
+        "LSR",
+        "LTC",
+        "LTW"
+      ],
+      "stations_reverse": [
+        "LTW",
+        "LTC",
+        "LSR",
+        "RCP",
+        "WTN",
+        "USP",
+        "HHG",
+        "BBG",
+        "BEN"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1134,6 +2146,38 @@
     {
       "name": "R045",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCV",
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "HHG",
+        "USP",
+        "WTN",
+        "RCP",
+        "LSR",
+        "LTC"
+      ],
+      "stations_reverse": [
+        "LTC",
+        "LSR",
+        "RCP",
+        "WTN",
+        "USP",
+        "HHG",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -1172,6 +2216,34 @@
     {
       "name": "R046",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCV",
+        "CHP",
+        "SCN",
+        "SCE",
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "SAP",
+        "SAC",
+        "SAX"
+      ],
+      "stations_reverse": [
+        "SAX",
+        "SAC",
+        "SAP",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB",
+        "SCE",
+        "SCN",
+        "CHP",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 158 /0",
         "Class 158 /9",
@@ -1208,6 +2280,22 @@
     {
       "name": "R047",
       "operator": "Metro",
+      "stations_forward": [
+        "SHB",
+        "AGP",
+        "BOD",
+        "COX",
+        "BEN",
+        "PBE"
+      ],
+      "stations_reverse": [
+        "PBE",
+        "BEN",
+        "COX",
+        "BOD",
+        "AGP",
+        "SHB"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -1223,6 +2311,26 @@
     {
       "name": "R048",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SHB",
+        "BOD",
+        "COX",
+        "BEN",
+        "BBG",
+        "SAP",
+        "SAC",
+        "SAX"
+      ],
+      "stations_reverse": [
+        "SAX",
+        "SAC",
+        "SAP",
+        "BBG",
+        "BEN",
+        "COX",
+        "BOD",
+        "SHB"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 158 /0",
@@ -1260,6 +2368,18 @@
     {
       "name": "R049",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "RLB",
+        "CLB",
+        "ALB",
+        "EDG"
+      ],
+      "stations_reverse": [
+        "EDG",
+        "ALB",
+        "CLB",
+        "RLB"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1279,6 +2399,34 @@
     {
       "name": "R050",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "RLB",
+        "CLB",
+        "ALB",
+        "EDG",
+        "FAY",
+        "WCT",
+        "MRC",
+        "MLC",
+        "WYV",
+        "STL",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "STL",
+        "WYV",
+        "MLC",
+        "MRC",
+        "WCT",
+        "FAY",
+        "EDG",
+        "ALB",
+        "CLB",
+        "RLB"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1298,6 +2446,14 @@
     {
       "name": "R051",
       "operator": "AirLink",
+      "stations_forward": [
+        "SCN",
+        "SAC"
+      ],
+      "stations_reverse": [
+        "SAC",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1319,6 +2475,18 @@
     {
       "name": "WHL",
       "operator": "AirLink",
+      "stations_forward": [
+        "SCN",
+        "SAC",
+        "SAO",
+        "SAX"
+      ],
+      "stations_reverse": [
+        "SAX",
+        "SAO",
+        "SAC",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1340,6 +2508,24 @@
     {
       "name": "WHL",
       "operator": "AirLink",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "ELJ",
+        "MGT",
+        "SAC",
+        "SAO",
+        "SAX"
+      ],
+      "stations_reverse": [
+        "SAX",
+        "SAO",
+        "SAC",
+        "MGT",
+        "ELJ",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1361,6 +2547,20 @@
     {
       "name": "WHL",
       "operator": "AirLink",
+      "stations_forward": [
+        "SCN",
+        "SHB",
+        "BRY",
+        "SAP",
+        "SAC"
+      ],
+      "stations_reverse": [
+        "SAC",
+        "SAP",
+        "BRY",
+        "SHB",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1382,6 +2582,22 @@
     {
       "name": "R055",
       "operator": "AirLink",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "SAP",
+        "SAC",
+        "SAX",
+        "SAZ"
+      ],
+      "stations_reverse": [
+        "SAZ",
+        "SAX",
+        "SAC",
+        "SAP",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1403,6 +2619,16 @@
     {
       "name": "R056",
       "operator": "AirLink",
+      "stations_forward": [
+        "SAC",
+        "SAP",
+        "LSR"
+      ],
+      "stations_reverse": [
+        "LSR",
+        "SAP",
+        "SAC"
+      ],
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1424,6 +2650,20 @@
     {
       "name": "R057",
       "operator": "AirLink",
+      "stations_forward": [
+        "SAZ",
+        "SAX",
+        "SAC",
+        "WTN",
+        "LSR"
+      ],
+      "stations_reverse": [
+        "LSR",
+        "WTN",
+        "SAC",
+        "SAX",
+        "SAZ"
+      ],
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1445,6 +2685,24 @@
     {
       "name": "WHL",
       "operator": "AirLink",
+      "stations_forward": [
+        "SCN",
+        "SHB",
+        "MGT",
+        "SAC",
+        "SAO",
+        "SAX",
+        "SAZ"
+      ],
+      "stations_reverse": [
+        "SAZ",
+        "SAX",
+        "SAO",
+        "SAC",
+        "MGT",
+        "SHB",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1466,6 +2724,22 @@
     {
       "name": "R059",
       "operator": "AirLink",
+      "stations_forward": [
+        "SCN",
+        "SHB",
+        "ELJ",
+        "SAP",
+        "SAC",
+        "SAX"
+      ],
+      "stations_reverse": [
+        "SAX",
+        "SAC",
+        "SAP",
+        "ELJ",
+        "SHB",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 185 Standard",
         "Class 185 Double",
@@ -1487,6 +2761,22 @@
     {
       "name": "R060",
       "operator": "AirLink",
+      "stations_forward": [
+        "MGT",
+        "SAP",
+        "SAC",
+        "SAO",
+        "SAZ",
+        "SAX"
+      ],
+      "stations_reverse": [
+        "SAX",
+        "SAZ",
+        "SAO",
+        "SAC",
+        "SAP",
+        "MGT"
+      ],
       "compatible_trains": [
         "Class 345"
       ]
@@ -1494,6 +2784,22 @@
     {
       "name": "R063",
       "operator": "AirLink",
+      "stations_forward": [
+        "HHG",
+        "SAP",
+        "SAC",
+        "SAO",
+        "SAZ",
+        "SAX"
+      ],
+      "stations_reverse": [
+        "SAX",
+        "SAZ",
+        "SAO",
+        "SAC",
+        "SAP",
+        "HHG"
+      ],
       "compatible_trains": [
         "Class 345"
       ]
@@ -1501,6 +2807,14 @@
     {
       "name": "R075",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "SCN",
+        "BEN"
+      ],
+      "stations_reverse": [
+        "BEN",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1534,6 +2848,20 @@
     {
       "name": "R076",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "SCN",
+        "SHB",
+        "BEN",
+        "LSR",
+        "LTC"
+      ],
+      "stations_reverse": [
+        "LTC",
+        "LSR",
+        "BEN",
+        "SHB",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1567,6 +2895,28 @@
     {
       "name": "R077",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "SCN",
+        "SHB",
+        "BEN",
+        "LSR",
+        "LTC",
+        "EDG",
+        "WYV",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "WYV",
+        "EDG",
+        "LTC",
+        "LSR",
+        "BEN",
+        "SHB",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1600,6 +2950,22 @@
     {
       "name": "R078",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "SCN",
+        "BEN",
+        "LSR",
+        "LTC",
+        "WYV",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "WYV",
+        "LTC",
+        "LSR",
+        "BEN",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1633,6 +2999,16 @@
     {
       "name": "R079",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "SCN",
+        "SHB",
+        "BEN"
+      ],
+      "stations_reverse": [
+        "BEN",
+        "SHB",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1666,6 +3042,26 @@
     {
       "name": "R080",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "SCN",
+        "SHB",
+        "MGT",
+        "LSR",
+        "LTC",
+        "WYV",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "WYV",
+        "LTC",
+        "LSR",
+        "MGT",
+        "SHB",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1699,6 +3095,16 @@
     {
       "name": "R081",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "SCN",
+        "LTC",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "LTC",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1732,6 +3138,24 @@
     {
       "name": "R082",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "SCN",
+        "ELJ",
+        "HHG",
+        "LSR",
+        "LTC",
+        "EDG",
+        "WYV"
+      ],
+      "stations_reverse": [
+        "WYV",
+        "EDG",
+        "LTC",
+        "LSR",
+        "HHG",
+        "ELJ",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1765,6 +3189,26 @@
     {
       "name": "R083",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "NRY",
+        "BEN",
+        "HHG",
+        "LSR",
+        "LTC",
+        "WCT",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "WCT",
+        "LTC",
+        "LSR",
+        "HHG",
+        "BEN",
+        "NRY"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1789,6 +3233,24 @@
     {
       "name": "R084",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "NRH",
+        "NRY",
+        "BEN",
+        "LSR",
+        "LTC",
+        "WYV",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "WYV",
+        "LTC",
+        "LSR",
+        "BEN",
+        "NRY",
+        "NRH"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1813,6 +3275,22 @@
     {
       "name": "R085",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "BEN",
+        "MGT",
+        "LSR",
+        "LTC",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "LTC",
+        "LSR",
+        "MGT",
+        "BEN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1837,6 +3315,20 @@
     {
       "name": "R086",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "NRY",
+        "EDQ",
+        "BEN",
+        "LSR",
+        "LTC"
+      ],
+      "stations_reverse": [
+        "LTC",
+        "LSR",
+        "BEN",
+        "EDQ",
+        "NRY"
+      ],
       "compatible_trains": [
         "Class 220 Standard",
         "Class 220 Double",
@@ -1850,6 +3342,20 @@
     {
       "name": "R087",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "RLB",
+        "EDG",
+        "WYV",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "WYV",
+        "EDG",
+        "RLB"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1874,6 +3380,28 @@
     {
       "name": "R088",
       "operator": "Stepford Express",
+      "stations_forward": [
+        "SCN",
+        "SHB",
+        "BEN",
+        "HHG",
+        "LSR",
+        "LTC",
+        "EDG",
+        "WCT",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "WCT",
+        "EDG",
+        "LTC",
+        "LSR",
+        "HHG",
+        "BEN",
+        "SHB",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 43 (HST) Standard",
         "Class 43 (HST) Buffer",
@@ -1907,6 +3435,20 @@
     {
       "name": "R100",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "RLB",
+        "CLB",
+        "ALB",
+        "EDG",
+        "LTW"
+      ],
+      "stations_reverse": [
+        "LTW",
+        "EDG",
+        "ALB",
+        "CLB",
+        "RLB"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1926,6 +3468,20 @@
     {
       "name": "R101",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "RLB",
+        "CLB",
+        "ALB",
+        "EDG",
+        "LTC"
+      ],
+      "stations_reverse": [
+        "LTC",
+        "EDG",
+        "ALB",
+        "CLB",
+        "RLB"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1945,6 +3501,28 @@
     {
       "name": "R102",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "RLB",
+        "CLB",
+        "ALB",
+        "EDG",
+        "FAY",
+        "WCT",
+        "MRC",
+        "MLC",
+        "WYV"
+      ],
+      "stations_reverse": [
+        "WYV",
+        "MLC",
+        "MRC",
+        "WCT",
+        "FAY",
+        "EDG",
+        "ALB",
+        "CLB",
+        "RLB"
+      ],
       "compatible_trains": [
         "Class 156 Standard",
         "Class 156 Double"
@@ -1953,6 +3531,26 @@
     {
       "name": "R103",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "WFD",
+        "BCY",
+        "SCN",
+        "SCE",
+        "UFC",
+        "WHL",
+        "HTR",
+        "WHF"
+      ],
+      "stations_reverse": [
+        "WHF",
+        "HTR",
+        "WHL",
+        "UFC",
+        "SCE",
+        "SCN",
+        "BCY",
+        "WFD"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 156 Standard",
@@ -1972,6 +3570,40 @@
     {
       "name": "R104",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "SHB",
+        "ELJ",
+        "BRY",
+        "MGT",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "EDG",
+        "MLC",
+        "WYV",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "WYV",
+        "MLC",
+        "EDG",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "MGT",
+        "BRY",
+        "ELJ",
+        "SHB",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -1992,6 +3624,36 @@
     {
       "name": "R105",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "SHB",
+        "ELJ",
+        "BRY",
+        "MGT",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "EDG",
+        "WCT",
+        "WYV"
+      ],
+      "stations_reverse": [
+        "WYV",
+        "WCT",
+        "EDG",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "MGT",
+        "BRY",
+        "ELJ",
+        "SHB",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -2012,6 +3674,36 @@
     {
       "name": "R106",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "SHB",
+        "ELJ",
+        "BRY",
+        "MGT",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "EDG",
+        "ALB",
+        "RLB"
+      ],
+      "stations_reverse": [
+        "RLB",
+        "ALB",
+        "EDG",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "MGT",
+        "BRY",
+        "ELJ",
+        "SHB",
+        "SCE",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -2021,28 +3713,30 @@
       ]
     },
     {
-      "name": "R107",
-      "operator": "Stepford Connect",
-      "compatible_trains": [
-        "Class 68 1+3+1",
-        "Class 185 Standard",
-        "Class 185 Double",
-        "Class 185 Standard",
-        "Class 185 Double",
-        "Class 380 /0",
-        "Class 380 /1",
-        "Class 385 /0",
-        "Class 385 /0 (Double)",
-        "Class 385 /1",
-        "Class 385 /1 (Double)",
-        "Class 700",
-        "Class 730 /0",
-        "Class 730 /1"
-      ]
-    },
-    {
       "name": "R108",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SAC",
+        "SAP",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "EDG",
+        "MLC",
+        "WYV"
+      ],
+      "stations_reverse": [
+        "WYV",
+        "MLC",
+        "EDG",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "SAP",
+        "SAC"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -2063,6 +3757,24 @@
     {
       "name": "R109",
       "operator": "Stepford Connect",
+      "stations_forward": [
+        "SAC",
+        "SAP",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "LTW"
+      ],
+      "stations_reverse": [
+        "LTW",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "SAP",
+        "SAC"
+      ],
       "compatible_trains": [
         "Class 68 1+3+1",
         "Class 185 Standard",
@@ -2083,6 +3795,28 @@
     {
       "name": "R120",
       "operator": "Waterline",
+      "stations_forward": [
+        "NRH",
+        "NRY",
+        "EDQ",
+        "FRD",
+        "WBN",
+        "BEN",
+        "PBE",
+        "MGD",
+        "MGT"
+      ],
+      "stations_reverse": [
+        "MGT",
+        "MGD",
+        "PBE",
+        "BEN",
+        "WBN",
+        "FRD",
+        "EDQ",
+        "NRY",
+        "NRH"
+      ],
       "compatible_trains": [
         "Class 143 Standard",
         "Class 143 Double",
@@ -2097,6 +3831,36 @@
     {
       "name": "R130",
       "operator": "Metro",
+      "stations_forward": [
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "AGP",
+        "BOD",
+        "CXN",
+        "BAR",
+        "BRY",
+        "EBR",
+        "BPK",
+        "MGT"
+      ],
+      "stations_reverse": [
+        "MGT",
+        "BPK",
+        "EBR",
+        "BRY",
+        "BAR",
+        "CXN",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2112,6 +3876,28 @@
     {
       "name": "R131",
       "operator": "Metro",
+      "stations_forward": [
+        "SHB",
+        "AGP",
+        "BOD",
+        "CXN",
+        "BAR",
+        "BRY",
+        "EBR",
+        "BPK",
+        "MGT"
+      ],
+      "stations_reverse": [
+        "MGT",
+        "BPK",
+        "EBR",
+        "BRY",
+        "BAR",
+        "CXN",
+        "BOD",
+        "AGP",
+        "SHB"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2127,6 +3913,34 @@
     {
       "name": "R132",
       "operator": "Metro",
+      "stations_forward": [
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "AGP",
+        "BOD",
+        "CXN",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "BAR"
+      ],
+      "stations_reverse": [
+        "BAR",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "CXN",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2142,6 +3956,42 @@
     {
       "name": "R133",
       "operator": "Metro",
+      "stations_forward": [
+        "WFD",
+        "HPK",
+        "BCY",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "AGP",
+        "BOD",
+        "CXN",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "BAR"
+      ],
+      "stations_reverse": [
+        "BAR",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "CXN",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "BCY",
+        "HPK",
+        "WFD"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2157,6 +4007,26 @@
     {
       "name": "R134",
       "operator": "Metro",
+      "stations_forward": [
+        "SHB",
+        "AGP",
+        "BOD",
+        "CXN",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "BAR"
+      ],
+      "stations_reverse": [
+        "BAR",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "CXN",
+        "BOD",
+        "AGP",
+        "SHB"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2172,6 +4042,38 @@
     {
       "name": "R135",
       "operator": "Metro",
+      "stations_forward": [
+        "BCY",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "AGP",
+        "BOD",
+        "CXN",
+        "BAR"
+      ],
+      "stations_reverse": [
+        "BAR",
+        "CXN",
+        "BOD",
+        "AGP",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "BCY"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2187,6 +4089,40 @@
     {
       "name": "R136",
       "operator": "Metro",
+      "stations_forward": [
+        "SCV",
+        "FNQ",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "AGP",
+        "BOD",
+        "CXN",
+        "BAR"
+      ],
+      "stations_reverse": [
+        "BAR",
+        "CXN",
+        "BOD",
+        "AGP",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "FNQ",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2202,6 +4138,40 @@
     {
       "name": "R137",
       "operator": "Metro",
+      "stations_forward": [
+        "SCV",
+        "FNQ",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "AGP",
+        "BOD",
+        "COX",
+        "BEN",
+        "PBE",
+        "MGD",
+        "MGT"
+      ],
+      "stations_reverse": [
+        "MGT",
+        "MGD",
+        "PBE",
+        "BEN",
+        "COX",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "FNQ",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 756 /0",
         "Class 756 /1"
@@ -2210,6 +4180,40 @@
     {
       "name": "R139",
       "operator": "Metro",
+      "stations_forward": [
+        "STB",
+        "CXN",
+        "BCY",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "BRY",
+        "DTR",
+        "GNS"
+      ],
+      "stations_reverse": [
+        "GNS",
+        "DTR",
+        "BRY",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "BCY",
+        "CXN",
+        "STB"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double"
@@ -2218,6 +4222,16 @@
     {
       "name": "R140",
       "operator": "Metro",
+      "stations_forward": [
+        "BCY",
+        "CXN",
+        "STB"
+      ],
+      "stations_reverse": [
+        "STB",
+        "CXN",
+        "BCY"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2228,6 +4242,20 @@
     {
       "name": "R141",
       "operator": "Metro",
+      "stations_forward": [
+        "WFD",
+        "HPK",
+        "BCY",
+        "CXN",
+        "STB"
+      ],
+      "stations_reverse": [
+        "STB",
+        "CXN",
+        "BCY",
+        "HPK",
+        "WFD"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double",
@@ -2238,6 +4266,46 @@
     {
       "name": "WHL",
       "operator": "Metro",
+      "stations_forward": [
+        "STB",
+        "CXN",
+        "BCY",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "AGP",
+        "BOD",
+        "CXN",
+        "BAR",
+        "BRY",
+        "DTR",
+        "GNS",
+        "RNW",
+        "WNG"
+      ],
+      "stations_reverse": [
+        "WNG",
+        "RNW",
+        "GNS",
+        "DTR",
+        "BRY",
+        "BAR",
+        "CXN",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "BCY",
+        "CXN",
+        "STB"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double"
@@ -2246,6 +4314,36 @@
     {
       "name": "WHL",
       "operator": "Metro",
+      "stations_forward": [
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "NHW",
+        "EMP",
+        "ELJ",
+        "BRY",
+        "DTR",
+        "GNS",
+        "RNW",
+        "WNG"
+      ],
+      "stations_reverse": [
+        "WNG",
+        "RNW",
+        "GNS",
+        "DTR",
+        "BRY",
+        "ELJ",
+        "EMP",
+        "NHW",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double"
@@ -2254,6 +4352,40 @@
     {
       "name": "WHL",
       "operator": "Metro",
+      "stations_forward": [
+        "SCV",
+        "FNQ",
+        "CHP",
+        "SCN",
+        "FWY",
+        "SCE",
+        "SHS",
+        "SHB",
+        "AGP",
+        "BOD",
+        "CXN",
+        "BAR",
+        "BRY",
+        "DTR",
+        "GNS"
+      ],
+      "stations_reverse": [
+        "GNS",
+        "DTR",
+        "BRY",
+        "BAR",
+        "CXN",
+        "BOD",
+        "AGP",
+        "SHB",
+        "SHS",
+        "SCE",
+        "FWY",
+        "SCN",
+        "CHP",
+        "FNQ",
+        "SCV"
+      ],
       "compatible_trains": [
         "Class 398 Standard",
         "Class 398 Double"

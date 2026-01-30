@@ -1,28 +1,28 @@
 {
   "invalid_routes": {
     "R052": [
-      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+      "MINOR : Wrong Headcode"
     ],
     "R053": [
-      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+      "MINOR : Wrong Headcode"
     ],
     "R054": [
-      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+      "MINOR : Wrong Headcode"
     ],
     "R058": [
-      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+      "MINOR : Wrong Headcode"
     ],
     "R107": [
-      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+      "MAJOR : Exception - cannot access local variable 'station_codes' where it is not associated with a value"
     ],
     "R142": [
-      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+      "MINOR : Wrong Headcode"
     ],
     "R143": [
-      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+      "MINOR : Wrong Headcode"
     ],
     "R144": [
-      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+      "MINOR : Wrong Headcode"
     ]
   }
 }
