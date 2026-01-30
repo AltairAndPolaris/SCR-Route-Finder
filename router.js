@@ -412,15 +412,15 @@ async function initialize() {
 
         // Add warning icon (top left)
         const invalidRouteCount = Object.keys(INVALID_ROUTES).length;
-        if (invalidRouteCount > 0) {
+        if (invalidRouteCount > 0) {`
             const warningBtn = document.createElement('button');
-            warningBtn.style.cssText = "
+            warningBtn.style.cssText = 
                 position: fixed; top: 10px; left: 10px;
                 background: #fef3c7; border: 2px solid #f59e0b;
                 border-radius: 50%; width: 3rem; height: 3rem;
                 cursor: pointer; font-size: 1.5rem; z-index: 9999;
                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            ";
+            `;
             warningBtn.innerHTML = '⚠️';
             warningBtn.title = `${invalidRouteCount} route${invalidRouteCount !== 1 ? 's' : ''} with data issues`;
             warningBtn.onclick = showInvalidRoutesWarning;
