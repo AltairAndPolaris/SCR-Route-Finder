@@ -48,7 +48,7 @@ async function loadAllData() {
             fetch("invalid_routes.json")
         ]);
 
-        const [segmentsData, routesData, stationsData, trainsData] = await Promise.all([
+        const [segmentsData, routesData, stationsData, trainsData, invalidRoutesData] = await Promise.all([
             segmentsRes.json(),
             routesRes.json(),
             stationsRes.json(),
