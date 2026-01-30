@@ -1,0 +1,28 @@
+{
+  "invalid_routes": {
+    "R052": [
+      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+    ],
+    "R053": [
+      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+    ],
+    "R054": [
+      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+    ],
+    "R058": [
+      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+    ],
+    "R107": [
+      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+    ],
+    "R142": [
+      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+    ],
+    "R143": [
+      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+    ],
+    "R144": [
+      "MAJOR : Exception - can only concatenate list (not \"str\") to list"
+    ]
+  }
+}
