@@ -25,7 +25,7 @@ const OPERATOR_COLORS = {
     "EX": '#FF0080'
 };
 
-/* =======================
+/* ======================
    DATA STRUCTURES
 ======================= */
 let GRAPH = new Map();
@@ -816,4 +816,5 @@ function showRouteDetails(routeId) {
     })
     container.appendChild(content);
     document.body.appendChild(container);
+
 }
