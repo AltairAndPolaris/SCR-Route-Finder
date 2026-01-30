@@ -44,7 +44,7 @@ async function loadAllData() {
             fetch("segments.json"),
             fetch("routes.json"),
             fetch("stations.json"),
-            fetch("trains.json")
+            fetch("trains.json"),
             fetch("invalid_routes.json")
         ]);
 
@@ -52,7 +52,7 @@ async function loadAllData() {
             segmentsRes.json(),
             routesRes.json(),
             stationsRes.json(),
-            trainsRes.json()
+            trainsRes.json(),
             invalidRoutesRes.json()
         ]);
 
