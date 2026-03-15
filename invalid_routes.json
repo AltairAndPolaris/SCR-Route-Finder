@@ -1,28 +1,13 @@
 {
   "invalid_routes": {
-    "R052": [
-      "MINOR : Wrong Headcode"
-    ],
-    "R053": [
-      "MINOR : Wrong Headcode"
-    ],
-    "R054": [
-      "MINOR : Wrong Headcode"
-    ],
-    "R058": [
-      "MINOR : Wrong Headcode"
-    ],
-    "R107": [
-      "MAJOR : Exception - cannot access local variable 'station_codes' where it is not associated with a value"
+    "R012": [
+      "MINOR : No compatible trains"
     ],
     "R142": [
-      "MINOR : Wrong Headcode"
-    ],
-    "R143": [
-      "MINOR : Wrong Headcode"
+      "MAJOR : Invalid Route Format"
     ],
     "R144": [
-      "MINOR : Wrong Headcode"
+      "MAJOR : Invalid Route Format"
     ]
   }
 }

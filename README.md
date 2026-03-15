@@ -20,4 +20,5 @@ Planned features :
 
 Have fun with my little website. I may take a bit long to respond to bug reports or requests, but i'm always trying to work on it.
 
-Last update: 30/01/2026
+Last code update: 30/01/2026
+Last data update: 3/15/2026 (2.3.3)

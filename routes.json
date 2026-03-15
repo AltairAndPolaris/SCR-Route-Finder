@@ -507,7 +507,7 @@
     },
     {
       "name": "R010",
-      "operator": "Waterline",
+      "operator": "Waterline South",
       "stations_forward": [
         "NRY",
         "EDQ",
@@ -547,7 +547,7 @@
     },
     {
       "name": "R011",
-      "operator": "Waterline",
+      "operator": "Waterline North",
       "stations_forward": [
         "NRY",
         "EDQ",
@@ -585,7 +585,7 @@
     },
     {
       "name": "R012",
-      "operator": "Waterline",
+      "operator": "Waterline North",
       "stations_forward": [
         "NRH",
         "NRY",
@@ -608,16 +608,7 @@
         "NRY",
         "NRH"
       ],
-      "compatible_trains": [
-        "Class 143 Standard",
-        "Class 143 Double",
-        "Class 165 Standard",
-        "Class 165 Double",
-        "Class 166",
-        "Class 171",
-        "Class 195 /0",
-        "Class 195 /1"
-      ]
+      "compatible_trains": []
     },
     {
       "name": "R013",
@@ -829,7 +820,7 @@
     },
     {
       "name": "R019",
-      "operator": "Waterline",
+      "operator": "Waterline North",
       "stations_forward": [
         "BEN",
         "CSP",
@@ -894,7 +885,7 @@
     },
     {
       "name": "R021",
-      "operator": "Metro",
+      "operator": "R021Metro",
       "stations_forward": [
         "SCN",
         "FWY",
@@ -1276,7 +1267,7 @@
     },
     {
       "name": "R029",
-      "operator": "Metro",
+      "operator": "R029Metro",
       "stations_forward": [
         "SCV",
         "FNQ",
@@ -2473,7 +2464,7 @@
       ]
     },
     {
-      "name": "WHL",
+      "name": "R052",
       "operator": "AirLink",
       "stations_forward": [
         "SCN",
@@ -2506,7 +2497,7 @@
       ]
     },
     {
-      "name": "WHL",
+      "name": "R053",
       "operator": "AirLink",
       "stations_forward": [
         "SCN",
@@ -2545,7 +2536,7 @@
       ]
     },
     {
-      "name": "WHL",
+      "name": "R054",
       "operator": "AirLink",
       "stations_forward": [
         "SCN",
@@ -2683,7 +2674,7 @@
       ]
     },
     {
-      "name": "WHL",
+      "name": "R058",
       "operator": "AirLink",
       "stations_forward": [
         "SCN",
@@ -2760,7 +2751,7 @@
     },
     {
       "name": "R060",
-      "operator": "AirLink",
+      "operator": "AirLink Shuttle",
       "stations_forward": [
         "MGT",
         "SAP",
@@ -2782,8 +2773,94 @@
       ]
     },
     {
-      "name": "R063",
+      "name": "R061",
       "operator": "AirLink",
+      "stations_forward": [
+        "SAC",
+        "SAP",
+        "WTN",
+        "LSR",
+        "LTC",
+        "EDG",
+        "WYV",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "WYV",
+        "EDG",
+        "LTC",
+        "LSR",
+        "WTN",
+        "SAP",
+        "SAC"
+      ],
+      "compatible_trains": [
+        "Class 185 Standard",
+        "Class 185 Double",
+        "Class 332 4-car",
+        "Class 332 5-car",
+        "Class 345",
+        "Class 360 /1",
+        "Class 360 /2",
+        "Class 387 Standard",
+        "Class 387 Double",
+        "Class 397 /1",
+        "Class 397 /1 (Double)",
+        "Class 745",
+        "Class 755 /3",
+        "Class 755 /4",
+        "Class 802 Standard",
+        "Class 802 Double"
+      ]
+    },
+    {
+      "name": "R062",
+      "operator": "AirLink",
+      "stations_forward": [
+        "SAZ",
+        "SAX",
+        "SAO",
+        "SAC",
+        "LSR",
+        "LTC",
+        "WYV",
+        "NSE",
+        "LYN"
+      ],
+      "stations_reverse": [
+        "LYN",
+        "NSE",
+        "WYV",
+        "LTC",
+        "LSR",
+        "SAC",
+        "SAO",
+        "SAX",
+        "SAZ"
+      ],
+      "compatible_trains": [
+        "Class 185 Standard",
+        "Class 185 Double",
+        "Class 332 4-car",
+        "Class 332 5-car",
+        "Class 345",
+        "Class 360 /1",
+        "Class 360 /2",
+        "Class 387 Standard",
+        "Class 387 Double",
+        "Class 397 /1",
+        "Class 397 /1 (Double)",
+        "Class 745",
+        "Class 755 /3",
+        "Class 755 /4",
+        "Class 802 Standard",
+        "Class 802 Double"
+      ]
+    },
+    {
+      "name": "R063",
+      "operator": "AirLink Shuttle",
       "stations_forward": [
         "HHG",
         "SAP",
@@ -3713,6 +3790,52 @@
       ]
     },
     {
+      "name": "R107",
+      "operator": "Stepford Connect",
+      "stations_forward": [
+        "SCN",
+        "SCE",
+        "SHB",
+        "ELJ",
+        "BRY",
+        "MGT",
+        "HHG",
+        "WTN",
+        "LSR",
+        "LTC",
+        "LTW"
+      ],
+      "stations_reverse": [
+        "LTW",
+        "LTC",
+        "LSR",
+        "WTN",
+        "HHG",
+        "MGT",
+        "BRY",
+        "ELJ",
+        "SHB",
+        "SCE",
+        "SCN"
+      ],
+      "compatible_trains": [
+        "Class 68 1+3+1",
+        "Class 185 Standard",
+        "Class 185 Double",
+        "Class 185 Standard",
+        "Class 185 Double",
+        "Class 380 /0",
+        "Class 380 /1",
+        "Class 385 /0",
+        "Class 385 /0 (Double)",
+        "Class 385 /1",
+        "Class 385 /1 (Double)",
+        "Class 700",
+        "Class 730 /0",
+        "Class 730 /1"
+      ]
+    },
+    {
       "name": "R108",
       "operator": "Stepford Connect",
       "stations_forward": [
@@ -4137,7 +4260,7 @@
     },
     {
       "name": "R137",
-      "operator": "Metro",
+      "operator": "Bodin Metro Operations Centre",
       "stations_forward": [
         "SCV",
         "FNQ",
@@ -4264,8 +4387,8 @@
       ]
     },
     {
-      "name": "WHL",
-      "operator": "Metro",
+      "name": "R142",
+      "operator": "Bodin Metro Operations Centre",
       "stations_forward": [
         "STB",
         "CXN",
@@ -4312,7 +4435,7 @@
       ]
     },
     {
-      "name": "WHL",
+      "name": "R143",
       "operator": "Metro",
       "stations_forward": [
         "SCN",
@@ -4350,7 +4473,7 @@
       ]
     },
     {
-      "name": "WHL",
+      "name": "R144",
       "operator": "Metro",
       "stations_forward": [
         "SCV",

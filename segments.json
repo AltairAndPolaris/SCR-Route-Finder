@@ -65,7 +65,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 1
         },
         {
@@ -86,6 +86,10 @@
         },
         {
           "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R107",
           "duration_minutes": 2
         }
       ]
@@ -157,6 +161,10 @@
         {
           "route": "R106",
           "duration_minutes": 2
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 2
         }
       ]
     },
@@ -211,14 +219,6 @@
         {
           "route": "R137",
           "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
         }
       ]
     },
@@ -272,14 +272,6 @@
         },
         {
           "route": "R137",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
           "duration_minutes": 1
         }
       ]
@@ -358,7 +350,7 @@
         },
         {
           "route": "R048",
-          "duration_minutes": 3
+          "duration_minutes": 2
         },
         {
           "route": "R137",
@@ -532,7 +524,7 @@
         },
         {
           "route": "R048",
-          "duration_minutes": 2
+          "duration_minutes": 1
         }
       ]
     },
@@ -561,7 +553,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R054",
           "duration_minutes": 2
         },
         {
@@ -578,6 +570,10 @@
         },
         {
           "route": "R060",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R061",
           "duration_minutes": 2
         },
         {
@@ -619,7 +615,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R054",
           "duration_minutes": 2
         },
         {
@@ -637,6 +633,10 @@
         {
           "route": "R060",
           "duration_minutes": 2
+        },
+        {
+          "route": "R061",
+          "duration_minutes": 1
         },
         {
           "route": "R063",
@@ -896,7 +896,7 @@
         },
         {
           "route": "R048",
-          "duration_minutes": 3
+          "duration_minutes": 2
         },
         {
           "route": "R137",
@@ -1054,6 +1054,10 @@
         },
         {
           "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R107",
           "duration_minutes": 2
         }
       ]
@@ -1123,7 +1127,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 2
         },
         {
@@ -1144,6 +1148,10 @@
         },
         {
           "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R107",
           "duration_minutes": 2
         }
       ]
@@ -1182,7 +1190,7 @@
         },
         {
           "route": "R031",
-          "duration_minutes": 2
+          "duration_minutes": 1
         },
         {
           "route": "R034",
@@ -1217,15 +1225,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -1264,7 +1264,7 @@
         },
         {
           "route": "R031",
-          "duration_minutes": 1
+          "duration_minutes": 2
         },
         {
           "route": "R034",
@@ -1299,15 +1299,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 2
         }
       ]
@@ -1346,7 +1338,7 @@
         },
         {
           "route": "R031",
-          "duration_minutes": 2
+          "duration_minutes": 1
         },
         {
           "route": "R034",
@@ -1381,15 +1373,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -1451,15 +1435,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 2
         }
       ]
@@ -1605,7 +1581,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -1623,10 +1599,6 @@
           "duration_minutes": 2
         },
         {
-          "route": "R008",
-          "duration_minutes": 2
-        },
-        {
           "route": "R021",
           "duration_minutes": 2
         },
@@ -1679,7 +1651,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 2
         }
       ]
@@ -1697,10 +1669,6 @@
           "duration_minutes": 1
         },
         {
-          "route": "R008",
-          "duration_minutes": 1
-        },
-        {
           "route": "R021",
           "duration_minutes": 1
         },
@@ -1753,7 +1721,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -1827,7 +1795,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 2
         }
       ]
@@ -1974,7 +1942,7 @@
         },
         {
           "route": "R024",
-          "duration_minutes": 3
+          "duration_minutes": 2
         },
         {
           "route": "R025",
@@ -2043,6 +2011,14 @@
           "duration_minutes": 1
         },
         {
+          "route": "R061",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R062",
+          "duration_minutes": 1
+        },
+        {
           "route": "R076",
           "duration_minutes": 2
         },
@@ -2093,6 +2069,10 @@
         {
           "route": "R106",
           "duration_minutes": 2
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 1
         },
         {
           "route": "R108",
@@ -2153,6 +2133,14 @@
           "duration_minutes": 1
         },
         {
+          "route": "R061",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R062",
+          "duration_minutes": 1
+        },
+        {
           "route": "R076",
           "duration_minutes": 2
         },
@@ -2203,6 +2191,10 @@
         {
           "route": "R106",
           "duration_minutes": 2
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 1
         },
         {
           "route": "R108",
@@ -2394,7 +2386,7 @@
         },
         {
           "route": "R024",
-          "duration_minutes": 2
+          "duration_minutes": 3
         },
         {
           "route": "R025",
@@ -2430,7 +2422,7 @@
         },
         {
           "route": "R048",
-          "duration_minutes": 3
+          "duration_minutes": 2
         }
       ]
     },
@@ -2475,6 +2467,10 @@
           "duration_minutes": 2
         },
         {
+          "route": "R107",
+          "duration_minutes": 2
+        },
+        {
           "route": "R108",
           "duration_minutes": 3
         },
@@ -2509,6 +2505,10 @@
           "duration_minutes": 2
         },
         {
+          "route": "R061",
+          "duration_minutes": 3
+        },
+        {
           "route": "R104",
           "duration_minutes": 2
         },
@@ -2519,6 +2519,10 @@
         {
           "route": "R106",
           "duration_minutes": 3
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 2
         },
         {
           "route": "R108",
@@ -2571,6 +2575,10 @@
           "duration_minutes": 2
         },
         {
+          "route": "R061",
+          "duration_minutes": 2
+        },
+        {
           "route": "R077",
           "duration_minutes": 2
         },
@@ -2580,7 +2588,7 @@
         },
         {
           "route": "R088",
-          "duration_minutes": 3
+          "duration_minutes": 2
         },
         {
           "route": "R101",
@@ -2645,6 +2653,10 @@
           "duration_minutes": 3
         },
         {
+          "route": "R061",
+          "duration_minutes": 2
+        },
+        {
           "route": "R077",
           "duration_minutes": 2
         },
@@ -2703,6 +2715,10 @@
           "duration_minutes": 2
         },
         {
+          "route": "R061",
+          "duration_minutes": 3
+        },
+        {
           "route": "R104",
           "duration_minutes": 3
         },
@@ -2713,6 +2729,10 @@
         {
           "route": "R106",
           "duration_minutes": 3
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 2
         },
         {
           "route": "R108",
@@ -2762,6 +2782,10 @@
         },
         {
           "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R107",
           "duration_minutes": 2
         },
         {
@@ -2867,10 +2891,6 @@
         {
           "route": "R137",
           "duration_minutes": 3
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
         }
       ]
     },
@@ -2955,10 +2975,6 @@
         {
           "route": "R137",
           "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
         }
       ]
     },
@@ -3012,14 +3028,6 @@
         },
         {
           "route": "R139",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
           "duration_minutes": 2
         }
       ]
@@ -3127,6 +3135,10 @@
         {
           "route": "R106",
           "duration_minutes": 2
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 3
         }
       ]
     },
@@ -3163,11 +3175,15 @@
           "duration_minutes": 1
         },
         {
+          "route": "R107",
+          "duration_minutes": 2
+        },
+        {
           "route": "R139",
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 2
         }
       ]
@@ -3191,6 +3207,10 @@
         {
           "route": "R106",
           "duration_minutes": 3
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 2
         }
       ]
     },
@@ -3212,6 +3232,10 @@
         },
         {
           "route": "R106",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R107",
           "duration_minutes": 2
         }
       ]
@@ -3235,6 +3259,10 @@
         {
           "route": "R106",
           "duration_minutes": 2
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 2
         }
       ]
     },
@@ -3257,6 +3285,10 @@
         {
           "route": "R106",
           "duration_minutes": 3
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 2
         }
       ]
     },
@@ -3293,11 +3325,15 @@
           "duration_minutes": 1
         },
         {
+          "route": "R107",
+          "duration_minutes": 2
+        },
+        {
           "route": "R139",
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 2
         }
       ]
@@ -3325,6 +3361,10 @@
         {
           "route": "R106",
           "duration_minutes": 2
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 3
         }
       ]
     },
@@ -3357,7 +3397,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 2
         }
       ]
@@ -3391,7 +3431,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -3425,7 +3465,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -3451,7 +3491,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -3477,7 +3517,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -3503,7 +3543,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 2
         }
       ]
@@ -4885,6 +4925,10 @@
           "duration_minutes": 3
         },
         {
+          "route": "R062",
+          "duration_minutes": 3
+        },
+        {
           "route": "R077",
           "duration_minutes": 4
         },
@@ -4940,6 +4984,10 @@
         },
         {
           "route": "R050",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R062",
           "duration_minutes": 3
         },
         {
@@ -5349,6 +5397,10 @@
           "duration_minutes": 2
         },
         {
+          "route": "R062",
+          "duration_minutes": 3
+        },
+        {
           "route": "R077",
           "duration_minutes": 2
         },
@@ -5381,6 +5433,10 @@
         {
           "route": "R037",
           "duration_minutes": 2
+        },
+        {
+          "route": "R062",
+          "duration_minutes": 3
         },
         {
           "route": "R077",
@@ -5603,10 +5659,6 @@
         {
           "route": "R139",
           "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
         }
       ]
     },
@@ -5637,14 +5689,6 @@
         {
           "route": "R134",
           "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
         }
       ]
     },
@@ -5671,14 +5715,6 @@
         {
           "route": "R136",
           "duration_minutes": 17
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
         }
       ]
     },
@@ -5696,14 +5732,6 @@
         },
         {
           "route": "R131",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
           "duration_minutes": 2
         }
       ]
@@ -5993,6 +6021,10 @@
           "duration_minutes": 3
         },
         {
+          "route": "R107",
+          "duration_minutes": 2
+        },
+        {
           "route": "R109",
           "duration_minutes": 3
         }
@@ -6009,6 +6041,10 @@
         {
           "route": "R044",
           "duration_minutes": 3
+        },
+        {
+          "route": "R107",
+          "duration_minutes": 2
         },
         {
           "route": "R109",
@@ -6036,7 +6072,7 @@
         },
         {
           "route": "R048",
-          "duration_minutes": 2
+          "duration_minutes": 4
         },
         {
           "route": "R055",
@@ -6261,7 +6297,7 @@
           "duration_minutes": 7
         },
         {
-          "route": "WHL",
+          "route": "R052",
           "duration_minutes": 7
         }
       ]
@@ -6275,7 +6311,7 @@
           "duration_minutes": 8
         },
         {
-          "route": "WHL",
+          "route": "R052",
           "duration_minutes": 8
         }
       ]
@@ -6285,15 +6321,15 @@
       "to": "SAO",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R052",
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R058",
           "duration_minutes": 1
         },
         {
@@ -6311,11 +6347,11 @@
       "to": "SAX",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R052",
           "duration_minutes": 4
         },
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 4
         }
       ]
@@ -6325,7 +6361,7 @@
       "to": "ELJ",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 3
         }
       ]
@@ -6335,7 +6371,7 @@
       "to": "MGT",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 3
         }
       ]
@@ -6345,11 +6381,11 @@
       "to": "SAC",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 3
         },
         {
-          "route": "WHL",
+          "route": "R058",
           "duration_minutes": 3
         }
       ]
@@ -6359,11 +6395,11 @@
       "to": "MGT",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 3
         },
         {
-          "route": "WHL",
+          "route": "R058",
           "duration_minutes": 3
         }
       ]
@@ -6373,7 +6409,7 @@
       "to": "ELJ",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 3
         }
       ]
@@ -6383,7 +6419,7 @@
       "to": "SCE",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R053",
           "duration_minutes": 3
         }
       ]
@@ -6393,11 +6429,11 @@
       "to": "SHB",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R054",
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R058",
           "duration_minutes": 2
         },
         {
@@ -6431,7 +6467,7 @@
       "to": "BRY",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R054",
           "duration_minutes": 3
         }
       ]
@@ -6441,7 +6477,7 @@
       "to": "SAP",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R054",
           "duration_minutes": 3
         }
       ]
@@ -6451,11 +6487,11 @@
       "to": "SCN",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R054",
           "duration_minutes": 4
         },
         {
-          "route": "WHL",
+          "route": "R058",
           "duration_minutes": 3
         },
         {
@@ -6507,7 +6543,7 @@
           "duration_minutes": 3
         },
         {
-          "route": "WHL",
+          "route": "R058",
           "duration_minutes": 9
         }
       ]
@@ -6526,6 +6562,10 @@
         },
         {
           "route": "R060",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R062",
           "duration_minutes": 3
         },
         {
@@ -6589,7 +6629,7 @@
       "to": "MGT",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R058",
           "duration_minutes": 4
         },
         {
@@ -6603,7 +6643,7 @@
       "to": "SHB",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R058",
           "duration_minutes": 4
         },
         {
@@ -6663,6 +6703,180 @@
         {
           "route": "R060",
           "duration_minutes": 2
+        }
+      ]
+    },
+    {
+      "from": "SAP",
+      "to": "WTN",
+      "routes": [
+        {
+          "route": "R061",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "EDG",
+      "to": "WYV",
+      "routes": [
+        {
+          "route": "R061",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R082",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R087",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "WYV",
+      "to": "LYN",
+      "routes": [
+        {
+          "route": "R061",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "LYN",
+      "to": "WYV",
+      "routes": [
+        {
+          "route": "R061",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "WYV",
+      "to": "EDG",
+      "routes": [
+        {
+          "route": "R061",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R077",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R082",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R087",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "WTN",
+      "to": "SAP",
+      "routes": [
+        {
+          "route": "R061",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "SAX",
+      "to": "SAO",
+      "routes": [
+        {
+          "route": "R062",
+          "duration_minutes": 16
+        }
+      ]
+    },
+    {
+      "from": "SAC",
+      "to": "LSR",
+      "routes": [
+        {
+          "route": "R062",
+          "duration_minutes": 6
+        }
+      ]
+    },
+    {
+      "from": "LTC",
+      "to": "WYV",
+      "routes": [
+        {
+          "route": "R062",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 5
+        }
+      ]
+    },
+    {
+      "from": "WYV",
+      "to": "LTC",
+      "routes": [
+        {
+          "route": "R062",
+          "duration_minutes": 5
+        },
+        {
+          "route": "R078",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R080",
+          "duration_minutes": 4
+        },
+        {
+          "route": "R084",
+          "duration_minutes": 4
+        }
+      ]
+    },
+    {
+      "from": "LSR",
+      "to": "SAC",
+      "routes": [
+        {
+          "route": "R062",
+          "duration_minutes": 6
         }
       ]
     },
@@ -6823,106 +7037,6 @@
         {
           "route": "R088",
           "duration_minutes": 3
-        }
-      ]
-    },
-    {
-      "from": "EDG",
-      "to": "WYV",
-      "routes": [
-        {
-          "route": "R077",
-          "duration_minutes": 4
-        },
-        {
-          "route": "R082",
-          "duration_minutes": 5
-        },
-        {
-          "route": "R087",
-          "duration_minutes": 5
-        }
-      ]
-    },
-    {
-      "from": "WYV",
-      "to": "EDG",
-      "routes": [
-        {
-          "route": "R077",
-          "duration_minutes": 4
-        },
-        {
-          "route": "R082",
-          "duration_minutes": 5
-        },
-        {
-          "route": "R087",
-          "duration_minutes": 5
-        }
-      ]
-    },
-    {
-      "from": "LTC",
-      "to": "WYV",
-      "routes": [
-        {
-          "route": "R078",
-          "duration_minutes": 4
-        },
-        {
-          "route": "R080",
-          "duration_minutes": 4
-        },
-        {
-          "route": "R084",
-          "duration_minutes": 5
-        }
-      ]
-    },
-    {
-      "from": "WYV",
-      "to": "LYN",
-      "routes": [
-        {
-          "route": "R078",
-          "duration_minutes": 5
-        },
-        {
-          "route": "R084",
-          "duration_minutes": 5
-        }
-      ]
-    },
-    {
-      "from": "LYN",
-      "to": "WYV",
-      "routes": [
-        {
-          "route": "R078",
-          "duration_minutes": 5
-        },
-        {
-          "route": "R084",
-          "duration_minutes": 5
-        }
-      ]
-    },
-    {
-      "from": "WYV",
-      "to": "LTC",
-      "routes": [
-        {
-          "route": "R078",
-          "duration_minutes": 4
-        },
-        {
-          "route": "R080",
-          "duration_minutes": 4
-        },
-        {
-          "route": "R084",
-          "duration_minutes": 4
         }
       ]
     },
@@ -7339,10 +7453,6 @@
         {
           "route": "R141",
           "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 1
         }
       ]
     },
@@ -7361,10 +7471,6 @@
         {
           "route": "R141",
           "duration_minutes": 3
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 2
         }
       ]
     },
@@ -7377,15 +7483,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -7399,15 +7497,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -7421,7 +7511,7 @@
           "duration_minutes": 2
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -7435,7 +7525,7 @@
           "duration_minutes": 1
         },
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -7477,29 +7567,21 @@
       ]
     },
     {
-      "from": "RNW",
-      "to": "WNG",
+      "from": "GNS",
+      "to": "RNW",
       "routes": [
         {
-          "route": "WHL",
-          "duration_minutes": 1
-        },
-        {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
     },
     {
-      "from": "GNS",
-      "to": "RNW",
+      "from": "RNW",
+      "to": "WNG",
       "routes": [
         {
-          "route": "WHL",
-          "duration_minutes": 2
-        },
-        {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -7509,7 +7591,7 @@
       "to": "RNW",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
@@ -7519,7 +7601,7 @@
       "to": "GNS",
       "routes": [
         {
-          "route": "WHL",
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
