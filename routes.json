@@ -507,7 +507,7 @@
     },
     {
       "name": "R010",
-      "operator": "Waterline South",
+      "operator": "Waterline",
       "stations_forward": [
         "NRY",
         "EDQ",
@@ -547,7 +547,7 @@
     },
     {
       "name": "R011",
-      "operator": "Waterline North",
+      "operator": "Waterline",
       "stations_forward": [
         "NRY",
         "EDQ",
@@ -585,7 +585,7 @@
     },
     {
       "name": "R012",
-      "operator": "Waterline North",
+      "operator": "Waterline",
       "stations_forward": [
         "NRH",
         "NRY",
@@ -608,7 +608,16 @@
         "NRY",
         "NRH"
       ],
-      "compatible_trains": []
+      "compatible_trains": [
+        "Class 143 Standard",
+        "Class 143 Double",
+        "Class 165 Standard",
+        "Class 165 Double",
+        "Class 166",
+        "Class 171",
+        "Class 195 /0",
+        "Class 195 /1"
+      ]
     },
     {
       "name": "R013",
@@ -820,7 +829,7 @@
     },
     {
       "name": "R019",
-      "operator": "Waterline North",
+      "operator": "Waterline",
       "stations_forward": [
         "BEN",
         "CSP",
@@ -885,7 +894,7 @@
     },
     {
       "name": "R021",
-      "operator": "R021Metro",
+      "operator": "Metro",
       "stations_forward": [
         "SCN",
         "FWY",
@@ -1267,7 +1276,7 @@
     },
     {
       "name": "R029",
-      "operator": "R029Metro",
+      "operator": "Metro",
       "stations_forward": [
         "SCV",
         "FNQ",
@@ -2751,7 +2760,7 @@
     },
     {
       "name": "R060",
-      "operator": "AirLink Shuttle",
+      "operator": "AirLink",
       "stations_forward": [
         "MGT",
         "SAP",
@@ -2860,7 +2869,7 @@
     },
     {
       "name": "R063",
-      "operator": "AirLink Shuttle",
+      "operator": "AirLink",
       "stations_forward": [
         "HHG",
         "SAP",
@@ -4260,7 +4269,7 @@
     },
     {
       "name": "R137",
-      "operator": "Bodin Metro Operations Centre",
+      "operator": "Metro",
       "stations_forward": [
         "SCV",
         "FNQ",
@@ -4388,7 +4397,7 @@
     },
     {
       "name": "R142",
-      "operator": "Bodin Metro Operations Centre",
+      "operator": "Metro",
       "stations_forward": [
         "STB",
         "CXN",

@@ -1,8 +1,5 @@
 {
   "invalid_routes": {
-    "R012": [
-      "MINOR : No compatible trains"
-    ],
     "R142": [
       "MAJOR : Invalid Route Format"
     ],
