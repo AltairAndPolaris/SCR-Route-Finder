@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\Documents\\GitHub\\SCR-Route-Finder\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\GitHub\\SCR-Route-Finder\\router.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:router.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\GitHub\\SCR-Route-Finder\\invalid_routes.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:invalid_routes.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\GitHub\\SCR-Route-Finder\\routes.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\GitHub\\SCR-Route-Finder\\segments.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:segments.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -15,20 +27,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:trains.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\GitHub\\SCR-Route-Finder\\routes.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\GitHub\\SCR-Route-Finder\\invalid_routes.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:invalid_routes.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\GitHub\\SCR-Route-Finder\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Documents\\GitHub\\SCR-Route-Finder\\router.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:router.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "trains.json",
               "DocumentMoniker": "E:\\Documents\\GitHub\\SCR-Route-Finder\\trains.json",
               "RelativeDocumentMoniker": "trains.json",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "trains.json",
               "ViewState": "AgIAACkCAAAAAAAAAAAIwEMCAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-30T15:50:19.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T15:50:19.016Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "stations.json",
               "DocumentMoniker": "E:\\Documents\\GitHub\\SCR-Route-Finder\\stations.json",
               "RelativeDocumentMoniker": "stations.json",
@@ -63,51 +62,50 @@
               "RelativeToolTip": "stations.json",
               "ViewState": "AgIAAAUBAAAAAAAAAAAIwBwBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-30T15:50:18.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T15:50:18.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "segments.json",
               "DocumentMoniker": "E:\\Documents\\GitHub\\SCR-Route-Finder\\segments.json",
               "RelativeDocumentMoniker": "segments.json",
               "ToolTip": "E:\\Documents\\GitHub\\SCR-Route-Finder\\segments.json",
               "RelativeToolTip": "segments.json",
-              "ViewState": "AgIAAEEdAAAAAAAAAAAIwE0dAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAEEdAAAAAAAAAAAIwE0dAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-30T15:50:17.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "routes.json",
               "DocumentMoniker": "E:\\Documents\\GitHub\\SCR-Route-Finder\\routes.json",
               "RelativeDocumentMoniker": "routes.json",
               "ToolTip": "E:\\Documents\\GitHub\\SCR-Route-Finder\\routes.json",
               "RelativeToolTip": "routes.json",
-              "ViewState": "AgIAAJgJAAAAAAAAAAAAAKsJAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAKEJAAAAAAAAAAAAALQJAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-30T15:50:16.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "invalid_routes.json",
               "DocumentMoniker": "E:\\Documents\\GitHub\\SCR-Route-Finder\\invalid_routes.json",
               "RelativeDocumentMoniker": "invalid_routes.json",
               "ToolTip": "E:\\Documents\\GitHub\\SCR-Route-Finder\\invalid_routes.json",
               "RelativeToolTip": "invalid_routes.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-30T15:50:14.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "index.html",
               "DocumentMoniker": "E:\\Documents\\GitHub\\SCR-Route-Finder\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -115,18 +113,17 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-01-29T23:03:48.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T23:03:48.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "router.js",
               "DocumentMoniker": "E:\\Documents\\GitHub\\SCR-Route-Finder\\router.js",
               "RelativeDocumentMoniker": "router.js",
               "ToolTip": "E:\\Documents\\GitHub\\SCR-Route-Finder\\router.js",
               "RelativeToolTip": "router.js",
-              "ViewState": "AgIAADsAAAAAAAAAAAAIwDYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAG0CAAAAAAAAAAAAABgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-01-29T22:58:23.61Z",
               "EditorCaption": ""

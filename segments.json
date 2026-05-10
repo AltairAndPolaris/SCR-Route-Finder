@@ -2502,7 +2502,7 @@
         },
         {
           "route": "R057",
-          "duration_minutes": 2
+          "duration_minutes": 4
         },
         {
           "route": "R061",
@@ -2604,7 +2604,7 @@
         },
         {
           "route": "R106",
-          "duration_minutes": 2
+          "duration_minutes": 3
         },
         {
           "route": "R108",
@@ -2682,7 +2682,7 @@
         },
         {
           "route": "R106",
-          "duration_minutes": 1
+          "duration_minutes": 3
         },
         {
           "route": "R108",
@@ -2728,7 +2728,7 @@
         },
         {
           "route": "R106",
-          "duration_minutes": 3
+          "duration_minutes": 2
         },
         {
           "route": "R107",
@@ -2782,7 +2782,7 @@
         },
         {
           "route": "R106",
-          "duration_minutes": 2
+          "duration_minutes": 3
         },
         {
           "route": "R107",
@@ -3172,7 +3172,7 @@
         },
         {
           "route": "R106",
-          "duration_minutes": 1
+          "duration_minutes": 2
         },
         {
           "route": "R107",
@@ -3206,7 +3206,7 @@
         },
         {
           "route": "R106",
-          "duration_minutes": 3
+          "duration_minutes": 2
         },
         {
           "route": "R107",
@@ -3284,7 +3284,7 @@
         },
         {
           "route": "R106",
-          "duration_minutes": 3
+          "duration_minutes": 2
         },
         {
           "route": "R107",
@@ -3322,7 +3322,7 @@
         },
         {
           "route": "R106",
-          "duration_minutes": 1
+          "duration_minutes": 2
         },
         {
           "route": "R107",
@@ -4720,7 +4720,7 @@
     },
     {
       "from": "FAY",
-      "to": "WCT",
+      "to": "WST",
       "routes": [
         {
           "route": "R024",
@@ -4761,7 +4761,7 @@
       ]
     },
     {
-      "from": "WCT",
+      "from": "WST",
       "to": "MLC",
       "routes": [
         {
@@ -5120,7 +5120,7 @@
     },
     {
       "from": "MLC",
-      "to": "WCT",
+      "to": "WST",
       "routes": [
         {
           "route": "R024",
@@ -5149,7 +5149,7 @@
       ]
     },
     {
-      "from": "WCT",
+      "from": "WST",
       "to": "FAY",
       "routes": [
         {
@@ -5233,7 +5233,7 @@
       ]
     },
     {
-      "from": "WCT",
+      "from": "WST",
       "to": "MRC",
       "routes": [
         {
@@ -5312,7 +5312,7 @@
     },
     {
       "from": "MRC",
-      "to": "WCT",
+      "to": "WST",
       "routes": [
         {
           "route": "R025",
@@ -5360,7 +5360,7 @@
     },
     {
       "from": "EDG",
-      "to": "WCT",
+      "to": "WST",
       "routes": [
         {
           "route": "R026",
@@ -5457,7 +5457,7 @@
       ]
     },
     {
-      "from": "WCT",
+      "from": "WST",
       "to": "EDG",
       "routes": [
         {
@@ -6106,7 +6106,7 @@
         },
         {
           "route": "R057",
-          "duration_minutes": 4
+          "duration_minutes": 2
         },
         {
           "route": "R059",
@@ -6202,7 +6202,7 @@
         },
         {
           "route": "R106",
-          "duration_minutes": 1
+          "duration_minutes": 2
         }
       ]
     },
@@ -6508,7 +6508,7 @@
         },
         {
           "route": "R079",
-          "duration_minutes": 3
+          "duration_minutes": 2
         },
         {
           "route": "R080",
@@ -6610,7 +6610,7 @@
       "routes": [
         {
           "route": "R057",
-          "duration_minutes": 5
+          "duration_minutes": 4
         }
       ]
     },
@@ -7200,7 +7200,7 @@
     },
     {
       "from": "LTC",
-      "to": "WCT",
+      "to": "WST",
       "routes": [
         {
           "route": "R083",
@@ -7209,7 +7209,7 @@
       ]
     },
     {
-      "from": "WCT",
+      "from": "WST",
       "to": "NSE",
       "routes": [
         {
@@ -7220,7 +7220,7 @@
     },
     {
       "from": "NSE",
-      "to": "WCT",
+      "to": "WST",
       "routes": [
         {
           "route": "R083",
@@ -7229,7 +7229,7 @@
       ]
     },
     {
-      "from": "WCT",
+      "from": "WST",
       "to": "LTC",
       "routes": [
         {
@@ -7333,7 +7333,7 @@
       ]
     },
     {
-      "from": "WCT",
+      "from": "WST",
       "to": "LYN",
       "routes": [
         {
@@ -7344,7 +7344,7 @@
     },
     {
       "from": "LYN",
-      "to": "WCT",
+      "to": "WST",
       "routes": [
         {
           "route": "R088",
@@ -7381,7 +7381,7 @@
       ]
     },
     {
-      "from": "WCT",
+      "from": "WST",
       "to": "WYV",
       "routes": [
         {
@@ -7392,7 +7392,7 @@
     },
     {
       "from": "WYV",
-      "to": "WCT",
+      "to": "WST",
       "routes": [
         {
           "route": "R105",
@@ -7435,70 +7435,6 @@
         {
           "route": "R134",
           "duration_minutes": 4
-        }
-      ]
-    },
-    {
-      "from": "STB",
-      "to": "CXN",
-      "routes": [
-        {
-          "route": "R139",
-          "duration_minutes": 1
-        },
-        {
-          "route": "R140",
-          "duration_minutes": 1
-        },
-        {
-          "route": "R141",
-          "duration_minutes": 1
-        }
-      ]
-    },
-    {
-      "from": "CXN",
-      "to": "BCY",
-      "routes": [
-        {
-          "route": "R139",
-          "duration_minutes": 2
-        },
-        {
-          "route": "R140",
-          "duration_minutes": 3
-        },
-        {
-          "route": "R141",
-          "duration_minutes": 3
-        }
-      ]
-    },
-    {
-      "from": "BRY",
-      "to": "DTR",
-      "routes": [
-        {
-          "route": "R139",
-          "duration_minutes": 1
-        },
-        {
-          "route": "R143",
-          "duration_minutes": 1
-        }
-      ]
-    },
-    {
-      "from": "DTR",
-      "to": "GNS",
-      "routes": [
-        {
-          "route": "R139",
-          "duration_minutes": 1
-        },
-        {
-          "route": "R143",
-          "duration_minutes": 1
         }
       ]
     },
@@ -7562,6 +7498,70 @@
         },
         {
           "route": "R141",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "STB",
+      "to": "CXN",
+      "routes": [
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R140",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "CXN",
+      "to": "BCY",
+      "routes": [
+        {
+          "route": "R139",
+          "duration_minutes": 2
+        },
+        {
+          "route": "R140",
+          "duration_minutes": 3
+        },
+        {
+          "route": "R141",
+          "duration_minutes": 3
+        }
+      ]
+    },
+    {
+      "from": "BRY",
+      "to": "DTR",
+      "routes": [
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R143",
+          "duration_minutes": 1
+        }
+      ]
+    },
+    {
+      "from": "DTR",
+      "to": "GNS",
+      "routes": [
+        {
+          "route": "R139",
+          "duration_minutes": 1
+        },
+        {
+          "route": "R143",
           "duration_minutes": 1
         }
       ]
