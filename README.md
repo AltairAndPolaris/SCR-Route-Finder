@@ -3,7 +3,7 @@
 *WARNING - The information used by the website comes from the unofficial fandom wiki. Please check it before reporting wrong data.*
 
 This is a website built for the game Stepford County Railway on Roblox.
-Contains all stations and routes from SCR 2.3
+Contains all stations and routes from SCR 2.3.4
 It works better on computer, mobile compatibility is planned for February.
 
 The website can be found at https://altairandpolaris.github.io/SCR-Route-Finder/
@@ -21,4 +21,4 @@ Planned features :
 Have fun with my little website. I may take a bit long to respond to bug reports or requests, but i'm always trying to work on it.
 
 Last code update: 30/01/2026
-Last data update: 3/15/2026 (2.3.3)
+Last data update: 11/05/2026 (2.3.4)
